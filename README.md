@@ -16,5 +16,5 @@ Irregular verbs are work in progress
 
 ## Technical Details & Manuals
 
-Information regarding the HFST tools and XFST syntax as well as usage manuals will be provided in the Wiki.
+Information regarding the structure of SiMoN, the HFST tools and XFST syntax as well as usage manuals will be provided in the Wiki.
 Also, a roadmap and worktime overview will be available there.
