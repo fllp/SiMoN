@@ -112,7 +112,6 @@ LEXICON Root
    l_curriri:curr+V_IRI SufVerbIri ;
    l_dicìtiri:dicìt+V_IRI SufVerbIri ;
    l_duviri:duv+V_IRI SufVerbIri ;
-   l_faciri:fac+V_IRI SufVerbIri ;
    l_firi:f+V_IRI SufVerbIri ;
    l_firiri:fir+V_IRI SufVerbIri ;
    l_ghiri:gh+V_IRI SufVerbIri ;
