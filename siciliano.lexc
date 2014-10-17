@@ -394,11 +394,9 @@ LEXICON Root
 
 !------- stem changing patterns -------
 
-    l_finiri:fin+V_IRI SufVerbIri ;
-    l_finiri:fin+V_IRI SufVerbIri ;
-    l_finiri:fin+V_IRI SufVerbIri ;
-    l_finiri:fin+V_IRI SufVerbIri ;
-    l_finiri:fin+V_IRI SufVerbIri ;
+    l_finiri:finsci+V_IRI rscIri ;
+    l_finiri:finsc+V_IRI rscIri2 ;
+    l_finiri:fin+V_IRI rscIri3 ;
 !------- frequent irregular verbs --------
 
     ! == conjugation paradigm for essiri
@@ -835,7 +833,23 @@ LEXICON SufVerbIri
 
 LEXICON rscIri
 
-    +V_FIN+IMP+PRES+2+SING:+IMP+PRES+2+SING*isci #;
+    +V_FIN+IND+PRES+1+SING:+IND+PRES+1+SING*u #;
+
+LEXICON rscIri2
+
+    +V_FIN+IND+PRES+2+SING:+IND+PRES+2+SING*i #;
+
+    +V_FIN+IND+PRES+3+SING:+IND+PRES+3+SING*i #;
+    +V_FIN+IND+PRES+3+PLUR:+IND+PRES+3+PLUR*inu #;
+    +V_FIN+IND+PRES+3+PLUR:+IND+PRES+3+PLUR*unu #;
+
+    +V_FIN+IMP+PRES+2+SING:+IMP+PRES+2+SING*i #;
+
+LEXICON rscIri3
+
+    +V_FIN+IND+PRES+1+PLUR:+IND+PRES+1+PLUR*emu #;
+    +V_FIN+IND+PRES+2+PLUR:+IND+PRES+2+PLUR*iti #;
+
     +V_FIN+IMP+PRES+3+SING:+IMP+PRES+3+SING*issi #;
     +V_FIN+IMP+PRES+1+PLUR:+IMP+PRES+1+PLUR*emu #;
     +V_FIN+IMP+PRES+2+PLUR:+IMP+PRES+2+PLUR*iti #;
