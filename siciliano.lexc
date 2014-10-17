@@ -15,76 +15,76 @@ LEXICON Root
 !- Multiple entries for 1st, 2nd or 3rd person (all tenses/modes) 
 !- record local variations in used forms (palermo,catania,etc.) for the same conjugation pattern
 
-	!------- regular verbs --------
-	l_abbaiari:abbai+V_ARI SufVerbAri ;
-	l_abbruciari:abbruci+V_ARI SufVerbAri ;
-	l_accatari:accat+V_ARI SufVerbAri ;
-	l_addumannari:addumann+V_ARI SufVerbAri ;
-	l_allavancari:allavanc+V_ARI SufVerbAri ;
-	l_ammazzari:ammazz+V_ARI SufVerbAri ;
-	l_arraspari:arrasp+V_ARI SufVerbAri ;
-	l_avanzari:avanz+V_ARI SufVerbAri ;
-	l_battiri:batt+V_IRI SufVerbIri ;
-	l_brillari:brill+V_ARI SufVerbAri ;
-	l_cacari:cac+V_ARI SufVerbAri ;
-	l_cacciari:cacci+V_ARI SufVerbAri ;
-	l_cadiri:cad+V_IRI SufVerbIri ;
-	l_campari:camp+V_ARI SufVerbAri ;
-	l_cantari:cant+V_ARI SufVerbAri ;
-	l_castigari:castig+V_ARI SufVerbAri ;
-	l_chiamari:chiam+V_ARI SufVerbAri ;
-	l_chiantari:chiant+V_ARI SufVerbAri ;
-	l_cumannari:cumann+V_ARI SufVerbAri ;
-	l_cunnannari:cunnann+V_ARI SufVerbAri ;
-	l_dormiri:dorm+V_IRI SufVerbIri ;
-	l_dummannari:dummann+V_ARI SufVerbAri ;
-	l_durmiri:durm+V_IRI SufVerbIri ;
-	l_finiri:fin+V_IRI SufVerbIri ;
-	l_guardagnari:guardagn+V_ARI SufVerbAri ;
-	l_guardari:guard+V_ARI SufVerbAri ;
-	l_imparari:impar+V_ARI SufVerbAri ;
-	l_ingarzari:ingarz+V_ARI SufVerbAri ;
-	l_lassari:lass+V_ARI SufVerbAri ;
-	l_lavari:lav+V_ARI SufVerbAri ;
-	l_manciari:manci+V_ARI SufVerbAri ;
-	l_mparari:mpar+V_ARI SufVerbAri ;
-	l_ngarzari:ngarz+V_ARI SufVerbAri ;
-	l_pagari:pag+V_ARI SufVerbAri ;
-	l_parlari:parl+V_ARI SufVerbAri ;
-	l_parrari:parr+V_ARI SufVerbAri ;
-	l_partiri:part+V_IRI SufVerbIri ;
-	l_pàrtiri:part+V_IRI SufVerbIri ;
-	l_passari:pass+V_ARI SufVerbAri ;
-	l_pisciari:pisci+V_ARI SufVerbAri ;
-	l_prividiri:privid+V_IRI SufVerbIri ;
-	l_purtari:purt+V_ARI SufVerbAri ;
-	l_raccumannari:raccumann+V_ARI SufVerbAri ;
-	l_rispunniri:rispun+V_IRI SufVerbIri ;
-	l_sapiri:sap+V_IRI SufVerbIri ;
-	l_sbattiri:sbatt+V_IRI SufVerbIri ;
-	l_scanciari:scanci+V_ARI SufVerbAri ;
-	l_scanzari:scanz+V_ARI SufVerbAri ;
-	l_sfragari:sfrag+V_ARI SufVerbAri ;
-	l_spanniri:spann+V_IRI SufVerbIri ;
-	l_sparagnari:sparagn+V_ARI SufVerbAri ;
-	l_sparrari:sparr+V_ARI SufVerbAri ;
-	l_spenniri:spenn+V_IRI SufVerbIri ;
-	l_stenniri:stenn+V_IRI SufVerbIri ;
-	l_stuiari:stui+V_ARI SufVerbAri ;
-	l_tagghiri:taggh+V_IRI SufVerbIri ;
-	l_tastari:tast+V_ARI SufVerbAri ;
-	l_tessiri:tess+V_IRI SufVerbIri ;
-	l_togghiri:toggh+V_IRI SufVerbIri ;
-	l_triiri:tri+V_IRI SufVerbIri ;
-	l_tuiri:tu+V_IRI SufVerbIri ;
-	l_viaggiari:viaggi+V_ARI SufVerbAri ;
-	l_viriri:vir+V_IRI SufVerbIri ;
-	l_viviri:viv+V_IRI SufVerbIri ;
-	l_vuliri:vul+V_IRI SufVerbIri ;
+!------- regular verbs --------
+
+    l_abbaiari:abbai+V_ARI SufVerbAri ;
+    l_abbruciari:abbruci+V_ARI SufVerbAri ;
+    l_accatari:accat+V_ARI SufVerbAri ;
+    l_addumannari:addumann+V_ARI SufVerbAri ;
+    l_allavancari:allavanc+V_ARI SufVerbAri ;
+    l_ammazzari:ammazz+V_ARI SufVerbAri ;
+    l_arraspari:arrasp+V_ARI SufVerbAri ;
+    l_avanzari:avanz+V_ARI SufVerbAri ;
+    l_battiri:batt+V_IRI SufVerbIri ;
+    l_brillari:brill+V_ARI SufVerbAri ;
+    l_cacari:cac+V_ARI SufVerbAri ;
+    l_cacciari:cacci+V_ARI SufVerbAri ;
+    l_cadiri:cad+V_IRI SufVerbIri ;
+    l_campari:camp+V_ARI SufVerbAri ;
+    l_cantari:cant+V_ARI SufVerbAri ;
+    l_castigari:castig+V_ARI SufVerbAri ;
+    l_chiamari:chiam+V_ARI SufVerbAri ;
+    l_chiantari:chiant+V_ARI SufVerbAri ;
+    l_cumannari:cumann+V_ARI SufVerbAri ;
+    l_cunnannari:cunnann+V_ARI SufVerbAri ;
+    l_dormiri:dorm+V_IRI SufVerbIri ;
+    l_dummannari:dummann+V_ARI SufVerbAri ;
+    l_durmiri:durm+V_IRI SufVerbIri ;
+    l_guardagnari:guardagn+V_ARI SufVerbAri ;
+    l_guardari:guard+V_ARI SufVerbAri ;
+    l_imparari:impar+V_ARI SufVerbAri ;
+    l_ingarzari:ingarz+V_ARI SufVerbAri ;
+    l_lassari:lass+V_ARI SufVerbAri ;
+    l_lavari:lav+V_ARI SufVerbAri ;
+    l_manciari:manci+V_ARI SufVerbAri ;
+    l_mparari:mpar+V_ARI SufVerbAri ;
+    l_ngarzari:ngarz+V_ARI SufVerbAri ;
+    l_pagari:pag+V_ARI SufVerbAri ;
+    l_parlari:parl+V_ARI SufVerbAri ;
+    l_parrari:parr+V_ARI SufVerbAri ;
+    l_partiri:part+V_IRI SufVerbIri ;
+    l_pàrtiri:part+V_IRI SufVerbIri ;
+    l_passari:pass+V_ARI SufVerbAri ;
+    l_pisciari:pisci+V_ARI SufVerbAri ;
+    l_prividiri:privid+V_IRI SufVerbIri ;
+    l_purtari:purt+V_ARI SufVerbAri ;
+    l_raccumannari:raccumann+V_ARI SufVerbAri ;
+    l_rispunniri:rispun+V_IRI SufVerbIri ;
+    l_sapiri:sap+V_IRI SufVerbIri ;
+    l_sbattiri:sbatt+V_IRI SufVerbIri ;
+    l_scanciari:scanci+V_ARI SufVerbAri ;
+    l_scanzari:scanz+V_ARI SufVerbAri ;
+    l_sfragari:sfrag+V_ARI SufVerbAri ;
+    l_spanniri:spann+V_IRI SufVerbIri ;
+    l_sparagnari:sparagn+V_ARI SufVerbAri ;
+    l_sparrari:sparr+V_ARI SufVerbAri ;
+    l_spenniri:spenn+V_IRI SufVerbIri ;
+    l_stenniri:stenn+V_IRI SufVerbIri ;
+    l_stuiari:stui+V_ARI SufVerbAri ;
+    l_tagghiri:taggh+V_IRI SufVerbIri ;
+    l_tastari:tast+V_ARI SufVerbAri ;
+    l_tessiri:tess+V_IRI SufVerbIri ;
+    l_togghiri:toggh+V_IRI SufVerbIri ;
+    l_triiri:tri+V_IRI SufVerbIri ;
+    l_tuiri:tu+V_IRI SufVerbIri ;
+    l_viaggiari:viaggi+V_ARI SufVerbAri ;
+    l_viriri:vir+V_IRI SufVerbIri ;
+    l_viviri:viv+V_IRI SufVerbIri ;
+    l_vuliri:vul+V_IRI SufVerbIri ;
 
 
-	!------- assumed regular verbs -----
-	!- CAUTION! REVISIION NEEDED. 
+    !------- assumed regular verbs -----
+    !- CAUTION! REVISIION NEEDED. 
    !- These forms have been autogenerated from the sicilian Wikipedia,
    !- guessing their membership of category by the surface forms they appear in the Wiki
    !- Irregular forms and forms of changing stems might be contained as well
@@ -390,441 +390,455 @@ LEXICON Root
    l_visitari:visit+V_ARI SufVerbAri ;
    l_vuscari:vusc+V_ARI SufVerbAri ;
    l_zappari:zapp+V_ARI SufVerbAri ;
-   
-	!-## conjugation paradigm for essiri
 
-	l_essiri+V_IRI: SiriEssiri ;
-	l_siri+V_IRI: SiriEssiri ;
-	!-- Note: since siri is a variation of essiri, the conjugation patterns 
-	!-- have been moved to an extra lexicon in order to avoid cloning the whole paradigm.
 
-	!-## conjugation paradigm for aviri
-	!--## indicative
-	l_aviri+V_FIN+IND+PRES+1+SING:haiu #;
-	l_aviri+V_FIN+IND+PRES+1+SING:aiu #;
-	l_aviri+V_FIN+IND+PRES+2+SING:hai #;
-	l_aviri+V_FIN+IND+PRES+2+SING:ai #;
-	l_aviri+V_FIN+IND+PRES+2+SING:a' #;
-	l_aviri+V_FIN+IND+PRES+3+SING:havi #;
-	l_aviri+V_FIN+IND+PRES+3+SING:avi #;
-	l_aviri+V_FIN+IND+PRES+1+PLUR:havemu #;
-	l_aviri+V_FIN+IND+PRES+1+PLUR:avemu #;
-	l_aviri+V_FIN+IND+PRES+1+PLUR:avimu #;
-	l_aviri+V_FIN+IND+PRES+2+PLUR:haviti #;
-	l_aviri+V_FIN+IND+PRES+2+PLUR:aviti #;
-	l_aviri+V_FIN+IND+PRES+3+PLUR:hannu # ;
-	l_aviri+V_FIN+IND+PRES+3+PLUR:annu #;
-	l_aviri+V_FIN+IND+IMPERF+1+SING:aviâ #;
-	l_aviri+V_FIN+IND+IMPERF+1+SING:avia #;
-	l_aviri+V_FIN+IND+IMPERF+2+SING:avivâ #;
-	l_aviri+V_FIN+IND+IMPERF+2+SING:aviva #;
-	l_aviri+V_FIN+IND+IMPERF+3+SING:aviâ #;
-	l_aviri+V_FIN+IND+IMPERF+3+SING:avia #;
-	l_aviri+V_FIN+IND+IMPERF+1+PLUR:aviamâ #;
-	l_aviri+V_FIN+IND+IMPERF+1+PLUR:aviama #;
-	l_aviri+V_FIN+IND+IMPERF+2+PLUR:aviavâ #;
-	l_aviri+V_FIN+IND+IMPERF+2+PLUR:aviava #;
-	l_aviri+V_FIN+IND+IMPERF+3+PLUR:avianâ #;
-	l_aviri+V_FIN+IND+PAST+1+SING:appi #;
-	l_aviri+V_FIN+IND+PAST+2+SING:avisti #;
-	l_aviri+V_FIN+IND+PAST+3+SING:appi #;
-	l_aviri+V_FIN+IND+PAST+1+PLUR:appimu #;
-	l_aviri+V_FIN+IND+PAST+2+PLUR:avistivu #;
-	l_aviri+V_FIN+IND+PAST+3+PLUR:appiru #;
-	l_aviri+V_FIN+IND+FUT+1+SING:avrò #;
-	l_aviri+V_FIN+IND+FUT+2+SING:avrai #;
-	l_aviri+V_FIN+IND+FUT+3+SING:avrà #;
-	l_aviri+V_FIN+IND+FUT+1+PLUR:avremo #;
-	l_aviri+V_FIN+IND+FUT+2+PLUR:avrete #;
-	l_aviri+V_FIN+IND+FUT+3+PLUR:avranno #;
-	!--## conditional
-	l_aviri+V_FIN+COND+PRES+1+SING:avirria #;
-	l_aviri+V_FIN+COND+PRES+3+SING:avirissi #;
-	l_aviri+V_FIN+COND+PRES+2+SING:avirrà #;
-	l_aviri+V_FIN+COND+PRES+1+PLUR:avririamu #;
-	l_aviri+V_FIN+COND+PRES+2+PLUR:aviriavu #;
-	l_aviri+V_FIN+COND+PRES+3+PLUR:avirianu #;
-	!--## imperative
-	l_aviri+V_FIN+IMP+PRES+2+SING:ai #;
-	l_aviri+V_FIN+IMP+PRES+2+SING:aia #;
-	l_aviri+V_FIN+IMP+PRES+2+SING:a' #;
-	l_aviri+V_FIN+IMP+PRES+3+SING:avissi #;
-	l_aviri+V_FIN+IMP+PRES+1+PLUR:avemu #;
-	l_aviri+V_FIN+IMP+PRES+2+PLUR:aviti #;
-	l_aviri+V_FIN+IMP+PRES+3+PLUR:avissiru #;
-	!--## subjunctive
-	l_aviri+V_FIN+SUBJ+PRES+1+SING:aia #;
-	l_aviri+V_FIN+SUBJ+PRES+2+SING:ai #;
-	l_aviri+V_FIN+SUBJ+PRES+3+SING:aia #;
-	l_aviri+V_FIN+SUBJ+PRES+1+PLUR:aiamu #;
-	l_aviri+V_FIN+SUBJ+PRES+2+PLUR:aiati #;
-	l_aviri+V_FIN+SUBJ+PRES+3+PLUR:aianu #;
-	l_aviri+V_FIN+SUBJ+IMPERF+1+SING:avissi #;
-	l_aviri+V_FIN+SUBJ+IMPERF+2+SING:avissi #;
-	l_aviri+V_FIN+SUBJ+IMPERF+3+SING:avisse #;
-	l_aviri+V_FIN+SUBJ+IMPERF+1+PLUR:avissimu #;
-	l_aviri+V_FIN+SUBJ+IMPERF+2+PLUR:avissivu #;
-	l_aviri+V_FIN+SUBJ+IMPERF+3+PLUR:avissiru #;
-	!--## nonfinites
-	l_aviri+V_NOFIN+GER+PRES:avennu #;
-!	l_aviri+V_NOFIN+INF+PRES:avir SufClit;
-	l_aviri+V_NOFIN+INF+PRES:aviri #;
-	!--## participles
-	l_aviri+V_PP+PART+PAST+FEMM+PLUR:avute #;
-	l_aviri+V_PP+PART+PAST+FEMM+SING:avuta #;
-	l_aviri+V_PP+PART+PAST+MASC+PLUR:avuti #;
-	l_aviri+V_PP+PART+PAST+MASC+SING:avutu #;
-	l_aviri+V_PP+PART+PRES+PLUR:aventi #;
-	l_aviri+V_PP+PART+PRES+SING:avente #;
+!------- stem changing patterns -------
 
-!-## conjugations for fari
-	!--## indicative
-	'_fari+V_FIN+IND+PRES+1+SING:fazzu #;
-	l_fari+V_FIN+IND+PRES+2+SING:fai #;
-	l_fari+V_FIN+IND+PRES+2+SING:fa' #;
-	l_fari+V_FIN+IND+PRES+3+SING:fa #;
-	l_fari+V_FIN+IND+PRES+3+SING:faci #;
-	l_fari+V_FIN+IND+PRES+1+PLUR:facemu #;
-	l_fari+V_FIN+IND+PRES+2+PLUR:faciti #;
-	l_fari+V_FIN+IND+PRES+3+PLUR:fannu #;
-	l_fari+V_FIN+IND+IMPERF+1+SING:facia #;
-	l_fari+V_FIN+IND+IMPERF+1+SING:faceva #;
-	l_fari+V_FIN+IND+IMPERF+1+SING:faciva #;
-	l_fari+V_FIN+IND+IMPERF+2+SING:facivi #;
-	l_fari+V_FIN+IND+IMPERF+2+SING:facevi #;
-	l_fari+V_FIN+IND+IMPERF+3+SING:facia #;
-	l_fari+V_FIN+IND+IMPERF+3+SING:faceva #;
-	l_fari+V_FIN+IND+IMPERF+3+SING:faciva #;
-	l_fari+V_FIN+IND+IMPERF+1+PLUR:faciamu #;
-	l_fari+V_FIN+IND+IMPERF+1+PLUR:facevamu #;
-	l_fari+V_FIN+IND+IMPERF+1+PLUR:facivamu #;
-	l_fari+V_FIN+IND+IMPERF+2+PLUR:faciavu #;
-	l_fari+V_FIN+IND+IMPERF+2+PLUR:facevavu #;
-	l_fari+V_FIN+IND+IMPERF+2+PLUR:facivavu #;
-	l_fari+V_FIN+IND+IMPERF+3+PLUR:facianu #;
-	l_fari+V_FIN+IND+IMPERF+3+PLUR:facevanu #;
-	l_fari+V_FIN+IND+IMPERF+3+PLUR:facivanu #;
-	l_fari+V_FIN+IND+PAST+1+SING:fici #;
-	l_fari+V_FIN+IND+PAST+2+SING:facisti #;
-	l_fari+V_FIN+IND+PAST+3+SING:fici #;
-	l_fari+V_FIN+IND+PAST+1+PLUR:ficimu #;
-	l_fari+V_FIN+IND+PAST+2+PLUR:facistivu #;
-	l_fari+V_FIN+IND+PAST+3+PLUR:ficiru #;
-	l_fari+V_FIN+IND+FUT+1+SING:farò #;
-	l_fari+V_FIN+IND+FUT+2+SING:farai #;
-	l_fari+V_FIN+IND+FUT+3+SING:farà #;
-	l_fari+V_FIN+IND+FUT+1+PLUR:faremu #;
-	l_fari+V_FIN+IND+FUT+2+PLUR:fariti #;
-	l_fari+V_FIN+IND+FUT+3+PLUR:farannu #;
-	!--## conditional
-	l_fari+V_FIN+COND+PRES+1+SING:faria #;
-	l_fari+V_FIN+COND+PRES+2+SING:farissi #;
-	l_fari+V_FIN+COND+PRES+3+SING:faria #;
-	l_fari+V_FIN+COND+PRES+1+PLUR:fariamu #;
-	l_fari+V_FIN+COND+PRES+2+PLUR:fariavu #;
-	l_fari+V_FIN+COND+PRES+3+PLUR:farianu #;
-	!--## imperative
-	l_fari+V_FIN+IMP+PRES+2+SING:fa' #;
-	l_fari+V_FIN+IMP+PRES+2+SING:fazza #;
-	l_fari+V_FIN+IMP+PRES+3+SING:facissi #;
-	l_fari+V_FIN+IMP+PRES+1+PLUR:faccemu #;
-	l_fari+V_FIN+IMP+PRES+2+PLUR:faciti #;
-	!--## subjunctive
-	!-- subjunctive present is not used, 
+    l_finiri:fin+V_IRI SufVerbIri ;
+    l_finiri:fin+V_IRI SufVerbIri ;
+    l_finiri:fin+V_IRI SufVerbIri ;
+    l_finiri:fin+V_IRI SufVerbIri ;
+    l_finiri:fin+V_IRI SufVerbIri ;
+!------- frequent irregular verbs --------
+
+    ! == conjugation paradigm for essiri
+
+    l_essiri+V_IRI: SiriEssiri ;
+    l_siri+V_IRI: SiriEssiri ;
+    !-- Note:
+    !-- since siri is a variation of essiri, the conjugation pattern
+    !-- has been moved to an extra lexicon in order to avoid redundancy
+
+    ! == conjugation paradigm for aviri ==
+
+    ! -- indicative --
+
+    l_aviri+V_FIN+IND+PRES+1+SING:haiu #;
+    l_aviri+V_FIN+IND+PRES+1+SING:aiu #;
+    l_aviri+V_FIN+IND+PRES+2+SING:hai #;
+    l_aviri+V_FIN+IND+PRES+2+SING:ai #;
+    l_aviri+V_FIN+IND+PRES+2+SING:a' #;
+    l_aviri+V_FIN+IND+PRES+3+SING:havi #;
+    l_aviri+V_FIN+IND+PRES+3+SING:avi #;
+    l_aviri+V_FIN+IND+PRES+1+PLUR:havemu #;
+    l_aviri+V_FIN+IND+PRES+1+PLUR:avemu #;
+    l_aviri+V_FIN+IND+PRES+1+PLUR:avimu #;
+    l_aviri+V_FIN+IND+PRES+2+PLUR:haviti #;
+    l_aviri+V_FIN+IND+PRES+2+PLUR:aviti #;
+    l_aviri+V_FIN+IND+PRES+3+PLUR:hannu # ;
+    l_aviri+V_FIN+IND+PRES+3+PLUR:annu #;
+    l_aviri+V_FIN+IND+IMPERF+1+SING:aviâ #;
+    l_aviri+V_FIN+IND+IMPERF+1+SING:avia #;
+    l_aviri+V_FIN+IND+IMPERF+2+SING:avivâ #;
+    l_aviri+V_FIN+IND+IMPERF+2+SING:aviva #;
+    l_aviri+V_FIN+IND+IMPERF+3+SING:aviâ #;
+    l_aviri+V_FIN+IND+IMPERF+3+SING:avia #;
+    l_aviri+V_FIN+IND+IMPERF+1+PLUR:aviamâ #;
+    l_aviri+V_FIN+IND+IMPERF+1+PLUR:aviama #;
+    l_aviri+V_FIN+IND+IMPERF+2+PLUR:aviavâ #;
+    l_aviri+V_FIN+IND+IMPERF+2+PLUR:aviava #;
+    l_aviri+V_FIN+IND+IMPERF+3+PLUR:avianâ #;
+    l_aviri+V_FIN+IND+PAST+1+SING:appi #;
+    l_aviri+V_FIN+IND+PAST+2+SING:avisti #;
+    l_aviri+V_FIN+IND+PAST+3+SING:appi #;
+    l_aviri+V_FIN+IND+PAST+1+PLUR:appimu #;
+    l_aviri+V_FIN+IND+PAST+2+PLUR:avistivu #;
+    l_aviri+V_FIN+IND+PAST+3+PLUR:appiru #;
+    l_aviri+V_FIN+IND+FUT+1+SING:avrò #;
+    l_aviri+V_FIN+IND+FUT+2+SING:avrai #;
+    l_aviri+V_FIN+IND+FUT+3+SING:avrà #;
+    l_aviri+V_FIN+IND+FUT+1+PLUR:avremo #;
+    l_aviri+V_FIN+IND+FUT+2+PLUR:avrete #;
+    l_aviri+V_FIN+IND+FUT+3+PLUR:avranno #;
+    ! -- conditional
+    l_aviri+V_FIN+COND+PRES+1+SING:avirria #;
+    l_aviri+V_FIN+COND+PRES+3+SING:avirissi #;
+    l_aviri+V_FIN+COND+PRES+2+SING:avirrà #;
+    l_aviri+V_FIN+COND+PRES+1+PLUR:avririamu #;
+    l_aviri+V_FIN+COND+PRES+2+PLUR:aviriavu #;
+    l_aviri+V_FIN+COND+PRES+3+PLUR:avirianu #;
+    ! -- imperative
+    l_aviri+V_FIN+IMP+PRES+2+SING:ai #;
+    l_aviri+V_FIN+IMP+PRES+2+SING:aia #;
+    l_aviri+V_FIN+IMP+PRES+2+SING:a' #;
+    l_aviri+V_FIN+IMP+PRES+3+SING:avissi #;
+    l_aviri+V_FIN+IMP+PRES+1+PLUR:avemu #;
+    l_aviri+V_FIN+IMP+PRES+2+PLUR:aviti #;
+    l_aviri+V_FIN+IMP+PRES+3+PLUR:avissiru #;
+    ! -- subjunctive
+    l_aviri+V_FIN+SUBJ+PRES+1+SING:aia #;
+    l_aviri+V_FIN+SUBJ+PRES+2+SING:ai #;
+    l_aviri+V_FIN+SUBJ+PRES+3+SING:aia #;
+    l_aviri+V_FIN+SUBJ+PRES+1+PLUR:aiamu #;
+    l_aviri+V_FIN+SUBJ+PRES+2+PLUR:aiati #;
+    l_aviri+V_FIN+SUBJ+PRES+3+PLUR:aianu #;
+    l_aviri+V_FIN+SUBJ+IMPERF+1+SING:avissi #;
+    l_aviri+V_FIN+SUBJ+IMPERF+2+SING:avissi #;
+    l_aviri+V_FIN+SUBJ+IMPERF+3+SING:avisse #;
+    l_aviri+V_FIN+SUBJ+IMPERF+1+PLUR:avissimu #;
+    l_aviri+V_FIN+SUBJ+IMPERF+2+PLUR:avissivu #;
+    l_aviri+V_FIN+SUBJ+IMPERF+3+PLUR:avissiru #;
+    ! -- nonfinites
+    l_aviri+V_NOFIN+GER+PRES:avennu #;
+!    l_aviri+V_NOFIN+INF+PRES:avir SufClit;
+    l_aviri+V_NOFIN+INF+PRES:aviri #;
+    ! -- participles
+    l_aviri+V_PP+PART+PAST+FEMM+PLUR:avute #;
+    l_aviri+V_PP+PART+PAST+FEMM+SING:avuta #;
+    l_aviri+V_PP+PART+PAST+MASC+PLUR:avuti #;
+    l_aviri+V_PP+PART+PAST+MASC+SING:avutu #;
+    l_aviri+V_PP+PART+PRES+PLUR:aventi #;
+    l_aviri+V_PP+PART+PRES+SING:avente #;
+
+! == conjugations for fari
+    ! -- indicative
+    '_fari+V_FIN+IND+PRES+1+SING:fazzu #;
+    l_fari+V_FIN+IND+PRES+2+SING:fai #;
+    l_fari+V_FIN+IND+PRES+2+SING:fa' #;
+    l_fari+V_FIN+IND+PRES+3+SING:fa #;
+    l_fari+V_FIN+IND+PRES+3+SING:faci #;
+    l_fari+V_FIN+IND+PRES+1+PLUR:facemu #;
+    l_fari+V_FIN+IND+PRES+2+PLUR:faciti #;
+    l_fari+V_FIN+IND+PRES+3+PLUR:fannu #;
+    l_fari+V_FIN+IND+IMPERF+1+SING:facia #;
+    l_fari+V_FIN+IND+IMPERF+1+SING:faceva #;
+    l_fari+V_FIN+IND+IMPERF+1+SING:faciva #;
+    l_fari+V_FIN+IND+IMPERF+2+SING:facivi #;
+    l_fari+V_FIN+IND+IMPERF+2+SING:facevi #;
+    l_fari+V_FIN+IND+IMPERF+3+SING:facia #;
+    l_fari+V_FIN+IND+IMPERF+3+SING:faceva #;
+    l_fari+V_FIN+IND+IMPERF+3+SING:faciva #;
+    l_fari+V_FIN+IND+IMPERF+1+PLUR:faciamu #;
+    l_fari+V_FIN+IND+IMPERF+1+PLUR:facevamu #;
+    l_fari+V_FIN+IND+IMPERF+1+PLUR:facivamu #;
+    l_fari+V_FIN+IND+IMPERF+2+PLUR:faciavu #;
+    l_fari+V_FIN+IND+IMPERF+2+PLUR:facevavu #;
+    l_fari+V_FIN+IND+IMPERF+2+PLUR:facivavu #;
+    l_fari+V_FIN+IND+IMPERF+3+PLUR:facianu #;
+    l_fari+V_FIN+IND+IMPERF+3+PLUR:facevanu #;
+    l_fari+V_FIN+IND+IMPERF+3+PLUR:facivanu #;
+    l_fari+V_FIN+IND+PAST+1+SING:fici #;
+    l_fari+V_FIN+IND+PAST+2+SING:facisti #;
+    l_fari+V_FIN+IND+PAST+3+SING:fici #;
+    l_fari+V_FIN+IND+PAST+1+PLUR:ficimu #;
+    l_fari+V_FIN+IND+PAST+2+PLUR:facistivu #;
+    l_fari+V_FIN+IND+PAST+3+PLUR:ficiru #;
+    l_fari+V_FIN+IND+FUT+1+SING:farò #;
+    l_fari+V_FIN+IND+FUT+2+SING:farai #;
+    l_fari+V_FIN+IND+FUT+3+SING:farà #;
+    l_fari+V_FIN+IND+FUT+1+PLUR:faremu #;
+    l_fari+V_FIN+IND+FUT+2+PLUR:fariti #;
+    l_fari+V_FIN+IND+FUT+3+PLUR:farannu #;
+    ! -- conditional
+    l_fari+V_FIN+COND+PRES+1+SING:faria #;
+    l_fari+V_FIN+COND+PRES+2+SING:farissi #;
+    l_fari+V_FIN+COND+PRES+3+SING:faria #;
+    l_fari+V_FIN+COND+PRES+1+PLUR:fariamu #;
+    l_fari+V_FIN+COND+PRES+2+PLUR:fariavu #;
+    l_fari+V_FIN+COND+PRES+3+PLUR:farianu #;
+    ! -- imperative
+    l_fari+V_FIN+IMP+PRES+2+SING:fa' #;
+    l_fari+V_FIN+IMP+PRES+2+SING:fazza #;
+    l_fari+V_FIN+IMP+PRES+3+SING:facissi #;
+    l_fari+V_FIN+IMP+PRES+1+PLUR:faccemu #;
+    l_fari+V_FIN+IMP+PRES+2+PLUR:faciti #;
+    ! -- subjunctive
+    !-- subjunctive present is not used, 
         !-- indicative present used instead
-	l_fari+V_FIN+SUBJ+PRES+1+SING:faccia #;
-	l_fari+V_FIN+SUBJ+PRES+2+SING:faccia #;
-	l_fari+V_FIN+SUBJ+PRES+3+SING:faccia #;
-	l_fari+V_FIN+SUBJ+PRES+1+PLUR:facciamo #;
-	l_fari+V_FIN+SUBJ+PRES+2+PLUR:facciate #;
-	l_fari+V_FIN+SUBJ+PRES+3+PLUR:facciano #;
-	l_fari+V_FIN+SUBJ+IMPERF+1+SING:facissi #;
-	l_fari+V_FIN+SUBJ+IMPERF+2+SING:facissi #;
-	l_fari+V_FIN+SUBJ+IMPERF+3+SING:facissi #;
-	l_fari+V_FIN+SUBJ+IMPERF+1+PLUR:facissimu #;
-	l_fari+V_FIN+SUBJ+IMPERF+2+PLUR:faceissivu #;
-	l_fari+V_FIN+SUBJ+IMPERF+3+PLUR:facessiru #;
-	l_fari+V_FIN+SUBJ+IMPERF+3+PLUR:facessinu #;
-	!--## nonfinals
-	l_fari+V_NOFIN+GER+PRES:facennu #;
-	!--- Needs SufClit to be done first!
-!	l_fari+V_NOFIN+INF+PRES:far SufClit;
-	l_fari+V_NOFIN+INF+PRES:fari #;
-	!--## participles
-	l_fari+V_PP+PART+PAST+FEMM+PLUR:fatte #;
-	l_fari+V_PP+PART+PAST+FEMM+SING:fatta #;
-	l_fari+V_PP+PART+PAST+MASC+PLUR:fatti #;
-	l_fari+V_PP+PART+PAST+MASC+SING:fattu #;
+    l_fari+V_FIN+SUBJ+PRES+1+SING:faccia #;
+    l_fari+V_FIN+SUBJ+PRES+2+SING:faccia #;
+    l_fari+V_FIN+SUBJ+PRES+3+SING:faccia #;
+    l_fari+V_FIN+SUBJ+PRES+1+PLUR:facciamo #;
+    l_fari+V_FIN+SUBJ+PRES+2+PLUR:facciate #;
+    l_fari+V_FIN+SUBJ+PRES+3+PLUR:facciano #;
+    l_fari+V_FIN+SUBJ+IMPERF+1+SING:facissi #;
+    l_fari+V_FIN+SUBJ+IMPERF+2+SING:facissi #;
+    l_fari+V_FIN+SUBJ+IMPERF+3+SING:facissi #;
+    l_fari+V_FIN+SUBJ+IMPERF+1+PLUR:facissimu #;
+    l_fari+V_FIN+SUBJ+IMPERF+2+PLUR:faceissivu #;
+    l_fari+V_FIN+SUBJ+IMPERF+3+PLUR:facessiru #;
+    l_fari+V_FIN+SUBJ+IMPERF+3+PLUR:facessinu #;
+    ! -- nonfinals
+    l_fari+V_NOFIN+GER+PRES:facennu #;
+    !--- Needs SufClit to be done first!
+!    l_fari+V_NOFIN+INF+PRES:far SufClit;
+    l_fari+V_NOFIN+INF+PRES:fari #;
+    ! -- participles
+    l_fari+V_PP+PART+PAST+FEMM+PLUR:fatte #;
+    l_fari+V_PP+PART+PAST+FEMM+SING:fatta #;
+    l_fari+V_PP+PART+PAST+MASC+PLUR:fatti #;
+    l_fari+V_PP+PART+PAST+MASC+SING:fattu #;
 !  not sure if this is actually sicilian or only italian
-!	l_fari+V_PP+PART+PRES+MASC+PLUR:facenti #;
+!    l_fari+V_PP+PART+PRES+MASC+PLUR:facenti #;
 
 LEXICON SiriEssiri
-!-## conjugation paradigm for essiri (and alternate form siri)
-	!--## indicative
-	+V_FIN+IND+PRES+1+SING:sugnu #;
-	+V_FIN+IND+PRES+2+SING:sì #;
-	+V_FIN+IND+PRES+3+SING:è #;
-	+V_FIN+IND+PRES+1+PLUR:semu #;
-	+V_FIN+IND+PRES+2+PLUR:siti #;
-	+V_FIN+IND+PRES+3+PLUR:sunnu #;
-	+V_FIN+IND+IMPERF+1+SING:era #;
-	+V_FIN+IND+IMPERF+2+SING:eri #;
-	+V_FIN+IND+IMPERF+3+SING:era #;
-	+V_FIN+IND+IMPERF+1+PLUR:eramu #;
-	+V_FIN+IND+IMPERF+1+PLUR:èramu #;
-	+V_FIN+IND+IMPERF+2+PLUR:eravu #;
-	+V_FIN+IND+IMPERF+3+PLUR:eranu #;
-	+V_FIN+IND+IMPERF+3+PLUR:èranu #;
-	+V_FIN+IND+IMPERF+3+PLUR:erunu #;
-	+V_FIN+IND+IMPERF+3+PLUR:èrunu #;
-	+V_FIN+IND+PAST+1+SING:fui #;
-	+V_FIN+IND+PAST+2+SING:fusti #;
-	+V_FIN+IND+PAST+3+SING:fu #;
-	+V_FIN+IND+PAST+1+PLUR:fomu #;
-	+V_FIN+IND+PAST+1+PLUR:fumu #;
-	+V_FIN+IND+PAST+2+PLUR:fustivu #;
-	+V_FIN+IND+PAST+2+PLUR:fùstivu #;
-	+V_FIN+IND+PAST+3+PLUR:foru #;
-	+V_FIN+IND+PAST+3+PLUR:furu #;
-	+V_FIN+IND+FUT+1+SING:sarò #;
-	+V_FIN+IND+FUT+2+SING:sarai #;
-	+V_FIN+IND+FUT+3+SING:sarà #;
-	+V_FIN+IND+FUT+1+PLUR:saremu #;
-	+V_FIN+IND+FUT+2+PLUR:sariti #;
-	+V_FIN+IND+FUT+3+PLUR:sarannu #;
-	!--## conditional
-	+V_FIN+COND+PRES+1+SING:saria #;
-	+V_FIN+COND+PRES+2+SING:sarissi #;
-	+V_FIN+COND+PRES+3+SING:saria #;
-	+V_FIN+COND+PRES+1+PLUR:sariamu #;
-	+V_FIN+COND+PRES+2+PLUR:sariavu #;
-	+V_FIN+COND+PRES+3+PLUR:sarianu #;
-	!--## imperative
-	+V_FIN+IMP+PRES+2+SING:sia #;
-	+V_FIN+IMP+PRES+3+SING:fussi #;
-	+V_FIN+IMP+PRES+1+PLUR:semu #;
-	+V_FIN+IMP+PRES+2+PLUR:siti #;
-	+V_FIN+IMP+PRES+2+PLUR:siati #;
-	+V_FIN+IMP+PRES+3+PLUR:fussiru #;
-	!--## subjunctive
-	+V_FIN+SUBJ+PRES+1+SING:sia #;
-	+V_FIN+SUBJ+PRES+2+SING:sia #;
-	+V_FIN+SUBJ+PRES+3+SING:sia #;
-	+V_FIN+SUBJ+PRES+1+PLUR:siamu #;
-	+V_FIN+SUBJ+PRES+2+PLUR:siati #;
-	+V_FIN+SUBJ+PRES+3+PLUR:sianu #;
-	+V_FIN+SUBJ+IMPERF+1+SING:fussi #;
-	+V_FIN+SUBJ+IMPERF+2+SING:fussi #;
-	+V_FIN+SUBJ+IMPERF+3+SING:fussi #;
-	+V_FIN+SUBJ+IMPERF+1+PLUR:fussimu #;
-	+V_FIN+SUBJ+IMPERF+2+PLUR:fussivu #;
-	+V_FIN+SUBJ+IMPERF+3+PLUR:fussiru #;
-	+V_FIN+SUBJ+IMPERF+3+PLUR:fussinu #;
-	!--## nonfinals
-	+V_NOFIN+GER+PRES:essennu #;
-!	+V_NOFIN+INF+PRES:essir SufClit;
-	+V_NOFIN+INF+PRES:essiri #;
-	!--## participles
-	+V_PP+PART+PAST+FEMM+SING:stata #;
-	+V_PP+PART+PAST+MASC+SING:statu #;
-	+V_PP+PART+PAST+FEMM+PLUR:state #;
-	+V_PP+PART+PAST+MASC+PLUR:stati #;
+
+! == conjugation paradigm for essiri (and alternate form siri)
+    ! -- indicative
+    +V_FIN+IND+PRES+1+SING:sugnu #;
+    +V_FIN+IND+PRES+2+SING:sì #;
+    +V_FIN+IND+PRES+3+SING:è #;
+    +V_FIN+IND+PRES+1+PLUR:semu #;
+    +V_FIN+IND+PRES+2+PLUR:siti #;
+    +V_FIN+IND+PRES+3+PLUR:sunnu #;
+    +V_FIN+IND+IMPERF+1+SING:era #;
+    +V_FIN+IND+IMPERF+2+SING:eri #;
+    +V_FIN+IND+IMPERF+3+SING:era #;
+    +V_FIN+IND+IMPERF+1+PLUR:eramu #;
+    +V_FIN+IND+IMPERF+1+PLUR:èramu #;
+    +V_FIN+IND+IMPERF+2+PLUR:eravu #;
+    +V_FIN+IND+IMPERF+3+PLUR:eranu #;
+    +V_FIN+IND+IMPERF+3+PLUR:èranu #;
+    +V_FIN+IND+IMPERF+3+PLUR:erunu #;
+    +V_FIN+IND+IMPERF+3+PLUR:èrunu #;
+    +V_FIN+IND+PAST+1+SING:fui #;
+    +V_FIN+IND+PAST+2+SING:fusti #;
+    +V_FIN+IND+PAST+3+SING:fu #;
+    +V_FIN+IND+PAST+1+PLUR:fomu #;
+    +V_FIN+IND+PAST+1+PLUR:fumu #;
+    +V_FIN+IND+PAST+2+PLUR:fustivu #;
+    +V_FIN+IND+PAST+2+PLUR:fùstivu #;
+    +V_FIN+IND+PAST+3+PLUR:foru #;
+    +V_FIN+IND+PAST+3+PLUR:furu #;
+    +V_FIN+IND+FUT+1+SING:sarò #;
+    +V_FIN+IND+FUT+2+SING:sarai #;
+    +V_FIN+IND+FUT+3+SING:sarà #;
+    +V_FIN+IND+FUT+1+PLUR:saremu #;
+    +V_FIN+IND+FUT+2+PLUR:sariti #;
+    +V_FIN+IND+FUT+3+PLUR:sarannu #;
+    ! -- conditional
+    +V_FIN+COND+PRES+1+SING:saria #;
+    +V_FIN+COND+PRES+2+SING:sarissi #;
+    +V_FIN+COND+PRES+3+SING:saria #;
+    +V_FIN+COND+PRES+1+PLUR:sariamu #;
+    +V_FIN+COND+PRES+2+PLUR:sariavu #;
+    +V_FIN+COND+PRES+3+PLUR:sarianu #;
+    ! -- imperative
+    +V_FIN+IMP+PRES+2+SING:sia #;
+    +V_FIN+IMP+PRES+3+SING:fussi #;
+    +V_FIN+IMP+PRES+1+PLUR:semu #;
+    +V_FIN+IMP+PRES+2+PLUR:siti #;
+    +V_FIN+IMP+PRES+2+PLUR:siati #;
+    +V_FIN+IMP+PRES+3+PLUR:fussiru #;
+    ! -- subjunctive
+    +V_FIN+SUBJ+PRES+1+SING:sia #;
+    +V_FIN+SUBJ+PRES+2+SING:sia #;
+    +V_FIN+SUBJ+PRES+3+SING:sia #;
+    +V_FIN+SUBJ+PRES+1+PLUR:siamu #;
+    +V_FIN+SUBJ+PRES+2+PLUR:siati #;
+    +V_FIN+SUBJ+PRES+3+PLUR:sianu #;
+    +V_FIN+SUBJ+IMPERF+1+SING:fussi #;
+    +V_FIN+SUBJ+IMPERF+2+SING:fussi #;
+    +V_FIN+SUBJ+IMPERF+3+SING:fussi #;
+    +V_FIN+SUBJ+IMPERF+1+PLUR:fussimu #;
+    +V_FIN+SUBJ+IMPERF+2+PLUR:fussivu #;
+    +V_FIN+SUBJ+IMPERF+3+PLUR:fussiru #;
+    +V_FIN+SUBJ+IMPERF+3+PLUR:fussinu #;
+    ! -- nonfinals
+    +V_NOFIN+GER+PRES:essennu #;
+!    +V_NOFIN+INF+PRES:essir SufClit;
+    +V_NOFIN+INF+PRES:essiri #;
+    ! -- participles
+    +V_PP+PART+PAST+FEMM+SING:stata #;
+    +V_PP+PART+PAST+MASC+SING:statu #;
+    +V_PP+PART+PAST+FEMM+PLUR:state #;
+    +V_PP+PART+PAST+MASC+PLUR:stati #;
 
 LEXICON SufVerbAri
-	+V_NOFIN+INF+PRES:+INF+PRES*ari #;
-	!--- Needs SufClit to be done first!
-!	+V_NOFIN+INF+PRES:+INF+PRES*ar SufClit;
+    +V_NOFIN+INF+PRES:+INF+PRES*ari #;
+    !-- Needs SufClit to be done first!
+!    +V_NOFIN+INF+PRES:+INF+PRES*ar SufClit;
 
-	+V_FIN+IND+PRES+1+SING:+IND+PRES+1+SING*u #;
-	+V_FIN+IND+PRES+2+SING:+IND+PRES+2+SING*i #;
-	+V_FIN+IND+PRES+3+SING:+IND+PRES+3+SING*a #;
-	+V_FIN+IND+PRES+1+PLUR:+IND+PRES+1+PLUR*amu #;
-	+V_FIN+IND+PRES+2+PLUR:+IND+PRES+2+PLUR*ati #;
-	+V_FIN+IND+PRES+3+PLUR:+IND+PRES+3+PLUR*anu #;
-	+V_FIN+IND+PRES+3+PLUR:+IND+PRES+3+PLUR*unu #;
+    +V_FIN+IND+PRES+1+SING:+IND+PRES+1+SING*u #;
+    +V_FIN+IND+PRES+2+SING:+IND+PRES+2+SING*i #;
+    +V_FIN+IND+PRES+3+SING:+IND+PRES+3+SING*a #;
+    +V_FIN+IND+PRES+1+PLUR:+IND+PRES+1+PLUR*amu #;
+    +V_FIN+IND+PRES+2+PLUR:+IND+PRES+2+PLUR*ati #;
+    +V_FIN+IND+PRES+3+PLUR:+IND+PRES+3+PLUR*anu #;
+    +V_FIN+IND+PRES+3+PLUR:+IND+PRES+3+PLUR*unu #;
 
-	+V_FIN+IND+IMPERF+1+SING:+IND+IMPERF+1+SING*ava #;
-	+V_FIN+IND+IMPERF+1+SING:+IND+IMPERF+1+SING*avu #;
-	+V_FIN+IND+IMPERF+2+SING:+IND+IMPERF+2+SING*avi #;
-	+V_FIN+IND+IMPERF+3+SING:+IND+IMPERF+3+SING*ava #;
-	+V_FIN+IND+IMPERF+1+PLUR:+IND+IMPERF+1+PLUR*àvamu #;
-	+V_FIN+IND+IMPERF+1+PLUR:+IND+IMPERF+1+PLUR*avamu #;
-	+V_FIN+IND+IMPERF+2+PLUR:+IND+IMPERF+2+PLUR*àvavu #;
-	+V_FIN+IND+IMPERF+2+PLUR:+IND+IMPERF+2+PLUR*avavu #;
-	+V_FIN+IND+IMPERF+3+PLUR:+IND+IMPERF+3+PLUR*avanu #;
-	+V_FIN+IND+IMPERF+3+PLUR:+IND+IMPERF+3+PLUR*àvanu #;
-	+V_FIN+IND+IMPERF+3+PLUR:+IND+IMPERF+3+PLUR*avunu #;
-	+V_FIN+IND+IMPERF+3+PLUR:+IND+IMPERF+3+PLUR*àvunu #;
+    +V_FIN+IND+IMPERF+1+SING:+IND+IMPERF+1+SING*ava #;
+    +V_FIN+IND+IMPERF+1+SING:+IND+IMPERF+1+SING*avu #;
+    +V_FIN+IND+IMPERF+2+SING:+IND+IMPERF+2+SING*avi #;
+    +V_FIN+IND+IMPERF+3+SING:+IND+IMPERF+3+SING*ava #;
+    +V_FIN+IND+IMPERF+1+PLUR:+IND+IMPERF+1+PLUR*àvamu #;
+    +V_FIN+IND+IMPERF+1+PLUR:+IND+IMPERF+1+PLUR*avamu #;
+    +V_FIN+IND+IMPERF+2+PLUR:+IND+IMPERF+2+PLUR*àvavu #;
+    +V_FIN+IND+IMPERF+2+PLUR:+IND+IMPERF+2+PLUR*avavu #;
+    +V_FIN+IND+IMPERF+3+PLUR:+IND+IMPERF+3+PLUR*avanu #;
+    +V_FIN+IND+IMPERF+3+PLUR:+IND+IMPERF+3+PLUR*àvanu #;
+    +V_FIN+IND+IMPERF+3+PLUR:+IND+IMPERF+3+PLUR*avunu #;
+    +V_FIN+IND+IMPERF+3+PLUR:+IND+IMPERF+3+PLUR*àvunu #;
 
-	+V_FIN+IND+PAST+1+SING:+IND+PAST+1+SING*ai #;
-	+V_FIN+IND+PAST+1+SING:+IND+PAST+1+SING*avi #;
-	+V_FIN+IND+PAST+1+SING:+IND+PAST+1+SING*aiu #;
-	+V_FIN+IND+PAST+1+SING:+IND+PAST+1+SING*avu #;
-	+V_FIN+IND+PAST+2+SING:+IND+PAST+2+SING*asti #;
-	+V_FIN+IND+PAST+3+SING:+IND+PAST+3+SING*au #;
-	+V_FIN+IND+PAST+3+SING:+IND+PAST+3+SING*ò #;
-	+V_FIN+IND+PAST+1+PLUR:+IND+PAST+1+PLUR*ammu #;
-	+V_FIN+IND+PAST+1+PLUR:+IND+PAST+1+PLUR*amu #;
-	+V_FIN+IND+PAST+2+PLUR:+IND+PAST+2+PLUR*astivu #;
-	+V_FIN+IND+PAST+2+PLUR:+IND+PAST+2+PLUR*astu #;
-	+V_FIN+IND+PAST+3+PLUR:+IND+PAST+3+PLUR*arunu #;
-	+V_FIN+IND+PAST+3+PLUR:+IND+PAST+3+PLUR*aru #;
+    +V_FIN+IND+PAST+1+SING:+IND+PAST+1+SING*ai #;
+    +V_FIN+IND+PAST+1+SING:+IND+PAST+1+SING*avi #;
+    +V_FIN+IND+PAST+1+SING:+IND+PAST+1+SING*aiu #;
+    +V_FIN+IND+PAST+1+SING:+IND+PAST+1+SING*avu #;
+    +V_FIN+IND+PAST+2+SING:+IND+PAST+2+SING*asti #;
+    +V_FIN+IND+PAST+3+SING:+IND+PAST+3+SING*au #;
+    +V_FIN+IND+PAST+3+SING:+IND+PAST+3+SING*ò #;
+    +V_FIN+IND+PAST+1+PLUR:+IND+PAST+1+PLUR*ammu #;
+    +V_FIN+IND+PAST+1+PLUR:+IND+PAST+1+PLUR*amu #;
+    +V_FIN+IND+PAST+2+PLUR:+IND+PAST+2+PLUR*astivu #;
+    +V_FIN+IND+PAST+2+PLUR:+IND+PAST+2+PLUR*astu #;
+    +V_FIN+IND+PAST+3+PLUR:+IND+PAST+3+PLUR*arunu #;
+    +V_FIN+IND+PAST+3+PLUR:+IND+PAST+3+PLUR*aru #;
 
-	+V_FIN+IND+FUT+1+SING:+IND+FUT+1+SING*irò #;
-	+V_FIN+IND+FUT+2+SING:+IND+FUT+2+SING*irai #;
-	+V_FIN+IND+FUT+3+SING:+IND+FUT+3+SING*irà #;
-	+V_FIN+IND+FUT+1+PLUR:+IND+FUT+1+PLUR*iremu #;
-	+V_FIN+IND+FUT+2+PLUR:+IND+FUT+2+PLUR*iriti #;
-	+V_FIN+IND+FUT+3+PLUR:+IND+FUT+3+PLUR*irannu #;
+    +V_FIN+IND+FUT+1+SING:+IND+FUT+1+SING*irò #;
+    +V_FIN+IND+FUT+2+SING:+IND+FUT+2+SING*irai #;
+    +V_FIN+IND+FUT+3+SING:+IND+FUT+3+SING*irà #;
+    +V_FIN+IND+FUT+1+PLUR:+IND+FUT+1+PLUR*iremu #;
+    +V_FIN+IND+FUT+2+PLUR:+IND+FUT+2+PLUR*iriti #;
+    +V_FIN+IND+FUT+3+PLUR:+IND+FUT+3+PLUR*irannu #;
 
-	!-- subjunctive present is not used, 
+    !-- subjunctive present is not used, 
         !-- indicative present used instead
-	+V_FIN+SUBJ+PRES+1+SING:+SUBJ+PRES+1+SING*u #;
-	+V_FIN+SUBJ+PRES+2+SING:+SUBJ+PRES+2+SING*i #;
-	+V_FIN+SUBJ+PRES+3+SING:+SUBJ+PRES+3+SING*a #;
-	+V_FIN+SUBJ+PRES+1+PLUR:+SUBJ+PRES+1+PLUR*amu #;
-	+V_FIN+SUBJ+PRES+2+PLUR:+SUBJ+PRES+2+PLUR*ati #;
-	+V_FIN+SUBJ+PRES+3+PLUR:+SUBJ+PRES+3+PLUR*anu #;
-	
-	+V_FIN+SUBJ+IMPERF+1+SING:+SUBJ+IMPERF+1+SING*assi #;
-	+V_FIN+SUBJ+IMPERF+2+SING:+SUBJ+IMPERF+2+SING*assi #;
-	+V_FIN+SUBJ+IMPERF+3+SING:+SUBJ+IMPERF+3+SING*assi #;
-	+V_FIN+SUBJ+IMPERF+1+PLUR:+SUBJ+IMPERF+1+PLUR*assimu #;
-	+V_FIN+SUBJ+IMPERF+2+PLUR:+SUBJ+IMPERF+2+PLUR*assivu #;
-	+V_FIN+SUBJ+IMPERF+3+PLUR:+SUBJ+IMPERF+3+PLUR*assiru #;
-	+V_FIN+SUBJ+IMPERF+3+PLUR:+SUBJ+IMPERF+3+PLUR*assinu #;
+    +V_FIN+SUBJ+PRES+1+SING:+SUBJ+PRES+1+SING*u #;
+    +V_FIN+SUBJ+PRES+2+SING:+SUBJ+PRES+2+SING*i #;
+    +V_FIN+SUBJ+PRES+3+SING:+SUBJ+PRES+3+SING*a #;
+    +V_FIN+SUBJ+PRES+1+PLUR:+SUBJ+PRES+1+PLUR*amu #;
+    +V_FIN+SUBJ+PRES+2+PLUR:+SUBJ+PRES+2+PLUR*ati #;
+    +V_FIN+SUBJ+PRES+3+PLUR:+SUBJ+PRES+3+PLUR*anu #;
 
-	+V_FIN+COND+PRES+1+SING:+COND+PRES+1+SING*iria #;
-	+V_FIN+COND+PRES+2+SING:+COND+PRES+2+SING*irissi #;
-	+V_FIN+COND+PRES+3+SING:+COND+PRES+3+SING*iria #;
-	+V_FIN+COND+PRES+1+PLUR:+COND+PRES+1+PLUR*iriamu #;
-	+V_FIN+COND+PRES+2+PLUR:+COND+PRES+2+PLUR*iriavu #;
-	+V_FIN+COND+PRES+3+PLUR:+COND+PRES+3+PLUR*irianu #;
+    +V_FIN+SUBJ+IMPERF+1+SING:+SUBJ+IMPERF+1+SING*assi #;
+    +V_FIN+SUBJ+IMPERF+2+SING:+SUBJ+IMPERF+2+SING*assi #;
+    +V_FIN+SUBJ+IMPERF+3+SING:+SUBJ+IMPERF+3+SING*assi #;
+    +V_FIN+SUBJ+IMPERF+1+PLUR:+SUBJ+IMPERF+1+PLUR*assimu #;
+    +V_FIN+SUBJ+IMPERF+2+PLUR:+SUBJ+IMPERF+2+PLUR*assivu #;
+    +V_FIN+SUBJ+IMPERF+3+PLUR:+SUBJ+IMPERF+3+PLUR*assiru #;
+    +V_FIN+SUBJ+IMPERF+3+PLUR:+SUBJ+IMPERF+3+PLUR*assinu #;
 
-	+V_FIN+IMP+PRES+2+SING:+IMP+PRES+2+SING*a #;
-	+V_FIN+IMP+PRES+3+SING:+IMP+PRES+3+SING*assi #;
-	+V_FIN+IMP+PRES+1+PLUR:+IMP+PRES+1+PLUR*amu #;
-	+V_FIN+IMP+PRES+2+PLUR:+IMP+PRES+2+PLUR*ati #;
-	+V_FIN+IMP+PRES+3+PLUR:+IMP+PRES+3+PLUR*assiru #;
-	
-		!--- unfinished italian forms ---
-!	+V_PP+PART+PRES+SING:+PART+PRES+SING*ante #;
-!	+V_PP+PART+PRES+PLUR:+PART+PRES+PLUR*anti #;
-	!---                          ---
-	+V_PP+PART+PAST+MASC+SING:+PART+PAST+MASC+SING*atu #;
-	+V_PP+PART+PAST+FEMM+SING:+PART+PAST+FEMM+SING*ata #;
-	+V_PP+PART+PAST+MASC+PLUR:+PART+PAST+MASC+PLUR*ati #;
-	+V_PP+PART+PAST+FEMM+PLUR:+PART+PAST+FEMM+PLUR*ate #;
-	
-	+V_NOFIN+GER+PRES:+GER+PRES*annu #;
-	!--- Needs SufClit to be done first!
-!	+V_NOFIN+GER+PRES:+GER+PRES*annu SufClit;
+    +V_FIN+COND+PRES+1+SING:+COND+PRES+1+SING*iria #;
+    +V_FIN+COND+PRES+2+SING:+COND+PRES+2+SING*irissi #;
+    +V_FIN+COND+PRES+3+SING:+COND+PRES+3+SING*iria #;
+    +V_FIN+COND+PRES+1+PLUR:+COND+PRES+1+PLUR*iriamu #;
+    +V_FIN+COND+PRES+2+PLUR:+COND+PRES+2+PLUR*iriavu #;
+    +V_FIN+COND+PRES+3+PLUR:+COND+PRES+3+PLUR*irianu #;
+
+    +V_FIN+IMP+PRES+2+SING:+IMP+PRES+2+SING*a #;
+    +V_FIN+IMP+PRES+3+SING:+IMP+PRES+3+SING*assi #;
+    +V_FIN+IMP+PRES+1+PLUR:+IMP+PRES+1+PLUR*amu #;
+    +V_FIN+IMP+PRES+2+PLUR:+IMP+PRES+2+PLUR*ati #;
+    +V_FIN+IMP+PRES+3+PLUR:+IMP+PRES+3+PLUR*assiru #;
+
+        !--- unfinished italian forms ---
+!    +V_PP+PART+PRES+SING:+PART+PRES+SING*ante #;
+!    +V_PP+PART+PRES+PLUR:+PART+PRES+PLUR*anti #;
+    !---                          ---
+    +V_PP+PART+PAST+MASC+SING:+PART+PAST+MASC+SING*atu #;
+    +V_PP+PART+PAST+FEMM+SING:+PART+PAST+FEMM+SING*ata #;
+    +V_PP+PART+PAST+MASC+PLUR:+PART+PAST+MASC+PLUR*ati #;
+    +V_PP+PART+PAST+FEMM+PLUR:+PART+PAST+FEMM+PLUR*ate #;
+
+    +V_NOFIN+GER+PRES:+GER+PRES*annu #;
+    !--- Needs SufClit to be done first!
+!    +V_NOFIN+GER+PRES:+GER+PRES*annu SufClit;
 
 LEXICON SufVerbIri
-	+V_NOFIN+INF+PRES:+INF+PRES*iri #;
+    +V_NOFIN+INF+PRES:+INF+PRES*iri #;
 !-- Needs SufClit to be done first!
-!	+V_NOFIN+INF+PRES:+INF+PRES*ir SufClit;
-	
-	+V_FIN+IND+PRES+1+SING:+IND+PRES+1+SING*u #;
-	+V_FIN+IND+PRES+2+SING:+IND+PRES+2+SING*i #;
-	+V_FIN+IND+PRES+3+SING:+IND+PRES+3+SING*i #;
-	+V_FIN+IND+PRES+1+PLUR:+IND+PRES+1+PLUR*emu #;
-	+V_FIN+IND+PRES+2+PLUR:+IND+PRES+2+PLUR*iti #;
-	+V_FIN+IND+PRES+3+PLUR:+IND+PRES+3+PLUR*inu #;
-	+V_FIN+IND+PRES+3+PLUR:+IND+PRES+3+PLUR*unu #;
-	
-	+V_FIN+IND+IMPERF+1+SING:+IND+IMPERF+1+SING*ia #;
-	+V_FIN+IND+IMPERF+1+SING:+IND+IMPERF+1+SING*iu #;
-	+V_FIN+IND+IMPERF+1+SING:+IND+IMPERF+1+SING*eva #;
-	+V_FIN+IND+IMPERF+1+SING:+IND+IMPERF+1+SING*evu #;
-	+V_FIN+IND+IMPERF+1+SING:+IND+IMPERF+1+SING*iva #;
-	+V_FIN+IND+IMPERF+1+SING:+IND+IMPERF+1+SING*ivu #;
-	+V_FIN+IND+IMPERF+2+SING:+IND+IMPERF+2+SING*ivi #;
-	+V_FIN+IND+IMPERF+2+SING:+IND+IMPERF+2+SING*evi #;
-	+V_FIN+IND+IMPERF+3+SING:+IND+IMPERF+3+SING*ia #;
-	+V_FIN+IND+IMPERF+3+SING:+IND+IMPERF+3+SING*eva #;
-	+V_FIN+IND+IMPERF+3+SING:+IND+IMPERF+3+SING*iva #;
-	+V_FIN+IND+IMPERF+1+PLUR:+IND+IMPERF+1+PLUR*iamu #;
-	+V_FIN+IND+IMPERF+1+PLUR:+IND+IMPERF+1+PLUR*evamu #;
-	+V_FIN+IND+IMPERF+1+PLUR:+IND+IMPERF+1+PLUR*ivamu #;
-	+V_FIN+IND+IMPERF+2+PLUR:+IND+IMPERF+2+PLUR*iavu #;
-	+V_FIN+IND+IMPERF+2+PLUR:+IND+IMPERF+2+PLUR*evavu #;
-	+V_FIN+IND+IMPERF+2+PLUR:+IND+IMPERF+2+PLUR*ivavu #;
-	+V_FIN+IND+IMPERF+3+PLUR:+IND+IMPERF+3+PLUR*ianu #;
-	+V_FIN+IND+IMPERF+3+PLUR:+IND+IMPERF+3+PLUR*evanu #;
-	+V_FIN+IND+IMPERF+3+PLUR:+IND+IMPERF+3+PLUR*ivanu #;
-	
-	+V_FIN+IND+PAST+1+SING:+IND+PAST+1+SING*ivi #;
-	+V_FIN+IND+PAST+1+SING:+IND+PAST+1+SING*ii #;
-	+V_FIN+IND+PAST+1+SING:+IND+PAST+1+SING*ìi #;
-	+V_FIN+IND+PAST+1+SING:+IND+PAST+1+SING*iu #;
-	+V_FIN+IND+PAST+1+SING:+IND+PAST+1+SING*ivu #;
-	+V_FIN+IND+PAST+2+SING:+IND+PAST+2+SING*isti #;
-	+V_FIN+IND+PAST+3+SING:+IND+PAST+3+SING*ìu #;
-	+V_FIN+IND+PAST+1+PLUR:+IND+PAST+1+PLUR*emmu #;
-	+V_FIN+IND+PAST+1+PLUR:+IND+PAST+1+PLUR*emu #;
-	+V_FIN+IND+PAST+2+PLUR:+IND+PAST+2+PLUR*istivu #;
-	+V_FIN+IND+PAST+2+PLUR:+IND+PAST+2+PLUR*astu #;
-	+V_FIN+IND+PAST+2+PLUR:+IND+PAST+2+PLUR*istu #;
-	+V_FIN+IND+PAST+3+PLUR:+IND+PAST+3+PLUR*erunu #;
-	+V_FIN+IND+PAST+3+PLUR:+IND+PAST+3+PLUR*eru #;
-	
-	+V_FIN+IND+FUT+1+SING:+IND+FUT+1+SING*irò #;
-	+V_FIN+IND+FUT+2+SING:+IND+FUT+2+SING*irai #;
-	+V_FIN+IND+FUT+3+SING:+IND+FUT+3+SING*irà #;
-	+V_FIN+IND+FUT+1+PLUR:+IND+FUT+1+PLUR*iremu #;
-	+V_FIN+IND+FUT+2+PLUR:+IND+FUT+2+PLUR*iriti #;
-	+V_FIN+IND+FUT+3+PLUR:+IND+FUT+3+PLUR*irannu #;
+!    +V_NOFIN+INF+PRES:+INF+PRES*ir SufClit;
 
-	!-- subjunctive present is not used, 
-	!-- indicative present used instead
-	+V_FIN+SUBJ+PRES+1+SING:+SUBJ+PRES+1+SING*u #;
-	+V_FIN+SUBJ+PRES+2+SING:+SUBJ+PRES+2+SING*i #;
-	+V_FIN+SUBJ+PRES+3+SING:+SUBJ+PRES+3+SING*i #;
-	+V_FIN+SUBJ+PRES+1+PLUR:+SUBJ+PRES+1+PLUR*emu #;
-	+V_FIN+SUBJ+PRES+2+PLUR:+SUBJ+PRES+2+PLUR*iti #;
-	+V_FIN+SUBJ+PRES+3+PLUR:+SUBJ+PRES+3+PLUR*inu #;
-	
-	+V_FIN+SUBJ+IMPERF+1+SING:+SUBJ+IMPERF+1+SING*issi #;
-	+V_FIN+SUBJ+IMPERF+2+SING:+SUBJ+IMPERF+2+SING*issi #;
-	+V_FIN+SUBJ+IMPERF+3+SING:+SUBJ+IMPERF+3+SING*issi #;
-	+V_FIN+SUBJ+IMPERF+1+PLUR:+SUBJ+IMPERF+1+PLUR*issimu #;
-	+V_FIN+SUBJ+IMPERF+2+PLUR:+SUBJ+IMPERF+2+PLUR*issivu #;
-	+V_FIN+SUBJ+IMPERF+3+PLUR:+SUBJ+IMPERF+3+PLUR*issiru #;
-	+V_FIN+SUBJ+IMPERF+3+PLUR:+SUBJ+IMPERF+3+PLUR*issinu #;
+    +V_FIN+IND+PRES+1+SING:+IND+PRES+1+SING*u #;
+    +V_FIN+IND+PRES+2+SING:+IND+PRES+2+SING*i #;
+    +V_FIN+IND+PRES+3+SING:+IND+PRES+3+SING*i #;
+    +V_FIN+IND+PRES+1+PLUR:+IND+PRES+1+PLUR*emu #;
+    +V_FIN+IND+PRES+2+PLUR:+IND+PRES+2+PLUR*iti #;
+    +V_FIN+IND+PRES+3+PLUR:+IND+PRES+3+PLUR*inu #;
+    +V_FIN+IND+PRES+3+PLUR:+IND+PRES+3+PLUR*unu #;
 
-	+V_FIN+COND+PRES+1+SING:+COND+PRES+1+SING*iria #;
-	+V_FIN+COND+PRES+2+SING:+COND+PRES+2+SING*irissi #;
-	+V_FIN+COND+PRES+3+SING:+COND+PRES+3+SING*iria #;
-	+V_FIN+COND+PRES+1+PLUR:+COND+PRES+1+PLUR*iriamu #;
-	+V_FIN+COND+PRES+2+PLUR:+COND+PRES+2+PLUR*iriavu #;
-	+V_FIN+COND+PRES+3+PLUR:+COND+PRES+3+PLUR*irianu #;
+    +V_FIN+IND+IMPERF+1+SING:+IND+IMPERF+1+SING*ia #;
+    +V_FIN+IND+IMPERF+1+SING:+IND+IMPERF+1+SING*iu #;
+    +V_FIN+IND+IMPERF+1+SING:+IND+IMPERF+1+SING*eva #;
+    +V_FIN+IND+IMPERF+1+SING:+IND+IMPERF+1+SING*evu #;
+    +V_FIN+IND+IMPERF+1+SING:+IND+IMPERF+1+SING*iva #;
+    +V_FIN+IND+IMPERF+1+SING:+IND+IMPERF+1+SING*ivu #;
+    +V_FIN+IND+IMPERF+2+SING:+IND+IMPERF+2+SING*ivi #;
+    +V_FIN+IND+IMPERF+2+SING:+IND+IMPERF+2+SING*evi #;
+    +V_FIN+IND+IMPERF+3+SING:+IND+IMPERF+3+SING*ia #;
+    +V_FIN+IND+IMPERF+3+SING:+IND+IMPERF+3+SING*eva #;
+    +V_FIN+IND+IMPERF+3+SING:+IND+IMPERF+3+SING*iva #;
+    +V_FIN+IND+IMPERF+1+PLUR:+IND+IMPERF+1+PLUR*iamu #;
+    +V_FIN+IND+IMPERF+1+PLUR:+IND+IMPERF+1+PLUR*evamu #;
+    +V_FIN+IND+IMPERF+1+PLUR:+IND+IMPERF+1+PLUR*ivamu #;
+    +V_FIN+IND+IMPERF+2+PLUR:+IND+IMPERF+2+PLUR*iavu #;
+    +V_FIN+IND+IMPERF+2+PLUR:+IND+IMPERF+2+PLUR*evavu #;
+    +V_FIN+IND+IMPERF+2+PLUR:+IND+IMPERF+2+PLUR*ivavu #;
+    +V_FIN+IND+IMPERF+3+PLUR:+IND+IMPERF+3+PLUR*ianu #;
+    +V_FIN+IND+IMPERF+3+PLUR:+IND+IMPERF+3+PLUR*evanu #;
+    +V_FIN+IND+IMPERF+3+PLUR:+IND+IMPERF+3+PLUR*ivanu #;
 
-	+V_FIN+IMP+PRES+2+SING:+IMP+PRES+2+SING*i #;
-	+V_FIN+IMP+PRES+3+SING:+IMP+PRES+3+SING*issi #;
-	+V_FIN+IMP+PRES+1+PLUR:+IMP+PRES+1+PLUR*emu #;
-	+V_FIN+IMP+PRES+2+PLUR:+IMP+PRES+2+PLUR*iti #;
-	+V_FIN+IMP+PRES+3+PLUR:+IMP+PRES+3+PLUR*issiru #;
-	
-	!---- unfinished italian forms ---
-!	+V_PP+PART+PRES+SING:+PART+PRES+SING*ente #;
-!	+V_PP+PART+PRES+PLUR:+PART+PRES+PLUR*enti #;
-	!----                          ---
-	+V_PP+PART+PAST+MASC+SING:+PART+PAST+MASC+SING*utu #;
-	+V_PP+PART+PAST+FEMM+SING:+PART+PAST+FEMM+SING*uta #;
-	+V_PP+PART+PAST+MASC+PLUR:+PART+PAST+MASC+PLUR*uti #;
-	+V_PP+PART+PAST+FEMM+PLUR:+PART+PAST+FEMM+PLUR*uti #;
-	
-	+V_NOFIN+GER+PRES:+GER+PRES*ennu #;
-	!--- Needs SufClit to be done first!
-!	+V_NOFIN+GER+PRES:+GER+PRES*ennu SufClit;
+    +V_FIN+IND+PAST+1+SING:+IND+PAST+1+SING*ivi #;
+    +V_FIN+IND+PAST+1+SING:+IND+PAST+1+SING*ii #;
+    +V_FIN+IND+PAST+1+SING:+IND+PAST+1+SING*ìi #;
+    +V_FIN+IND+PAST+1+SING:+IND+PAST+1+SING*iu #;
+    +V_FIN+IND+PAST+1+SING:+IND+PAST+1+SING*ivu #;
+    +V_FIN+IND+PAST+2+SING:+IND+PAST+2+SING*isti #;
+    +V_FIN+IND+PAST+3+SING:+IND+PAST+3+SING*ìu #;
+    +V_FIN+IND+PAST+1+PLUR:+IND+PAST+1+PLUR*emmu #;
+    +V_FIN+IND+PAST+1+PLUR:+IND+PAST+1+PLUR*emu #;
+    +V_FIN+IND+PAST+2+PLUR:+IND+PAST+2+PLUR*istivu #;
+    +V_FIN+IND+PAST+2+PLUR:+IND+PAST+2+PLUR*astu #;
+    +V_FIN+IND+PAST+2+PLUR:+IND+PAST+2+PLUR*istu #;
+    +V_FIN+IND+PAST+3+PLUR:+IND+PAST+3+PLUR*erunu #;
+    +V_FIN+IND+PAST+3+PLUR:+IND+PAST+3+PLUR*eru #;
+
+    +V_FIN+IND+FUT+1+SING:+IND+FUT+1+SING*irò #;
+    +V_FIN+IND+FUT+2+SING:+IND+FUT+2+SING*irai #;
+    +V_FIN+IND+FUT+3+SING:+IND+FUT+3+SING*irà #;
+    +V_FIN+IND+FUT+1+PLUR:+IND+FUT+1+PLUR*iremu #;
+    +V_FIN+IND+FUT+2+PLUR:+IND+FUT+2+PLUR*iriti #;
+    +V_FIN+IND+FUT+3+PLUR:+IND+FUT+3+PLUR*irannu #;
+
+    !-- subjunctive present is not used, 
+    !-- indicative present used instead
+    +V_FIN+SUBJ+PRES+1+SING:+SUBJ+PRES+1+SING*u #;
+    +V_FIN+SUBJ+PRES+2+SING:+SUBJ+PRES+2+SING*i #;
+    +V_FIN+SUBJ+PRES+3+SING:+SUBJ+PRES+3+SING*i #;
+    +V_FIN+SUBJ+PRES+1+PLUR:+SUBJ+PRES+1+PLUR*emu #;
+    +V_FIN+SUBJ+PRES+2+PLUR:+SUBJ+PRES+2+PLUR*iti #;
+    +V_FIN+SUBJ+PRES+3+PLUR:+SUBJ+PRES+3+PLUR*inu #;
+
+    +V_FIN+SUBJ+IMPERF+1+SING:+SUBJ+IMPERF+1+SING*issi #;
+    +V_FIN+SUBJ+IMPERF+2+SING:+SUBJ+IMPERF+2+SING*issi #;
+    +V_FIN+SUBJ+IMPERF+3+SING:+SUBJ+IMPERF+3+SING*issi #;
+    +V_FIN+SUBJ+IMPERF+1+PLUR:+SUBJ+IMPERF+1+PLUR*issimu #;
+    +V_FIN+SUBJ+IMPERF+2+PLUR:+SUBJ+IMPERF+2+PLUR*issivu #;
+    +V_FIN+SUBJ+IMPERF+3+PLUR:+SUBJ+IMPERF+3+PLUR*issiru #;
+    +V_FIN+SUBJ+IMPERF+3+PLUR:+SUBJ+IMPERF+3+PLUR*issinu #;
+
+    +V_FIN+COND+PRES+1+SING:+COND+PRES+1+SING*iria #;
+    +V_FIN+COND+PRES+2+SING:+COND+PRES+2+SING*irissi #;
+    +V_FIN+COND+PRES+3+SING:+COND+PRES+3+SING*iria #;
+    +V_FIN+COND+PRES+1+PLUR:+COND+PRES+1+PLUR*iriamu #;
+    +V_FIN+COND+PRES+2+PLUR:+COND+PRES+2+PLUR*iriavu #;
+    +V_FIN+COND+PRES+3+PLUR:+COND+PRES+3+PLUR*irianu #;
+
+    +V_FIN+IMP+PRES+2+SING:+IMP+PRES+2+SING*i #;
+    +V_FIN+IMP+PRES+3+SING:+IMP+PRES+3+SING*issi #;
+    +V_FIN+IMP+PRES+1+PLUR:+IMP+PRES+1+PLUR*emu #;
+    +V_FIN+IMP+PRES+2+PLUR:+IMP+PRES+2+PLUR*iti #;
+    +V_FIN+IMP+PRES+3+PLUR:+IMP+PRES+3+PLUR*issiru #;
+
+    !---- unfinished italian forms ---
+!    +V_PP+PART+PRES+SING:+PART+PRES+SING*ente #;
+!    +V_PP+PART+PRES+PLUR:+PART+PRES+PLUR*enti #;
+    !----                          ---
+    +V_PP+PART+PAST+MASC+SING:+PART+PAST+MASC+SING*utu #;
+    +V_PP+PART+PAST+FEMM+SING:+PART+PAST+FEMM+SING*uta #;
+    +V_PP+PART+PAST+MASC+PLUR:+PART+PAST+MASC+PLUR*uti #;
+    +V_PP+PART+PAST+FEMM+PLUR:+PART+PAST+FEMM+PLUR*uti #;
+
+    +V_NOFIN+GER+PRES:+GER+PRES*ennu #;
+    !--- Needs SufClit to be done first!
+!    +V_NOFIN+GER+PRES:+GER+PRES*ennu SufClit;
 
 LEXICON rscIri
 
-	+V_FIN+IMP+PRES+2+SING:+IMP+PRES+2+SING*isci #;
-	+V_FIN+IMP+PRES+3+SING:+IMP+PRES+3+SING*issi #;
-	+V_FIN+IMP+PRES+1+PLUR:+IMP+PRES+1+PLUR*emu #;
-	+V_FIN+IMP+PRES+2+PLUR:+IMP+PRES+2+PLUR*iti #;
-	+V_FIN+IMP+PRES+3+PLUR:+IMP+PRES+3+PLUR*issiru #;
+    +V_FIN+IMP+PRES+2+SING:+IMP+PRES+2+SING*isci #;
+    +V_FIN+IMP+PRES+3+SING:+IMP+PRES+3+SING*issi #;
+    +V_FIN+IMP+PRES+1+PLUR:+IMP+PRES+1+PLUR*emu #;
+    +V_FIN+IMP+PRES+2+PLUR:+IMP+PRES+2+PLUR*iti #;
+    +V_FIN+IMP+PRES+3+PLUR:+IMP+PRES+3+PLUR*issiru #;
 
 END
