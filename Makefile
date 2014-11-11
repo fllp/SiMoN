@@ -23,4 +23,3 @@ build-generator: siciliano.generator.hfst
 # invert analyzer for use as generator
 %.generator.hfst : %.analyzer.hfst
 	hfst-invert $< -o $@
-

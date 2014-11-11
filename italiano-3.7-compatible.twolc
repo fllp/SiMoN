@@ -1,9 +1,9 @@
 Alphabet
 	a à b c d e è é f g h i ì j k l m n o ò p q r s t u ù v w x y z
 	%*:0 %-
-	%+NN:0 %+NN%_P:0 
-	%+ADJ:0 %+ADJ%_DIM:0 %+ADJ%_IND:0 %+ADJ%_IES:0 %+ADJ%_NUM:0 %+ADJ%_POS:0 
-	%+PRON:0 %+PRON%_P:0 %+PRON%_DIM:0 %+PRON%_IND:0 %+PRON%_IES:0 %+PRON%_REL:0 %+PRON%_POS:0 %+PRON%_PER:0	
+	%+NN:0 %+NN%_P:0
+	%+ADJ:0 %+ADJ%_DIM:0 %+ADJ%_IND:0 %+ADJ%_IES:0 %+ADJ%_NUM:0 %+ADJ%_POS:0
+	%+PRON:0 %+PRON%_P:0 %+PRON%_DIM:0 %+PRON%_IND:0 %+PRON%_IES:0 %+PRON%_REL:0 %+PRON%_POS:0 %+PRON%_PER:0
 	%+ADV:0 %+INT:0 %+PREP:0 %+PREP%_A:0 %+CONJ%_C:0 %+CONJ%_S:0 %+ART:0
 	%+V%_ARE:0 %+V%_ERE:0 %+V%_IRE:0 %+V%_FIN:0 %+V%_NOFIN:0 %+V%_PP:0
 	%+INF:0 %+IND:0 %+SUBJ:0 %+COND:0 %+IMP:0 %+PART:0 %+GER:0
@@ -12,9 +12,9 @@ Alphabet
 	%+MASC:0 %+FEMM:0
 	%+SING:0 %+PLUR:0
 	%+DIM:0 %+AUM:0 %+VEZA:0 %+VEZB:0 %+PEG:0 %+SUP:0
-	%+GLI:0 %+VEL%_A:0 %+VEL%_Y:0 
+	%+GLI:0 %+VEL%_A:0 %+VEL%_Y:0
 	%+C%_CE:0 %+C%_CI:0 %+C%_GLI:0 %+C%_LA:0 %+C%_LE:0 %+C%_LI:0 %+C%_LO:0 %+C%_ME:0 %+C%_MI:0 %+C%_NE:0 %+C%_SI:0 %+C%_SE:0 %+C%_TE:0 %+C%_TI:0 %+C%_VE:0 %+C%_VI:0
-	#:0; 
+	#:0;
 
 Sets
 	Cons   = b c d f g h j k l m n p q r s t v w x y z ;
@@ -22,7 +22,7 @@ Sets
 
 Definitions
 	Head = %+NN: | %+NN%_P: | %+V%_ARE: | %+V%_ERE: | %+V%_IRE: | %+V%_FIN: | %+V%_NOFIN: | %+V%_PP: | %+ADJ: | %+ADJ%_DIM: | %+ADJ%_IND: | %+ADJ%_IES: | %+ADJ%_NUM: | %+ADJ%_POS: | %+ADV: | %+PRON: | %+PRON%_P: | %+PRON%_DIM: | %+PRON%_IND: | %+PRON%_IES: | %+PRON%_REL: | %+PRON%_POS: | %+PRON%_PER: | %+INT: | %+PREP: | %+PREP%_A: | %+CONJ%_C: | %+CONJ%_S: | %+ART: ;
-	Nonverbi =  %+NN: | %+NN%_P: | %+ADJ: | %+ADJ%_DIM: | %+ADJ%_IND: | %+ADJ%_IES: | %+ADJ%_NUM: | %+ADJ%_POS: | %+ADV: | %+PRON: | %+PRON%_P: | %+PRON%_DIM: | %+PRON%_IND: | %+PRON%_IES: | %+PRON%_REL: | %+PRON%_POS: | %+PRON%_PER: | %+INT: | %+PREP: | %+PREP%_A: | %+CONJ%_C: | %+CONJ%_S: | %+ART: ;	
+	Nonverbi =  %+NN: | %+NN%_P: | %+ADJ: | %+ADJ%_DIM: | %+ADJ%_IND: | %+ADJ%_IES: | %+ADJ%_NUM: | %+ADJ%_POS: | %+ADV: | %+PRON: | %+PRON%_P: | %+PRON%_DIM: | %+PRON%_IND: | %+PRON%_IES: | %+PRON%_REL: | %+PRON%_POS: | %+PRON%_PER: | %+INT: | %+PREP: | %+PREP%_A: | %+CONJ%_C: | %+CONJ%_S: | %+ART: ;
 	Verbi = %+V%_ARE: | %+V%_ERE: | %+V%_IRE: | %+V%_FIN: | %+V%_NOFIN: | %+V%_PP: ;
 	Coniug = %+V%_ARE: | %+V%_ERE: | %+V%_IRE: ;
 	Modo = %+INF: | %+IND: | %+SUBJ: | %+COND: | %+IMP: | %+PART: | %+GER: ;
@@ -57,6 +57,6 @@ Rules
 
 "Eliminazione i con glide = y"
 	i:0 <=> _ %+GLI: (Head) (Modo) (Tempo) (Pers) (Genere) (Numero) (Modif) %*: [i | ì] ;
-	
+
 "Eliminazione i per gn"
-	i:0 <=> g n (%+VEL%_A: | %+VEL%_Y: | %+GLI:) (Head) (Modo) (Tempo) (Pers) (Genere) (Numero) (Modif) %*: _ [a | à] ;	
+	i:0 <=> g n (%+VEL%_A: | %+VEL%_Y: | %+GLI:) (Head) (Modo) (Tempo) (Pers) (Genere) (Numero) (Modif) %*: _ [a | à] ;
