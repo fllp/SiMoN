@@ -60,3 +60,6 @@ Rules
 
 "Canceling of i with gn"
 	i:0 <=> g n (%+VEL%_A: | %+VEL%_Y: | %+GLI:) (Head) (Modo) (Tempo) (Pers) (Genere) (Numero) (Modif) %*: _ [a | à] ;
+
+"Canceling of initial vowels i/e"
+        [i:0|e:0] <= .#. _ Cons;
