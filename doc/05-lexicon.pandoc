@@ -1,0 +1,73 @@
+# Lexicon of SiMoN
+
+This article gives an overview of the lexicon general structure of SiMoN
+and the different lexicons containing regular and irregular verbs in particular.
+It closely follows the documentation of [Tamburini & Melandri][]
+
+[Tamburini & Melandri]: 
+
+## Overview [WIP!]
+
+The Lexicon of SiMoN has a hierarchical tree structure, closely following that of AnIta.
+At the present, SiMoN covers the following sicilian morphology paradigms:
+
+- [regular verbs](lexicon-doc#regular-verbs-lexicons)
+- irregular verbs (coming soon!)
+
+There are three section types:
+
+0. the so called *[Multichar Symbols][]*
+0. the [root lexicon](lexicon-doc#root-lexicon)
+0. the [sub lexicons](lexicon-doc#sub-lexicon)
+
+[Multichar Symbols]: lexicon-doc#mulichar-symbols
+
+### Multichar Symbols
+
+The multicharacter symbols can be seen as some sort of tags used to indicate the respective POS and other grammatical informations of an entry in the lexicon. Examples are ``+V_ARI, +SING, +PLUR``. They denote a verb ending in the suffix *ari* or the number of a word as singular or plural.
+Multichar Symbols also act as variables in combination with the [ruleset](rules-doc). In the context of the lexicon they serve as tags containing grammatical and morphological information.
+For further information about *Multichar Symbols*, please refer to the [HFST-Documentation](https://kitwiki.csc.fi/twiki/bin/view/KitWiki/HfstLexcAndTwolcTutorial)
+
+### Root Lexicon
+
+The lexicon part of SiMoN is composed of a root lexicon and sub lexicons.
+The root lexicon basically is a list of lexicon entries. These entries represent lemmas of verbs. Each entry consists of the infinitive form of a verb, its stem, the verb type and the corresponding continuation class.
+The infinitive forms of the verbs are prefixed with the characters *l_* to make them better recognizable as lemmas.
+
+
+### Sub Lexicons
+
+A sub lexicon or *continuation class*(CCl) contains the suffixes of the inflected forms of a word.
+Those suffixes are provided as a list of word endings annotated with grammatical information like *gender*, *number*, *tense* or *mode*, each marked by its equivalent multichar symbol.
+The sub lexicon for a verb is the corresponding conjugation pattern with the respective tenses of different modes for first, second and third person.
+
+Combining a words stem form from a root lemma with the appropriate CCl yields the inflectional paradigm of that word. The inflected forms of that paradigm are called *surface forms*. Each surface form additionally contains grammatical information indicating to which word type it belongs and which mode, tense and person it represents.
+The graphic below provides a visual representation of the root and CCl structure.
+
+![Structure](doc/img/structure.png)
+
+## Regular Verb Lexicons [WIP]
+
+Analogous to the structure described above, SiMoN has special sub lexicons or CCl for sicilian regular verb forms.
+
+They are as follows:
+
+### SufVerbAri
+
+  Contains the endings of regular verbs ending in **ari** for the tenses of the modes infinitive, indicative, subjunctive, conditional, and imperative as well as participle forms.
+
+### SufVerbIri
+
+  Same as *SufVerbAri* but for the verbal ending **iri.
+
+### SiriEssiri
+
+  This is in fact a CCl of a frequent *irregular* verb. Since it occurs in the two forms *siri* and *essiri* that both have the same suffixes, their lemmas point to this special CCl in oder to avoid writing the same paradigm in the root lexicon twice.
+
+  > Note: this might be eventually moved to irregular lexicon part, once there is one
+
+### rscIri
+
+  Another special ...CCl that only applies to the imperative forms of regular verbs that have the suffix **iri** *and* their stem ending in *isc* **[INSERT EXAMPLE!]**. Currently, there is no lemma in the lexicon this case applies to.
+
+  > Dev-Note: **"Inversion"** lexicon, missing the imperative paradigm is needed** (plus verbs this actually applies to)
