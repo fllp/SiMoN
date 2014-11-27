@@ -1,25 +1,62 @@
-file ?= siciliano
-# einfache ersetzung: $(file:%.lexc=%.foo) -> pattern substitution
+target ?= siciliano
+keep-intermediates ?= no
 
-# use all steps by default and construct word generator
-default: build-generator
+# setting flags and extensions for pandoc to use on documentation files
+pandoc_flags = -N
+pandoc_extensions = +pandoc_title_block+pipe_tables+table_captions+header_attributes+yaml_metadata_block
+# doc_files = home.pdoc intro.pdoc compile-use.pdoc lexicon-doc.pdoc roadmap.pdoc
+doc_files = $(shell find doc -type f -name '*.pandoc' -printf "%f ")
 
-compile-lexicon-and-rules: siciliano.lexc.hfst siciliano.twolc.hfst
+# auto-detect AnIta files when in any subdir
+# ANITA = $(shell find . -type f -name 'italiano.*' -printf "%P\n" -quit | sed -e "s/\w\+\.\w\+\$//g")
+VPATH = ./AnIta-v1.2core:./v1.2core:./*:$(ANITA)
 
-combine-to-analyzer: siciliano.analyzer.hfst
+# empties .SECONDARY if set to yes via command line,
+# thus rendering intermediates 'important' to keep
+ifeq ($(keep-intermediates),yes)
+  .SECONDARY:
+endif
 
-build-generator: siciliano.generator.hfst
+# use all steps by default and construct morpholocical generator
+default: $(target).generator.hfst
+
+# remove HFST binaries and documentation file
+.PHONY : clean it-scn.analyzer.hfst %.generator.hfst 
+clean: $(shell find . -iname '*.hfst') $(shell find . -iname '*.lexc.hfst')
+	@rm -f $^ SiMoN-Documentation.pdf
+
+# compiles SiMoN & AnIta in the whole
+complete: it-scn.generator.hfst
 
 # convert XFST files to HFST binary format
 %.lexc.hfst: %.lexc
+	@echo -e '== Step 1: compile lexicon ==\n $^ to binary'
 	hfst-lexc $< -o $@
+	@echo -e ''
+
 %.twolc.hfst: %.twolc
+	@echo '== Step 2: compile rules ==\n $^ to binary'
 	hfst-twolc $< -o $@
+	@echo -e ''
 
 # combine ruleset and lexicon binaries to analyzer FST
 %.analyzer.hfst: %.lexc.hfst %.twolc.hfst
-	hfst-compose-intersect $^ -o $@
+	@echo '== Step 3: combine lexicon & rules =='
+	hfst-compose-intersect -v $^ -o $@
+	@echo -e ''
 
 # invert analyzer for use as generator
 %.generator.hfst : %.analyzer.hfst
-	hfst-invert $< -o $@
+	@echo '== Step 4: get generator =='
+	hfst-invert -v $< -o $@
+	@echo -e ''
+
+it-scn.analyzer.hfst: siciliano.analyzer.hfst italiano.analyzer.hfst
+	hfst-union -v $^ -o $@
+
+vpath %.pandoc doc/
+docs: SiMoN-Documentation.pdf
+
+%.pdf: $(doc_files)
+	@pandoc $(pandoc_flags) -o $@ -f markdown$(pandoc_extensions) $^
+	@echo 'Documentation written to' $@
