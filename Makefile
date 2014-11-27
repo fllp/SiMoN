@@ -35,7 +35,7 @@ complete: it-scn.generator.hfst
 	@echo -e ''
 
 %.twolc.hfst: %.twolc
-	@echo '== Step 2: compile rules ==\n $^ to binary'
+	@echo -e '== Step 2: compile rules ==\n $^ to binary'
 	hfst-twolc $< -o $@
 	@echo -e ''
 
