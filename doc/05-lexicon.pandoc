@@ -4,7 +4,7 @@ This article gives an overview of the lexicon general structure of SiMoN
 and the different lexicons containing regular and irregular verbs in particular.
 It closely follows the documentation of [Tamburini & Melandri][]
 
-[Tamburini & Melandri]: 
+[Tamburini & Melandri]:
 
 ## Overview [WIP!]
 
@@ -58,7 +58,7 @@ They are as follows:
 
 ### SufVerbIri
 
-  Same as *SufVerbAri* but for the verbal ending **iri.
+  Same as *SufVerbAri* but for the verbal ending **iri**.
 
 ### SiriEssiri
 
@@ -68,6 +68,6 @@ They are as follows:
 
 ### rscIri
 
-  Another special ...CCl that only applies to the imperative forms of regular verbs that have the suffix **iri** *and* their stem ending in *isc* **[INSERT EXAMPLE!]**. Currently, there is no lemma in the lexicon this case applies to.
+  Another special CCl that only applies to the imperative forms of regular verbs that have the suffix **iri** *and* their stem ending in *isc* **[INSERT EXAMPLE!]**. Currently, there is no lemma in the lexicon this case applies to.
 
-  > Dev-Note: **"Inversion"** lexicon, missing the imperative paradigm is needed** (plus verbs this actually applies to)
+  > **DEV-NOTE:** see branch *verbs-irreg* for examples
