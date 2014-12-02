@@ -1,9 +1,20 @@
-%SiMoN · Documentation
-%Simeon Herteis
+% SiMoN · Documentation
+% Simeon Herteis
+% as of December 2, 2014
 
 ---
+title:
+- type: main
+  text: "SiMoN ♦ Documentation"
+- type: subtitle
+  text: "The sicilian morphological parser explained"
+
+creator:
+- role: author
+  text: Simeon Herteis
+
 abstract: |
-  This document conains usage instructions and a project description for the SiMoN morphological parser.
+  This document contains usage instructions and the project description for the SiMoN morphological parser.
 ---
 
 \tableofcontents
