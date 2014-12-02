@@ -2,7 +2,7 @@ target ?= siciliano
 keep-intermediates ?= no
 
 # setting flags and extensions for pandoc to use on documentation files
-pandoc_flags = -N
+pandoc_flags = -N -V geometry:margin=2.5cm -V documentclass=report
 pandoc_extensions = +pandoc_title_block+pipe_tables+table_captions+header_attributes+yaml_metadata_block
 # doc_files = home.pdoc intro.pdoc compile-use.pdoc lexicon-doc.pdoc roadmap.pdoc
 
