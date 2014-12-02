@@ -1,29 +1,7 @@
 target ?= siciliano
 keep-intermediates ?= no
 
-# setting flags and extensions for pandoc to use on documentation files
-define pandoc_flags =
-    -N
-    --listings
-    -V fontsize=12pt
-    -V mainfont="Linux Libertine O"
-    -V monofont="Dejavu Sans Mono - Book"
-    -V geometry:margin=2.5cm
-    -V documentclass=report
-endef
-
-define pandoc_extensions =
-    +fenced_code_blocks
-    +pandoc_title_block
-    +pipe_tables
-    +table_captions
-    +header_attributes
-    +yaml_metadata_block
-endef
-
-# doc_files = home.pdoc intro.pdoc compile-use.pdoc lexicon-doc.pdoc roadmap.pdoc
-
-doc_files = $(notdir $(shell find doc -type f -name '*.pandoc' | sort -n));
+include Make_Docs.mk
 
 # auto-detect AnIta files when in any subdir
 # ANITA = $(shell find . -type f -name 'italiano.*' -printf "%P\n" -quit | sed -e "s/\w\+\.\w\+\$//g")
@@ -71,10 +49,3 @@ complete: it-scn.generator.hfst
 
 it-scn.analyzer.hfst: siciliano.analyzer.hfst italiano.analyzer.hfst
 	hfst-union -v $^ -o $@
-
-vpath %.pandoc doc/
-docs: SiMoN-Documentation.pdf
-
-%.pdf: $(doc_files)
-	@pandoc $(pandoc_flags) -o $@ -f markdown$(pandoc_extensions) $^
-	@echo 'Documentation written to' $@
