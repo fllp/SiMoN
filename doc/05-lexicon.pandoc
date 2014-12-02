@@ -11,21 +11,21 @@ It closely follows the documentation of [Tamburini & Melandri][]
 The Lexicon of SiMoN has a hierarchical tree structure, closely following that of AnIta.
 At the present, SiMoN covers the following sicilian morphology paradigms:
 
-- [regular verbs](lexicon-doc#regular-verbs-lexicons)
+- [regular verbs](#regular-verb-lexicons)
 - irregular verbs (coming soon!)
 
 There are three section types:
 
 0. the so called *[Multichar Symbols][]*
-0. the [root lexicon](lexicon-doc#root-lexicon)
-0. the [sub lexicons](lexicon-doc#sub-lexicon)
+0. the [root lexicon](#root-lexicon)
+0. the [sub lexicons](#sub-lexicons)
 
-[Multichar Symbols]: lexicon-doc#mulichar-symbols
+[Multichar Symbols]: #multichar-symbols
 
 ### Multichar Symbols
 
 The multicharacter symbols can be seen as some sort of tags used to indicate the respective POS and other grammatical informations of an entry in the lexicon. Examples are ``+V_ARI, +SING, +PLUR``. They denote a verb ending in the suffix *ari* or the number of a word as singular or plural.
-Multichar Symbols also act as variables in combination with the [ruleset](rules-doc). In the context of the lexicon they serve as tags containing grammatical and morphological information.
+Multichar Symbols also act as variables in combination with the [ruleset]. In the context of the lexicon they serve as tags containing grammatical and morphological information.
 For further information about *Multichar Symbols*, please refer to the [HFST-Documentation](https://kitwiki.csc.fi/twiki/bin/view/KitWiki/HfstLexcAndTwolcTutorial)
 
 ### Root Lexicon
@@ -46,7 +46,7 @@ The graphic below provides a visual representation of the root and CCl structure
 
 ![Structure](doc/img/structure.png)
 
-## Regular Verb Lexicons [WIP]
+## Regular Verb Lexicons [WIP]{#regular-verb-lexicons}
 
 Analogous to the structure described above, SiMoN has special sub lexicons or CCl for sicilian regular verb forms.
 
