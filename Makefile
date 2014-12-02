@@ -2,8 +2,25 @@ target ?= siciliano
 keep-intermediates ?= no
 
 # setting flags and extensions for pandoc to use on documentation files
-pandoc_flags = -N -V geometry:margin=2.5cm -V documentclass=report
-pandoc_extensions = +pandoc_title_block+pipe_tables+table_captions+header_attributes+yaml_metadata_block
+define pandoc_flags =
+    -N
+    --listings
+    -V fontsize=12pt
+    -V mainfont="Linux Libertine O"
+    -V monofotn="Dejavu Sans Mono - Book"
+    -V geometry:margin=2.5cm
+    -V documentclass=report
+endef
+
+define pandoc_extensions =
+    +fenced_code_blocks
+    +pandoc_title_block
+    +pipe_tables
+    +table_captions
+    +header_attributes
+    +yaml_metadata_block
+endef
+
 # doc_files = home.pdoc intro.pdoc compile-use.pdoc lexicon-doc.pdoc roadmap.pdoc
 
 doc_files = $(notdir $(shell find doc -type f -name '*.pandoc' | sort -n));
@@ -22,7 +39,7 @@ endif
 default: $(target).generator.hfst
 
 # remove HFST binaries and documentation file
-.PHONY : clean it-scn.analyzer.hfst %.generator.hfst 
+.PHONY : clean it-scn.analyzer.hfst %.generator.hfst
 clean: $(shell find . -iname '*.hfst') $(shell find . -iname '*.lexc.hfst')
 	@rm -f $^ SiMoN-Documentation.pdf
 
