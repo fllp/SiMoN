@@ -66,7 +66,8 @@ $ hfst-twolc siciliano.twolc -o siciliano.twolc.hfst
 ### Step 2: Combine binaries to analyzer {-}
 
 ~~~
-$ hfst-compose-intersect siciliano.lexc.hfst siciliano.twolc.hfst -o siciliano.analyzer.hfst
+$ hfst-compose-intersect siciliano.lexc.hfst \
+  siciliano.twolc.hfst -o siciliano.analyzer.hfst
 ~~~
 
 ### Step 3: Invert analyzer to function as generator {-}
@@ -82,5 +83,6 @@ $ hfst-invert siciliano.analyzer.hfst -o siciliano.generator.hfst
 Merges the two parsers for parallel analysis of sicilian and italian.
 
 ~~~
-$ hfst-union -v italiano.generator.hfst siciliano.generator.hfst -o it-scn-analysator.hfst
+$ hfst-union -v italiano.generator.hfst \
+  siciliano.generator.hfst -o it-scn-analysator.hfst
 ~~~
