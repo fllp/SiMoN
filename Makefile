@@ -7,7 +7,7 @@ define pandoc_flags =
     --listings
     -V fontsize=12pt
     -V mainfont="Linux Libertine O"
-    -V monofotn="Dejavu Sans Mono - Book"
+    -V monofont="Dejavu Sans Mono - Book"
     -V geometry:margin=2.5cm
     -V documentclass=report
 endef
