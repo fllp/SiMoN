@@ -5,7 +5,8 @@ keep-intermediates ?= no
 pandoc_flags = -N
 pandoc_extensions = +pandoc_title_block+pipe_tables+table_captions+header_attributes+yaml_metadata_block
 # doc_files = home.pdoc intro.pdoc compile-use.pdoc lexicon-doc.pdoc roadmap.pdoc
-doc_files = $(shell find doc -type f -name '*.pandoc' -printf "%f ")
+
+doc_files = $(notdir $(shell find doc -type f -name '*.pandoc' | sort -n));
 
 # auto-detect AnIta files when in any subdir
 # ANITA = $(shell find . -type f -name 'italiano.*' -printf "%P\n" -quit | sed -e "s/\w\+\.\w\+\$//g")
