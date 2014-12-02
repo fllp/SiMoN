@@ -16,9 +16,9 @@ At the present, SiMoN covers the following sicilian morphology paradigms:
 
 There are three section types:
 
-0. the so called *[Multichar Symbols][]*
-0. the [root lexicon](#root-lexicon)
-0. the [sub lexicons](#sub-lexicons)
+1. the so called *[Multichar Symbols][]*
+1. the [root lexicon](#root-lexicon)
+1. the [sub lexicons](#sub-lexicons)
 
 [Multichar Symbols]: #multichar-symbols
 
