@@ -2,12 +2,13 @@
 
 # Using SiMoN
 
-The binaries of SiMoN can be opened with the various tools of the HFST-Suite to perform morphological analysis for the sicilian/italian language on a word basis.
+The binaries of SiMoN can be opened with the various tools of the HFST-Suite to perform morphological analysis for the Sicilian/Italian language on a word basis.
 Below you can find some explanatory usage examples. A full list of available HFST tools can be found on the respective HFST wiki page.
 
 ## Generator vs. Analyzer
 
 - explain nature of generator and analyzer due to two level stuff
+    + plus examples! (1 or 2)
 - refer to lexicon & rules doc (surface forms, reading direction)
 
 ### Generati`ng` Words

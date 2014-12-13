@@ -1,10 +1,15 @@
 \newpage
 
-# Introduction to SiMoN{#intro}
+# Introduction: AnIta and SiMoN{#intro}
 
 **Under contstruction!**
 
+- what is AnIta? State purpose of SiMoN in context of AnIta
 - define acronym SiMoN
 - purpose of the project (scicilian morphology)
 - define terms (FST, morphological parser, ...)
 - basic technical informations and principles (XFST, surface forms, ...)
+
+[**Tamburini & Melandri FIX REF!!**]
+
+> **DEV-NOTE**: Add proper citation (use pandoc-citeprog)

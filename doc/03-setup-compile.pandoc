@@ -9,7 +9,7 @@
 
 In order to use SiMoN for morphological analysis, the [HFST-Suite] is required.
 
-HFST is available for MAC/UNIX and Windows platforms and can be installed according to the information provided at the projects home page.
+HFST is available for MAC/UNIX and Windows platforms and can be installed according to the information provided at the project's home page.
 SiMoN is currently tested against hfst v3.7.x.
 
 ## Using the GNU Makefile

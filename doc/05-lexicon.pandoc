@@ -1,20 +1,19 @@
 # Lexicon of SiMoN
 
-This article gives an overview of the lexicon general structure of SiMoN
+This article gives an overview of the general lexicon structure of SiMoN
 and the different lexicons containing regular and irregular verbs in particular.
 It closely follows the documentation of [Tamburini & Melandri][]
 
-[Tamburini & Melandri]:
+[**Tamburini & Melandri FIX REF!!**]
+
+> **DEV-NOTE:** Add proper citation (use pandoc-citeprog)
 
 ## Overview [WIP!]
 
 The Lexicon of SiMoN has a hierarchical tree structure, closely following that of AnIta.
-At the present, SiMoN covers the following sicilian morphology paradigms:
+At present, SiMoN covers Sicilian morphology paradigms for [regular verbs](#regular-verb-lexicons).
 
-- [regular verbs](#regular-verb-lexicons)
-- irregular verbs (coming soon!)
-
-There are three section types:
+There are three sections to the lexicon:
 
 1. the so called *[Multichar Symbols][]*
 1. the [root lexicon](#root-lexicon)
@@ -24,16 +23,15 @@ There are three section types:
 
 ### Multichar Symbols
 
-The multicharacter symbols can be seen as some sort of tags used to indicate the respective POS and other grammatical informations of an entry in the lexicon. Examples are ``+V_ARI, +SING, +PLUR``. They denote a verb ending in the suffix *ari* or the number of a word as singular or plural.
+The multicharacter symbols can be seen as tags used to indicate the respective POS [**DEFINE ABBR.**] and other grammatical informations of an entry in the lexicon.
+Examples are ``+V_ARI, +SING, +PLUR``. They denote a verb ending in the suffix *ari* or the number of a word as singular or plural.
 Multichar Symbols also act as variables in combination with the [ruleset]. In the context of the lexicon they serve as tags containing grammatical and morphological information.
+
+- **ADD EXAMPLES FOR RULES W/ VARIABLES (maybe in chapter for rules)**
+
 For further information about *Multichar Symbols*, please refer to the [HFST-Documentation](https://kitwiki.csc.fi/twiki/bin/view/KitWiki/HfstLexcAndTwolcTutorial)
 
-### Root Lexicon
-
-The lexicon part of SiMoN is composed of a root lexicon and sub lexicons.
-The root lexicon basically is a list of lexicon entries. These entries represent lemmas of verbs. Each entry consists of the infinitive form of a verb, its stem, the verb type and the corresponding continuation class.
-The infinitive forms of the verbs are prefixed with the characters *l_* to make them better recognizable as lemmas.
-
+> **DEV-NOTE:** Maybe a glossary is useful? (terms like POS, ...)
 
 ### Sub Lexicons
 
@@ -50,7 +48,9 @@ The graphic below provides a visual representation of the root and CCl structure
 
 Analogous to the structure described above, SiMoN has special sub lexicons or CCl for sicilian regular verb forms.
 
-They are as follows:
+They are described in sections 4.2.1 through 4.2.4:
+
+> **DEV-NOTE:** use proper LaTeX reference markers instead of manually writing subsection numbers
 
 ### SufVerbAri
 
@@ -62,9 +62,7 @@ They are as follows:
 
 ### SiriEssiri
 
-  This is in fact a CCl of a frequent *irregular* verb. Since it occurs in the two forms *siri* and *essiri* that both have the same suffixes, their lemmas point to this special CCl in oder to avoid writing the same paradigm in the root lexicon twice.
-
-  > Note: this might be eventually moved to irregular lexicon part, once there is one
+  This is in fact a CCl of a frequent *irregular* verb. Since it occurs in the two forms *siri* and *essiri* that both have the same suffixes, their lemmas both point to this special CCl to avoid writing the same paradigm in the root lexicon twice.
 
 ### rscIri
 
