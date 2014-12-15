@@ -1,10 +1,14 @@
+BIBLIO = doc/bib/references.bib
+REFSTYLE = doc/bib/ACL.csl
+
 # setting flags and extensions for pandoc to use on documentation files
 define pandoc_flags
 -N \
 --toc \
 --toc-depth=1 \
 --latex-engine=xelatex \
---bibliography doc/references.bib \
+--bibliography $(BIBLIO)\
+--csl=$(REFSTYLE) \
 -V documentclass=report \
 -V geometry:margin=3.0cm \
 -V fontsize=11pt \
