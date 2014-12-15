@@ -7,7 +7,7 @@ define pandoc_flags
 --toc \
 --toc-depth=1 \
 --latex-engine=xelatex \
---bibliography $(BIBLIO)\
+--bibliography $(BIBLIO) \
 --csl=$(REFSTYLE) \
 -V documentclass=report \
 -V geometry:margin=3.0cm \

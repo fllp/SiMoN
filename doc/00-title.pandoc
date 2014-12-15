@@ -7,7 +7,7 @@ title:
 - type: main
   text: "SiMoN ♦ Documentation"
 - type: subtitle
-  text: "The sicilian morphological parser explained"
+  text: "The Sicilian morphological parser explained"
 
 creator:
 - role: author
@@ -15,6 +15,4 @@ creator:
 
 abstract: |
   This document contains usage instructions and the project description for the SiMoN morphological parser.
----
-
-\tableofcontents
+...
