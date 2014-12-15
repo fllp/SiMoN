@@ -1,7 +1,10 @@
 # setting flags and extensions for pandoc to use on documentation files
 define pandoc_flags
 -N \
+--toc \
+--toc-depth=1 \
 --latex-engine=xelatex \
+--bibliography doc/references.bib \
 -V documentclass=report \
 -V geometry:margin=3.0cm \
 -V fontsize=11pt \
@@ -23,6 +26,7 @@ define pandoc_extensions
 endef
 
 # disabled extensions:
+# mmd_title_block\
 #  pandoc_title_block\
 
 # doc_files = home.pdoc intro.pdoc compile-use.pdoc lexicon-doc.pdoc roadmap.pdoc
