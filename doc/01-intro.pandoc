@@ -4,13 +4,13 @@
 
 **Under contstruction!**
 
+This document describes the morphological parser SiMoN, an analyzer for the Sicilian language.
+It is inspired by and based on AnIta, the work of Tamburini and Melandri [-@TamburiniMelandri.2012].
+AnIta is a morphological analyzer for the Italian language that consists of a larger lexicon of italian words.
+SiMoN comprises of the regular verbal morphology of Sicilian and while being standalone it's purpose is to act as an extension to AnIta that makes Sicilian morphological paradigms available for processing in parallel to Italian.
+
 - what is AnIta? State purpose of SiMoN in context of AnIta
 - define acronym SiMoN
 - purpose of the project (scicilian morphology)
 - define terms (FST, morphological parser, ...)
 - basic technical informations and principles (XFST, surface forms, ...)
-
-[**Tamburini & Melandri FIX REF!!**]
-[@Tamburini&Melandri.2012]
-
-> **DEV-NOTE**: Add proper citation (use pandoc-citeprog)

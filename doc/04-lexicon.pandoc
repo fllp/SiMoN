@@ -2,13 +2,10 @@
 
 This article gives an overview of the general lexicon structure of SiMoN
 and the different lexicons containing regular and irregular verbs in particular.
-It closely follows the documentation of [Tamburini & Melandri][]
+It closely follows the documentation of [@TamburiniMelandri.2012].
 
-[**Tamburini & Melandri FIX REF!!**]
 
-> **DEV-NOTE:** Add proper citation (use pandoc-citeprog)
-
-## Overview [WIP!]
+## Overview
 
 The Lexicon of SiMoN has a hierarchical tree structure, closely following that of AnIta.
 At present, SiMoN covers Sicilian morphology paradigms for [regular verbs](#regular-verb-lexicons).
@@ -23,7 +20,7 @@ There are three sections to the lexicon:
 
 ### Multichar Symbols
 
-The multicharacter symbols can be seen as tags used to indicate the respective POS [**DEFINE ABBR.**] and other grammatical informations of an entry in the lexicon.
+The multicharacter symbols can be seen as tags used to indicate the respective POS (*part of speech tag*) and other grammatical informations of an entry in the lexicon.
 Examples are ``+V_ARI, +SING, +PLUR``. They denote a verb ending in the suffix *ari* or the number of a word as singular or plural.
 Multichar Symbols also act as variables in combination with the [ruleset]. In the context of the lexicon they serve as tags containing grammatical and morphological information.
 
