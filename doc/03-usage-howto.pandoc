@@ -1,7 +1,9 @@
 # Using SiMoN
 
+[hfst-tools-list]: https://kitwiki.csc.fi/twiki/bin/view/KitWiki/HfstCommandLineTools
+
 The binaries of SiMoN can be opened with the various tools of the HFST-Suite to perform morphological analysis for the Sicilian/Italian language on a word basis.
-Below you can find some explanatory usage examples. A full list of available HFST tools can be found on the respective HFST wiki page.
+Below you can find some explanatory usage examples. A full list of available HFST tools can be found on the [respective HFST wiki page][hfst-tools-list].
 
 ## Generator vs. Analyzer
 
