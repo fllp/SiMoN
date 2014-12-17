@@ -1,13 +1,14 @@
 # Compile & Prepare SiMoN
 
-[HFST-Suite]: http://hfst.sourceforge.net/
+[HFST-Suite]: http://hfst.sf.net/
+[hfst-setup-link]: https://kitwiki.csc.fi/twiki/bin/view/KitWiki/HfstDownloads
 
 ## Prerequesites
 
 
 In order to use SiMoN for morphological analysis, the [HFST-Suite] is required.
 
-HFST is available for MAC/UNIX and Windows platforms and can be installed according to the information provided at the project's home page.
+HFST is available for MAC/UNIX and Windows platforms and can be installed according to the information provided at the [project's wiki page][hfst-setup-link].
 SiMoN is currently tested against hfst v3.7.x.
 
 ## Using the GNU Makefile
@@ -17,8 +18,8 @@ If you received the SiMoN source files, you can use the provided [Makefile](Make
 Simply typing `make` in a terminal should get you set up.
 
 [^1]: The HFST-Package needs to be installed and its binaries must be present in the systems $PATH variable.
-**This is tested on Mac OSX and Linux only!**
-Even though GNU Make is [available for Windows](www.mingw.org), users of that platforms are advised to follow the instructions in the section *[manual compilation](#manual-compilation)*. For these the only requirement is the HFST software.
+**This has been tested for Mac OSX and Linux only!**
+Even though GNU Make is [available for Windows](www.mingw.org), users of that platform are advised to follow the instructions in the section *[manual compilation](#manual-compilation)*. For these the only requirement is the HFST software.
 
 ### Make Options
 
