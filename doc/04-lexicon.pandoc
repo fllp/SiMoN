@@ -20,7 +20,7 @@ There are three sections to the lexicon:
 
 ### Multichar Symbols
 
-The multicharacter symbols can be seen as tags used to indicate the respective POS (*part of speech tag*) and other grammatical informations of an entry in the lexicon.
+The multicharacter symbols can be seen as tags used to indicate the respective POS and other grammatical informations of an entry in the lexicon.
 Examples are ``+V_ARI, +SING, +PLUR``. They denote a verb ending in the suffix *ari* or the number of a word as singular or plural.
 Multichar Symbols also act as variables in combination with the [ruleset]. In the context of the lexicon they serve as tags containing grammatical and morphological information.
 
@@ -28,11 +28,9 @@ Multichar Symbols also act as variables in combination with the [ruleset]. In th
 
 For further information about *Multichar Symbols*, please refer to the [HFST-Documentation](https://kitwiki.csc.fi/twiki/bin/view/KitWiki/HfstLexcAndTwolcTutorial)
 
-> **DEV-NOTE:** Maybe a glossary is useful? (terms like POS, ...)
-
 ### Sub Lexicons
 
-A sub lexicon or *continuation class*(CCl) contains the suffixes of the inflected forms of a word.
+A *sub lexicon* or *continuation class*(CCl) contains the suffixes of the inflected forms of a word.
 Those suffixes are provided as a list of word endings annotated with grammatical information like *gender*, *number*, *tense* or *mode*, each marked by its equivalent multichar symbol.
 The sub lexicon for a verb is the corresponding conjugation pattern with the respective tenses of different modes for first, second and third person.
 
