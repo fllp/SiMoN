@@ -1,16 +1,25 @@
-\newpage
+# Introduction
 
-# Introduction: AnIta and SiMoN{#intro}
+## AnIta and SiMoN{#intro}
 
-**Under contstruction!**
-
-This document describes the morphological parser SiMoN, an analyzer for the Sicilian language.
+This document describes the morphological parser SiMoN[^0], an analyzer for the Sicilian language.
 It is inspired by and based on AnIta, the work of Tamburini and Melandri [-@TamburiniMelandri.2012].
 AnIta is a morphological analyzer for the Italian language that consists of a larger lexicon of italian words.
-SiMoN comprises of the regular verbal morphology of Sicilian and while being standalone it's purpose is to act as an extension to AnIta that makes Sicilian morphological paradigms available for processing in parallel to Italian.
+SiMoN currently comprises of the regular verbal morphology of Sicilian and while being available for usage as a standalone application it's purpose is to act as an extension to AnIta and provide Sicilian morphological paradigms for processing in parallel to Italian.
+The subsequent chapter contains technical information for the setup of SiMoN. The 3rd chapter describes the basic commands to analyze sicilian words with SiMoN. Chapters 4 and 5 explain SiMoN's lexicon and ruleset that form the morphological paradigms of Sicilian.
 
-- what is AnIta? State purpose of SiMoN in context of AnIta
-- define acronym SiMoN
-- purpose of the project (scicilian morphology)
-- define terms (FST, morphological parser, ...)
-- basic technical informations and principles (XFST, surface forms, ...)
+[^0]: Acronym for **Si**cilian **Mo**rphology for **N**atural Language Processing
+
+## Relevant Terminology
+
+There are a few terms from computational linguistics being used throughout this documentation that should be known. They are as follows:
+
+- *parsing*: general term for analyzing and/or filtering text with specific rulesets
+  + *parser*: application/collection of rules to analyze/filter a certain type of textual
+- *POS*:  **P**art **O**f **S**peech tagging - identifying word types(verb, noun, adverb,...) in a text
+- lemma: entry in a (linguistic) lexicon, providing the basic form of a word plus grammatical information
+- *paradigm*: contains a 'list' of word forms belonging to the same word
+  + in the case of SiMoN, a paradigm holds all inflectional forms of a wlemma
+- *Makefile*: text file containing receipts for compiling program sources to executable binaries
+- *FST*: **F**inite **S**tate **T**echnology - applications that are based on mathematical algorithms from the theory of (finite state) automata
+- *XFST*: set of applications by the XEROX company implementing automata
