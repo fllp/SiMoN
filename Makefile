@@ -1,8 +1,6 @@
 target ?= siciliano
 keep-intermediates ?= no
 
-include Make_Docs.mk
-
 # auto-detect AnIta files when in any subdir
 # ANITA = $(shell find . -type f -name 'italiano.*' -printf "%P\n" -quit | sed -e "s/\w\+\.\w\+\$//g")
 VPATH = ./AnIta-v1.2core:./v1.2core:./*:$(ANITA)
@@ -20,6 +18,8 @@ default: $(target).generator.hfst
 .PHONY : clean it-scn.analyzer.hfst %.generator.hfst
 clean: $(shell find . -iname '*.hfst') $(shell find . -iname '*.lexc.hfst')
 	@rm -f $^ SiMoN-Documentation.pdf
+
+include Make_Docs.mk
 
 # compiles SiMoN & AnIta in the whole
 complete: it-scn.generator.hfst
