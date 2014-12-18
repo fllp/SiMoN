@@ -24,6 +24,14 @@ include Make_Docs.mk
 # compiles SiMoN & AnIta in the whole
 complete: it-scn.generator.hfst
 
+check: check-dep_hfst-lexc check-dep_hfst-twolc check-dep_hfst-invert check-dep_hfst-compose-intersect check-dep_hfst-union
+
+check-dep_%:
+	@echo 'Checking dependency: $(*) \n' $$(\
+	    which $* &>/dev/null && echo 'Found in: '|| \
+	    echo FAIL: '$(*) not found!\nPlease install HFST (https://kitwiki.csc.fi/twiki/bin/view/KitWiki/HfstDownloads).' \
+	    )
+
 # convert XFST files to HFST binary format
 %.lexc.hfst: %.lexc
 	@echo -e '== Step 1: compile lexicon ==\n $^ to binary'
