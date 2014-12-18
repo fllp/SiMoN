@@ -1,5 +1,6 @@
 BIBLIO = doc/bib/references.bib
 REFSTYLE = doc/bib/ACL.csl
+H_INC = doc/pandoc-headerincludes
 
 # setting flags and extensions for pandoc to use on documentation files
 define pandoc_flags
@@ -17,6 +18,7 @@ endef
 
 # disabled flags:
 # -V mainfont="Linux Libertine O" \
+# --include-in-header=$(H_INC) \
 # --listings \
 # -V monofont="Dejavu Sans Mono - Book" \
 
