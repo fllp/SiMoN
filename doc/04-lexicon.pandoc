@@ -35,9 +35,13 @@ Those suffixes are provided as a list of word endings each annotated with gramma
 The sub lexicon for a verb is the corresponding conjugation pattern with the respective tenses of different modes for first, second and third person.
 
 Combining a words stem form a root lemma with the appropriate CCl yields the inflectional paradigm of that word. The generated forms of that paradigm are called *surface forms*. A surface form contains no *Multichar Symbols*, all grammatical information is supressed through the [ruleset]. On the '*surface*' of the lexicon (the actual inflected verb), the internal grammatical representation is not visible.
-The graphic below provides a visual representation of the root and CCl structure.
+The graphics below provide a visual representation of the root and CCl structure.
 
-![Structure](doc/img/structure.png)
+![Lexicon Structure](doc/img/structure.png)
+
+![Generating a surface form](doc/img/surface-form.png)
+
+\newpage
 
 ## Regular Verb Lexicons{#regular-verb-lexicons}
 
