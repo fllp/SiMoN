@@ -13,7 +13,7 @@ define pandoc_flags
 -V documentclass=report \
 -V geometry:margin=3.0cm \
 -V fontsize=11pt \
--V linkcolor="black"
+-V linkcolor="green"
 endef
 
 # disabled flags:
