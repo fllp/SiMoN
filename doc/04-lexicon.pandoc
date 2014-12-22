@@ -1,4 +1,7 @@
 [LexC-Tuto]: (https://kitwiki.csc.fi/twiki/bin/view/KitWiki/HfstLexcAndTwolcTutorial)
+[Multichar Symbols]: #multichar-symbols
+[scn-wiki]: https://scn.wikipedia.org/wiki/P%C3%A0ggina_principali
+
 # Lexicon of SiMoN
 
 This chapter gives an overview of the general structure of SiMoN's lexicon and the different sub lexicons containing the regular and irregular verbs in particular.
@@ -8,7 +11,7 @@ It closely follows the documentation of AnIta [@TamburiniMelandri.2012].
 ## Overview
 
 The Lexicon of SiMoN has a hierarchical tree structure, closely following that of AnIta.
-At present, SiMoN covers Sicilian morphology paradigms for [regular verbs](#regular-verb-lexicons).
+At present, SiMoN covers Sicilian morphology paradigms for [regular verbs](#regular-verb-lexicons), according to the grammar descriptions of J. K. Bonner [-@Bonner.2001].
 
 There are three sections to the lexicon:
 
@@ -16,7 +19,23 @@ There are three sections to the lexicon:
 1. The [root lexicon](#root-lexicon)
 1. The [sub lexicons](#sub-lexicons)
 
-[Multichar Symbols]: #multichar-symbols
+### The Root Lexicon
+
+While the verbal inflection patterns are documented in their [dedicated sections](#regular-verb-lexicons), the actual Sicilian verbs are listed in the *Root* lexicon:
+
+~~~
+l_ammazzari:ammazz+V_ARI SufVerbAri ;
+l_cantari:cant+V_ARI SufVerbAri ;
+l_durmiri:durm+V_IRI SufVerbIri ;
+~~~
+
+These entries are called lemmas. Each lemma contains a verb in its infinitive form[^p]. Additionally, the lemma records the stem of the word (e.g. *cant* for *cantari*, to sing), its word class (verb, either ending in *ari* or *iri*) and the sub lexicon containing the inflectional suffixes of that word class (*[SufVerbAri](#sufverbari)* and *[ SufVerbIri ](#sufverbiri)*)
+
+The vocabulary of SiMoN is taken from Bonner [-@Bonner.2001] and comprises of around 60 regular Sicilian verbs. Additionally, a verb list automatically generated from forms present in the [Sicilian Wikipedia][scn-wiki] pages is included[^v].
+
+[^v]: The verbs from Wikipedia have been picked according to a very basic pattern, matching regular inflectional endings. It is very likely that irregular forms are contained in this list as well.
+
+[^p]: Prefixed with *l_* for easier discrimination from the generated inflected forms of that verb
 
 ### Multichar Symbols
 
@@ -43,11 +62,9 @@ The graphics below provide a visual representation of the root and CCl structure
 
 \newpage
 
-## Regular Verb Lexicons{#regular-verb-lexicons}
+## Regular Verb Paradigms{#regular-verb-lexicons}
 
-The special sub lexicons (or CCl's) for sicilian regular verb forms created for SiMoN are described in sections 4.2.1 through 4.2.4:
-
-> **DEV-NOTE:** use proper LaTeX reference markers instead of manually writing subsection numbers
+The special sub lexicons (or CCls) for sicilian regular verb forms created for SiMoN are described in sections 4.2.1 through 4.2.5:
 
 ### SufVerbAri
 
@@ -69,4 +86,4 @@ The special sub lexicons (or CCl's) for sicilian regular verb forms created for 
 
 ### Inter-root entries
 
-The frequent irregular auxiliary verbs *aviri* (to have) and *fari* (to do/make) have their paradigms listed entirely in the root section since the irregularity prevents effective compartmentalisation in CCl's.
+The frequent irregular auxiliary verbs *aviri* (to have) and *fari* (to do/make) have their paradigms listed entirely in the root section since the irregularity prevents effective compartmentalisation in CCls.
