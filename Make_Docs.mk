@@ -8,6 +8,7 @@ define pandoc_flags
 --toc \
 --toc-depth=1 \
 --latex-engine=xelatex \
+--include-in-header=$(H_INC) \
 --bibliography $(BIBLIO) \
 --csl=$(REFSTYLE) \
 -V documentclass=report \
@@ -18,7 +19,6 @@ endef
 
 # disabled flags:
 # -V mainfont="Linux Libertine O" \
-# --include-in-header=$(H_INC) \
 # --listings \
 # -V monofont="Dejavu Sans Mono - Book" \
 
