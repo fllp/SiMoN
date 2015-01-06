@@ -4,11 +4,12 @@ As mentioned before, SiMoN has a lexicon and a rule compound. While the lexicon 
 
 ## The *two-level* principle
 
-In the previous chapter 
-The ruleset of SiMon is divided into specific parts, just as the lexicon.
-They are described in the sections 5.1.1 - 5.x
+In the previous chapter the *surface forms* were introduced. These are part of a practice of representing morphologies that is known as two-level morphology. Such morphologies - as the name suggests - contain two 'layers', the surface level and the internal level.
 
 ## The ruleset sections
+
+The ruleset of SiMon is divided into specific parts, just as the lexicon.
+They are described in the sections 5.2.1 - 5.2.4.
 
 ### Alphabet
 
@@ -25,7 +26,10 @@ The (mathematical) sets defined for SiMoN are bags of letters, one containing al
 
 ### Definitions
 
-The definitons in the ruleset could be described as categories for the *multichar symbols*
+The definitons in the ruleset could be described as categories for the *multichar symbols* repesenting grammatical information that allow grouping specific information together. Refering to these groups within in context sensitive rules allows the construction of complex phenomena.
+A few examples:
+
+
 
 ### Context rules
 
