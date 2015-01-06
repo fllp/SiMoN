@@ -2,3 +2,5 @@
 %\usepackage{pifont}
 \usepackage{xcolor}
 \definecolor{green}{RGB}{0, 65, 0}
+\usepackage{draftwatermark}
+\SetWatermarkLightness{0.8}

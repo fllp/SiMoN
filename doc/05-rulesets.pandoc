@@ -1,1 +1,31 @@
-# The rulesets
+# The ruleset
+
+As mentioned before, SiMoN has a lexicon and a rule compound. While the lexicon contains all the necessary patterns and CCls to generate inflectional paradigms, the ruleset determines how *multichar symbols* are treated and additionally takes care of accounting for particular morpho-phonetic phenomena in the generation process of surface forms.
+
+## The *two-level* principle
+
+In the previous chapter 
+The ruleset of SiMon is divided into specific parts, just as the lexicon.
+They are described in the sections 5.1.1 - 5.x
+
+## The ruleset sections
+
+### Alphabet
+
+The alphabet section contains a list of letters valid for the used language. In case of Sicilian this includes the letters *a* - *z* plus accented vowels like *à*, *â*, *è*, *é* and so on.
+All available *multichar symbols* are contained in the alphabet as well. They are listed as two layer pairs that determine `0` as emission for each of them:
+
+```+V_ARI:0  +V_IRI:0 +V_FIN:0 +V_NOFIN:0 +V_PP:0```
+
+The line above filters any annotated verb and eliminates the symbols `V_ARI`, `V_IRI`, etc. from the final surface form of any verb.
+
+### Sets
+
+The (mathematical) sets defined for SiMoN are bags of letters, one containing all vowels (`Vowel`) the other containing all consonants (`Cons`) of the alphabet. These sets are used in the [context rules](#context-rules) and simplify accessing single letters by their type.
+
+### Definitions
+
+The definitons in the ruleset could be described as categories for the *multichar symbols*
+
+### Context rules
+
