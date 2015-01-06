@@ -1,20 +1,32 @@
 SiMoN - sicilian morphology for the AnIta morphological parser
 ==============================================================
 
-**README under construction!**
-
-SiMoN is a semi-standalone morpholocigal parser for the Sicilian language.. It is intended to be used as an extension to the AnIta italian morphological parser.
+SiMoN is a semi-standalone morpholocigal parser for the Sicilian language. It's purpose is to act as an extension to AnIta Italian morphological parser and provide Sicilian morphological paradigms for processing in parallel to Italian
 The underlying technology are finite state transducers, namely the implementation of the *Helsinki Finite State Transducer*(HFST) project.
 The notation format used is the XFST syntax.
 
 ## Features
 
-Currently supported are the morphology of regular conjugation with a lexicon of roughly 60 regular verbs.
+Currently supported is the morphology of regular verbal conjugation with a lexicon of roughly 60 regular verbs plus an automatically extracted list of ~300 verbs from wikipedia (unchecked).
 
-Irregular verbs are work in progress
-...
+## License
 
-## Technical Details & Manuals
+to be determined
 
-Information regarding the structure of SiMoN, the HFST tools and XFST syntax as well as usage manuals will be provided in the [Wiki](home).
-Also, a roadmap and work time overview will be available there.
+## Documentation
+
+The documentation for SiMoN can be found either in *doc/* or as PDF (for release versions)
+
+## Changelog/Roadmap
+
+Released versions are bold
+
+SiMoN 1.1
+
+add frequent irregular verbs
+include custom morphosyntactic rules for sicilian
+
+SiMoN 1.0
+Initial puplic release
+including regular verbal morphology
++ auxiliary verbs *fari*, *siri/essiri*, *aviri*
