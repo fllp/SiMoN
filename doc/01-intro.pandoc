@@ -6,7 +6,7 @@ This document describes the morphological parser SiMoN[^0], an analyzer for the 
 It is inspired by and based on *AnIta*, the work of Tamburini and Melandri [-@TamburiniMelandri.2012].
 AnIta is a morphological analyzer for the Italian language that consists of a larger lexicon of italian words.
 SiMoN currently comprises of the regular verbal morphology of Sicilian and while being available for usage as a standalone application it's purpose is to act as an extension to AnIta and provide Sicilian morphological paradigms for processing in parallel to Italian.
-The subsequent chapter contains technical information for the setup of SiMoN. The third chapter describes the basic commands to analyze sicilian words with SiMoN. Chapters 4 and 5 explain SiMoN's lexicon and ruleset that form the morphological paradigms of Sicilian.
+The subsequent chapter contains technical information for the setup of SiMoN. The third chapter describes the basic commands to analyze sicilian words with SiMoN. Chapters 4 and 5 explain SiMoN's lexicon and rule set that form the morphological paradigms of Sicilian.
 
 - add license info
 - mention CIS (Desi, Dr. Krefeld?, Proj. Homepage)
@@ -17,18 +17,27 @@ The subsequent chapter contains technical information for the setup of SiMoN. Th
 
 A few terms specific to the field of computational linguistics will occur throughout this documentation. They are as follows:
 
-- *parsing*: general term for analyzing and/or filtering text with specific rulesets
-    + *parser*: application/collection of rules to analyze/filter a certain type of textual
+- *parsing*: general term for analyzing and/or filtering text with specific rule sets
+    + *parser*: application/collection of rules to analyze/filter a certain type of textual information
 
-- *POS*:  **P**art **O**f **S**peech tagging - identifying word types(verb, noun, adverb,...) in a text
+- *POS*:  **P**art **O**f **S**peech (tagging) - identifying word types (verb, noun, adverb,...) in a text
 
 - lemma: entry in a (linguistic) lexicon, providing the basic form of a word plus grammatical information
 
 - *paradigm*: contains a 'list' of word forms belonging to the same word
-    + in the case of SiMoN, a paradigm holds all inflectional forms of a wlemma
+    + in the case of SiMoN, a paradigm holds all inflectional forms of a lemma
 
 - *Makefile*: text file containing receipts for compiling program sources to executable binaries
 
 - *FST*: **F**inite **S**tate **T**echnology - applications that are based on mathematical algorithms from the theory of (finite state) automata
 
 - *XFST*: set of applications by the XEROX company implementing automata
+
+## The *two-level* principle
+
+SiMoN (as AnIta) consists of two parts: A lexicon and a rule set. These are part of a practice of representing morphologies that is known as *two-level morphology*, first introduced by Kimmo Koskenniemi [-@Kimmo.1983]. Such morphologies - as the name suggests - contain two levels, the *surface level* and the *internal level*.  
+On the *internal level* all grammatical information concerning the morphology and phonetic features is recorded in the lexicon on a word basis. Thus the lexicon contains various lemmas and inflection patterns, each annotated with the grammatical categories of words and other features. When looking up a word in this lexicon, the provided information of a lemma can be used for linguistic analysis.
+For word generation these annotations determine the assigned inflection patterns, e.g. according to the word category a conjugation (verbs) or declination pattern (nouns). Since these generated words still contain grammatical annotations and do not reflect special phenomena resulting in spell changing, a set of rules is added alongside the lexicon that manages these phenomena and the elimination of any internal annotations when generating a word.
+The appliance of those rules to the lexicon on the *internal level* leads to the adjusted results on the *surface level*. The lexicon and the rules are built in a way that allows *bidirectional* access to the morphological informations in order to both analyze and generate words with the lemmas available in the lexicon.
+
+The actual layout implementing this concept is explained more detailed in the chapters [4](#the-lexicon) and [5](#the-rule-set).
