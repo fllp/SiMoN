@@ -1,24 +1,22 @@
-# The ruleset
+# The rule set
 
-As mentioned before, SiMoN has a lexicon and a rule compound. While the lexicon contains all the necessary patterns and CCls to generate inflectional paradigms, the ruleset determines how *multichar symbols* are treated and additionally takes care of accounting for particular morpho-phonetic phenomena in the generation process of surface forms.
-
-## The *two-level* principle
-
-In the previous chapter the *surface forms* were introduced. These are part of a practice of representing morphologies that is known as two-level morphology. Such morphologies - as the name suggests - contain two 'layers', the surface level and the internal level.
+As mentioned before, SiMoN has a lexicon and a rule compound. While the former contains all the necessary lemmas and patterns to generate inflectional paradigms, the latter determines how the *multichar symbols* are treated and additionally takes care of accounting for particular morpho-phonetic phenomena, like gemination or ..., in the generation process applying to certain surface forms. The *surface forms* introduced in the previous chapter are built from the lexicon with the use of these rules.
 
 ## The ruleset sections
 
-The ruleset of SiMon is divided into specific parts, just as the lexicon.
-They are described in the sections 5.2.1 - 5.2.4.
+The ruleset of SiMoN is divided into specific parts, just as the lexicon.
+These are described in the sections 5.2.1 - 5.2.4.
 
 ### Alphabet
 
 The alphabet section contains a list of letters valid for the used language. In case of Sicilian this includes the letters *a* - *z* plus accented vowels like *à*, *â*, *è*, *é* and so on.
-All available *multichar symbols* are contained in the alphabet as well. They are listed as two layer pairs that determine `0` as emission for each of them:
+All available *multichar symbols* are contained in the alphabet as well. They are listed as two-layer pairs that determine `0` as emission for each of them:
 
-```+V_ARI:0  +V_IRI:0 +V_FIN:0 +V_NOFIN:0 +V_PP:0```
+```
++V_ARI:0  +V_IRI:0 +V_FIN:0 +V_NOFIN:0 +V_PP:0
+```
 
-The line above filters any annotated verb and eliminates the symbols `V_ARI`, `V_IRI`, etc. from the final surface form of any verb.
+Thus, the line above filters any annotated verb and eliminates the symbols `V_ARI`, `V_IRI`, etc. from the final surface form of any verb.
 
 ### Sets
 
