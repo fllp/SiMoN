@@ -1,6 +1,6 @@
 BIBLIO = doc/bib/references.bib
 REFSTYLE = doc/bib/ACL.csl
-H_INC = doc/pandoc-headerincludes
+H_INC = doc/pandoc-h-inc.tex
 
 # setting flags and extensions for pandoc to use on documentation files
 define pandoc_flags
