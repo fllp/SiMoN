@@ -1,5 +1,7 @@
 # The rule set
 
+\label{ch:rules}
+
 As mentioned before, SiMoN has a lexicon and a rule compound. While the former contains all the necessary lemmas and patterns to generate inflectional paradigms, the latter determines how the *multichar symbols* are treated and additionally takes care of accounting for particular morpho-phonetic phenomena, like gemination or ..., in the generation process applying to certain surface forms. The *surface forms* introduced in the previous chapter are built from the lexicon with the use of these rules.
 
 ## The ruleset sections
