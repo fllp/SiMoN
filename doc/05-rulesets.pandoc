@@ -7,9 +7,11 @@ As mentioned before, SiMoN has a lexicon and a rule compound. While the former c
 ## The ruleset sections
 
 The ruleset of SiMoN is divided into specific parts, just as the lexicon.
-These are described in the sections 5.2.1 - 5.2.4.
+These are described in the sections \ref{ruleTypeFirst} to \ref{ruleTypeLast}.
 
 ### Alphabet
+
+\label{ruleTypeFirst}
 
 The alphabet section contains a list of letters valid for the used language. In case of Sicilian this includes the letters *a* - *z* plus accented vowels like *à*, *â*, *è*, *é* and so on.
 All available *multichar symbols* are contained in the alphabet as well. They are listed as two-layer pairs that determine `0` as emission for each of them:
@@ -33,3 +35,6 @@ A few examples:
 
 ### Context rules
 
+Context rules check for specific conditions in the context of a character and execute certain actions if these conditions are met.
+
+\label{ruleTypeLast}
