@@ -17,27 +17,36 @@ The subsequent chapter contains technical information for the setup of SiMoN. Th
 
 A few terms specific to the field of computational linguistics will occur throughout this documentation. They are as follows:
 
-- *parsing*: general term for analyzing and/or filtering text with specific rule sets
-    + *parser*: application/collection of rules to analyze/filter a certain type of textual information
+parsing:
+  ~ general term for analyzing and/or filtering text with specific rule sets
 
-- *POS*:  **P**art **O**f **S**peech (tagging) - identifying word types (verb, noun, adverb,...) in a text
+parser:
+  ~ application/collection of rules to analyze/filter a certain type of textual information
 
-- lemma: entry in a (linguistic) lexicon, providing the basic form of a word plus grammatical information
+POS:
+  ~ **P**art **O**f **S**peech (tagging) - identifying word types (verb, noun, adverb,...) in a text
 
-- *paradigm*: contains a 'list' of word forms belonging to the same word
+lemma:
+  ~ entry in a (linguistic) lexicon, providing the basic form of a word plus grammatical information
+
+paradigm:
+  ~ contains a 'list' of word forms belonging to the same word
     + in the case of SiMoN, a paradigm holds all inflectional forms of a lemma
 
-- *Makefile*: text file containing receipts for compiling program sources to executable binaries
+Makefile:
+  ~ text file containing receipts for compiling program sources to executable binaries
 
-- *FST*: **F**inite **S**tate **T**echnology - applications that are based on mathematical algorithms from the theory of (finite state) automata
+FST:
+  ~ **F**inite **S**tate **T**echnology - applications that are based on mathematical algorithms from the theory of (finite state) automata
 
-- *XFST*: set of applications by the XEROX company implementing automata
+XFST:
+  ~ set of applications by the XEROX company implementing automata
 
 ## The *two-level* principle
 
-SiMoN (as AnIta) consists of two parts: A lexicon and a rule set. These are part of a practice of representing morphologies that is known as *two-level morphology*, first introduced by Kimmo Koskenniemi [-@Kimmo.1983]. Such morphologies - as the name suggests - contain two levels, the *surface level* and the *internal level*.  
-On the *internal level* all grammatical information concerning the morphology and phonetic features is recorded in the lexicon on a word basis. Thus the lexicon contains various lemmas and inflection patterns, each annotated with the grammatical categories of words and other features. When looking up a word in this lexicon, the provided information of a lemma can be used for linguistic analysis.
-For word generation these annotations determine the assigned inflection patterns, e.g. according to the word category a conjugation (verbs) or declination pattern (nouns). Since these generated words still contain grammatical annotations and do not reflect special phenomena resulting in spell changing, a set of rules is added alongside the lexicon that manages these phenomena and the elimination of any internal annotations when generating a word.
-The appliance of those rules to the lexicon on the *internal level* leads to the adjusted results on the *surface level*. The lexicon and the rules are built in a way that allows *bidirectional* access to the morphological informations in order to both analyze and generate words with the lemmas available in the lexicon.
-
-The actual layout implementing this concept is explained more detailed in the chapters [4](#the-lexicon) and [5](#the-rule-set).
+SiMoN (as AnIta) consists of two parts: A lexicon and a rule set. These are part of a practice of representing morphologies that is known as *two-level morphology*, first introduced by Kimmo Koskenniemi [-@Kimmo.1983]. Such morphologies - as the name suggests - contain two levels, the *surface level* and the *internal level*. 
+In the following paragraph the principle is explained in brief.
+On the *internal level* grammatical information concerning the morphological and phonetic features is recorded in the lexicon on a word basis. Thus the lexicon contains various lemmas and inflection patterns, each annotated with the grammatical categories of words and other features. These annotations determine the assoicated inflection patterns, e.g. a conjugation pattern for verbs or a declination pattern for nouns. Since they should not be visible when generating inflected forms form the patterns a means is required to remove them from the produced words while keeping the information intact for the generation process. In addition, many linguistic phenomena - especially those concerning phonetic effects - can not easily be represented with the additive approach of a lexicon with included inflectional patterns. This is where the second part, the rule set is used. It contains various filters that both eliminate annotations from generated forms and manage phenomena outside the scope of the lexicon.
+Applying those rules to the lexicon on the *internal level* produces cleaned results on the *surface level*. Another aspect of the *two-level* concept is the special algorithm used for implementation in computer programs. It allows executing the combination of patterns and applying of rules in parallel and increases speed. Further information can be found in the article of E. Antworth [@Antworth.1991] and the original work about *two-level* morphology [@Kimmo.1983].
+SiMoN's lexicon and rules are constructed in a way that allows *bidirectional* access to the morphological informations in order to both analyze and generate words with the lemmas available in the lexicon. When looking up a word in the lexicon or inflecting a word the provided information of the lemma can be used for linguistic analysis.
+The structure allowing such usage is explained in the dedicated chapters \ref{ch:lexicon} (p. \pageref{ch:lexicon}) and \ref{ch:rules} (p. \pageref{ch:rules}).
