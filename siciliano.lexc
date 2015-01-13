@@ -398,7 +398,7 @@ LEXICON Root
     l_finiri:finsc+V_IRI rscIri2 ;
     l_finiri:fin+V_IRI rscIri3 ;
     l_finiri:fin+V_IRI rscIri4 ;
-!------- frequent irregular verbs --------
+!------- frequent irregular auxiliary verbs --------
 
     ! == conjugation paradigm for essiri
 
