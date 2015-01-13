@@ -394,8 +394,8 @@ LEXICON Root
 
 !------- stem changing patterns -------
 
-    l_finiri:finsci+V_IRI rscIri ;
-    l_finiri:finsc+V_IRI rscIri2 ;
+    l_finiri:finisci+V_IRI rscIri ;
+    l_finiri:finisc+V_IRI rscIri2 ;
     l_finiri:fin+V_IRI rscIri3 ;
 !------- frequent irregular auxiliary verbs --------
 
