@@ -86,12 +86,33 @@ The special sub lexicons (or CCls) for sicilian regular verb forms created for S
 
 ### rscIri
 
-  Another special CCl that only applies to the imperative forms of regular verbs that have the suffix **iri** *and* their stem ending in *isc* **[INSERT EXAMPLE!]**. Currently, there is no lemma in the lexicon this case applies to.
+ A group of special CCls that only apply to regular verbs that have the suffix **iri** *and* their stem ending in *isc*. Words in this category basically have two (or more) stems each of which only occurs in a certain mode or tense of the conjugation paradigm. The suffixes stay the same while the different stems go with different sections of the paradigm that do not overlap. \
+Currently, there is only one lemma in the lexicon to which this property applies to: the verb *finiri*. It branches into three stem versions: `finisci~`, `finisc~` and `fin~`.
+A sample of its CCls can be found below.
 
-  > **DEV-NOTE:** see branch *verbs-irreg* for examples
+```
+l_finiri:finisci+V_IRI rscIri ;
+l_finiri:finisc+V_IRI rscIri2 ;
+l_finiri:fin+V_IRI rscIri3 ;
+
+LEXICON rscIri
+
+    +V_FIN+IND+PRES+1+SING:+IND+PRES+1+SING*u #;
+
+    +V_FIN+IND+PRES+3+PLUR:+IND+PRES+3+PLUR*unu #;
+
+LEXICON rscIri2
+
+    +V_FIN+IND+PRES+2+SING:+IND+PRES+2+SING*i #;
+    +V_FIN+IND+PRES+3+SING:+IND+PRES+3+SING*i #;
+
+    +V_FIN+IND+PRES+3+PLUR:+IND+PRES+3+PLUR*inu #;
+```
+
+The stem variation `finisci~` only applies to the forms of *1st person singular* and *3rd person plural* while `finisc~` is used for *2nd* and *3rd person singular* plus *3rd person plural*. The CCl `rscIri3` contains all the remaining tenses and modes and is almost an exact copy of the regular CCl `SufVerbIri`.
 
 ### Inter-root entries
 
-The frequent irregular auxiliary verbs *aviri* (to have) and *fari* (to do/make) have their paradigms listed entirely in the root section since the irregularity prevents effective compartmentalisation in CCls.
+The frequent irregular auxiliary verbs *aviri* (to have) and *fari* (to do/make) have their paradigms listed entirely in the root section since the irregularity prevents effective compartmentalization in CCls.
 
 \label{sufVerbLast}
