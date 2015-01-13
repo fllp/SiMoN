@@ -394,11 +394,10 @@ LEXICON Root
 
 !------- stem changing patterns -------
 
-    l_finiri:fin+V_IRI SufVerbIri ;
-    l_finiri:fin+V_IRI SufVerbIri ;
-    l_finiri:fin+V_IRI SufVerbIri ;
-    l_finiri:fin+V_IRI SufVerbIri ;
-    l_finiri:fin+V_IRI SufVerbIri ;
+    l_finiri:finsci+V_IRI rscIri ;
+    l_finiri:finsc+V_IRI rscIri2 ;
+    l_finiri:fin+V_IRI rscIri3 ;
+    l_finiri:fin+V_IRI rscIri4 ;
 !------- frequent irregular verbs --------
 
     ! == conjugation paradigm for essiri
@@ -835,10 +834,96 @@ LEXICON SufVerbIri
 
 LEXICON rscIri
 
-    +V_FIN+IMP+PRES+2+SING:+IMP+PRES+2+SING*isci #;
+    +V_FIN+IND+PRES+1+SING:+IND+PRES+1+SING*u #;
+
+LEXICON rscIri2
+
+    +V_FIN+IND+PRES+2+SING:+IND+PRES+2+SING*i #;
+
+    +V_FIN+IND+PRES+3+SING:+IND+PRES+3+SING*i #;
+    +V_FIN+IND+PRES+3+PLUR:+IND+PRES+3+PLUR*inu #;
+    +V_FIN+IND+PRES+3+PLUR:+IND+PRES+3+PLUR*unu #;
+
+    +V_FIN+IMP+PRES+2+SING:+IMP+PRES+2+SING*i #;
+
+LEXICON rscIri3
+
+    +V_FIN+IND+PRES+1+PLUR:+IND+PRES+1+PLUR*emu #;
+    +V_FIN+IND+PRES+2+PLUR:+IND+PRES+2+PLUR*iti #;
+
     +V_FIN+IMP+PRES+3+SING:+IMP+PRES+3+SING*issi #;
     +V_FIN+IMP+PRES+1+PLUR:+IMP+PRES+1+PLUR*emu #;
     +V_FIN+IMP+PRES+2+PLUR:+IMP+PRES+2+PLUR*iti #;
     +V_FIN+IMP+PRES+3+PLUR:+IMP+PRES+3+PLUR*issiru #;
+
+LEXICON rscIri4
+
+    +V_FIN+IND+IMPERF+1+SING:+IND+IMPERF+1+SING*ia #;
+    +V_FIN+IND+IMPERF+1+SING:+IND+IMPERF+1+SING*iu #;
+    +V_FIN+IND+IMPERF+1+SING:+IND+IMPERF+1+SING*eva #;
+    +V_FIN+IND+IMPERF+1+SING:+IND+IMPERF+1+SING*evu #;
+    +V_FIN+IND+IMPERF+1+SING:+IND+IMPERF+1+SING*iva #;
+    +V_FIN+IND+IMPERF+1+SING:+IND+IMPERF+1+SING*ivu #;
+    +V_FIN+IND+IMPERF+2+SING:+IND+IMPERF+2+SING*ivi #;
+    +V_FIN+IND+IMPERF+2+SING:+IND+IMPERF+2+SING*evi #;
+    +V_FIN+IND+IMPERF+3+SING:+IND+IMPERF+3+SING*ia #;
+    +V_FIN+IND+IMPERF+3+SING:+IND+IMPERF+3+SING*eva #;
+    +V_FIN+IND+IMPERF+3+SING:+IND+IMPERF+3+SING*iva #;
+    +V_FIN+IND+IMPERF+1+PLUR:+IND+IMPERF+1+PLUR*iamu #;
+    +V_FIN+IND+IMPERF+1+PLUR:+IND+IMPERF+1+PLUR*evamu #;
+    +V_FIN+IND+IMPERF+1+PLUR:+IND+IMPERF+1+PLUR*ivamu #;
+    +V_FIN+IND+IMPERF+2+PLUR:+IND+IMPERF+2+PLUR*iavu #;
+    +V_FIN+IND+IMPERF+2+PLUR:+IND+IMPERF+2+PLUR*evavu #;
+    +V_FIN+IND+IMPERF+2+PLUR:+IND+IMPERF+2+PLUR*ivavu #;
+    +V_FIN+IND+IMPERF+3+PLUR:+IND+IMPERF+3+PLUR*ianu #;
+    +V_FIN+IND+IMPERF+3+PLUR:+IND+IMPERF+3+PLUR*evanu #;
+    +V_FIN+IND+IMPERF+3+PLUR:+IND+IMPERF+3+PLUR*ivanu #;
+
+    +V_FIN+IND+PAST+1+SING:+IND+PAST+1+SING*ivi #;
+    +V_FIN+IND+PAST+1+SING:+IND+PAST+1+SING*ii #;
+    +V_FIN+IND+PAST+1+SING:+IND+PAST+1+SING*ìi #;
+    +V_FIN+IND+PAST+1+SING:+IND+PAST+1+SING*iu #;
+    +V_FIN+IND+PAST+1+SING:+IND+PAST+1+SING*ivu #;
+    +V_FIN+IND+PAST+2+SING:+IND+PAST+2+SING*isti #;
+    +V_FIN+IND+PAST+3+SING:+IND+PAST+3+SING*ìu #;
+    +V_FIN+IND+PAST+1+PLUR:+IND+PAST+1+PLUR*emmu #;
+    +V_FIN+IND+PAST+1+PLUR:+IND+PAST+1+PLUR*emu #;
+    +V_FIN+IND+PAST+2+PLUR:+IND+PAST+2+PLUR*istivu #;
+    +V_FIN+IND+PAST+2+PLUR:+IND+PAST+2+PLUR*astu #;
+    +V_FIN+IND+PAST+2+PLUR:+IND+PAST+2+PLUR*istu #;
+    +V_FIN+IND+PAST+3+PLUR:+IND+PAST+3+PLUR*erunu #;
+    +V_FIN+IND+PAST+3+PLUR:+IND+PAST+3+PLUR*eru #;
+
+    +V_FIN+IND+FUT+1+SING:+IND+FUT+1+SING*irò #;
+    +V_FIN+IND+FUT+2+SING:+IND+FUT+2+SING*irai #;
+    +V_FIN+IND+FUT+3+SING:+IND+FUT+3+SING*irà #;
+    +V_FIN+IND+FUT+1+PLUR:+IND+FUT+1+PLUR*iremu #;
+    +V_FIN+IND+FUT+2+PLUR:+IND+FUT+2+PLUR*iriti #;
+    +V_FIN+IND+FUT+3+PLUR:+IND+FUT+3+PLUR*irannu #;
+
+    !-- subjunctive present is not used,
+    !-- indicative present used instead
+    +V_FIN+SUBJ+PRES+1+SING:+SUBJ+PRES+1+SING*u #;
+    +V_FIN+SUBJ+PRES+2+SING:+SUBJ+PRES+2+SING*i #;
+    +V_FIN+SUBJ+PRES+3+SING:+SUBJ+PRES+3+SING*i #;
+    +V_FIN+SUBJ+PRES+1+PLUR:+SUBJ+PRES+1+PLUR*emu #;
+    +V_FIN+SUBJ+PRES+2+PLUR:+SUBJ+PRES+2+PLUR*iti #;
+    +V_FIN+SUBJ+PRES+3+PLUR:+SUBJ+PRES+3+PLUR*inu #;
+
+    +V_FIN+SUBJ+IMPERF+1+SING:+SUBJ+IMPERF+1+SING*issi #;
+    +V_FIN+SUBJ+IMPERF+2+SING:+SUBJ+IMPERF+2+SING*issi #;
+    +V_FIN+SUBJ+IMPERF+3+SING:+SUBJ+IMPERF+3+SING*issi #;
+    +V_FIN+SUBJ+IMPERF+1+PLUR:+SUBJ+IMPERF+1+PLUR*issimu #;
+    +V_FIN+SUBJ+IMPERF+2+PLUR:+SUBJ+IMPERF+2+PLUR*issivu #;
+    +V_FIN+SUBJ+IMPERF+3+PLUR:+SUBJ+IMPERF+3+PLUR*issiru #;
+    +V_FIN+SUBJ+IMPERF+3+PLUR:+SUBJ+IMPERF+3+PLUR*issinu #;
+
+    +V_FIN+COND+PRES+1+SING:+COND+PRES+1+SING*iria #;
+    +V_FIN+COND+PRES+2+SING:+COND+PRES+2+SING*irissi #;
+    +V_FIN+COND+PRES+3+SING:+COND+PRES+3+SING*iria #;
+    +V_FIN+COND+PRES+1+PLUR:+COND+PRES+1+PLUR*iriamu #;
+    +V_FIN+COND+PRES+2+PLUR:+COND+PRES+2+PLUR*iriavu #;
+    +V_FIN+COND+PRES+3+PLUR:+COND+PRES+3+PLUR*irianu #;
+
 
 END
