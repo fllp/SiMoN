@@ -33,7 +33,7 @@ l_durmiri:durm+V_IRI SufVerbIri ;
 
 These entries are called lemmas. Each lemma contains a verb in its infinitive form[^p]. Additionally, the lemma records the stem of the word (e.g. *cant* for *cantari*, to sing), its word class (verb, either ending in *ari* or *iri*) and the sub lexicon containing the inflectional suffixes of that word class (*[SufVerbAri](#sufverbari)* and *[ SufVerbIri ](#sufverbiri)*)
 
-The vocabulary of SiMoN is taken from Bonner [-@Bonner.2001] and comprises of around 60 regular Sicilian verbs. Additionally, a verb list automatically generated from forms present in the [Sicilian Wikipedia][scn-wiki] pages is included[^v].
+The vocabulary of SiMoN is taken from Bonner [-@Bonner.2001] and comprises of around 60 regular Sicilian verbs. Additionally a verb list automatically extracted from the [Sicilian Wikipedia][scn-wiki] pages is included[^v].
 
 [^v]: The verbs from Wikipedia have been picked according to a very basic pattern, matching regular inflectional endings. It is very likely that irregular forms are contained in this list as well.
 
@@ -41,9 +41,9 @@ The vocabulary of SiMoN is taken from Bonner [-@Bonner.2001] and comprises of ar
 
 ### Multichar Symbols
 
-The *multicharacter symbols* can be seen as tags used to indicate the respective POS type and other grammatical informations of an entry in the lexicon.
+The *multicharacter symbols* can be seen as tags used to indicate the respective *POS* type and other grammatical informations of an entry in the lexicon.
 Examples are ``+V_ARI, +SING, +PLUR``. They denote a verb ending in the suffix *ari* and the number of a word (singular or plural).
-*multichar Symbols* also act as variables in combination with the [ruleset definitions](#the-alphabet). In the context of the lexicon however, they serve as tags containing grammatical and morphological information.
+*multichar symbols* also act as variables in combination with the [ruleset definitions](#the-alphabet). In the context of the lexicon however, they serve as annotation tags containing grammatical and morphological information.
 
 - **ADD EXAMPLES FOR RULES W/ VARIABLES (maybe in chapter for rules)**
 

@@ -17,7 +17,7 @@ In case you have recieved binaries of SiMoN, you can skip this chapter after ins
 If you received the SiMoN source files, you can use the provided [Makefile](Makefile)[^1] for to auto-compile the binaries.
 Simply typing `make` in a terminal should get you set up.[^w]
 
-[^1]: The HFST-Package *needs* to be installed and its binaries must be present in the systems $PATH variable. Run `make check` to make sure dependencies are met.
+[^1]: The HFST-Package needs to be installed and its binaries must be present in the systems $PATH variable. Run `make check` to make sure dependencies are met.
 
 [^w]: **This has been tested for Mac OSX and Linux only!**
 Even though GNU Make is [available for Windows](www.mingw.org), users of that platform are advised to follow the instructions in the section *[manual compilation](#manual-compilation)*. For these the only requirement is the HFST software.
