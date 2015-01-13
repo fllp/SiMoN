@@ -397,7 +397,6 @@ LEXICON Root
     l_finiri:finsci+V_IRI rscIri ;
     l_finiri:finsc+V_IRI rscIri2 ;
     l_finiri:fin+V_IRI rscIri3 ;
-    l_finiri:fin+V_IRI rscIri4 ;
 !------- frequent irregular auxiliary verbs --------
 
     ! == conjugation paradigm for essiri
@@ -836,13 +835,14 @@ LEXICON rscIri
 
     +V_FIN+IND+PRES+1+SING:+IND+PRES+1+SING*u #;
 
+    +V_FIN+IND+PRES+3+PLUR:+IND+PRES+3+PLUR*unu #;
+
 LEXICON rscIri2
 
     +V_FIN+IND+PRES+2+SING:+IND+PRES+2+SING*i #;
-
     +V_FIN+IND+PRES+3+SING:+IND+PRES+3+SING*i #;
+
     +V_FIN+IND+PRES+3+PLUR:+IND+PRES+3+PLUR*inu #;
-    +V_FIN+IND+PRES+3+PLUR:+IND+PRES+3+PLUR*unu #;
 
     +V_FIN+IMP+PRES+2+SING:+IMP+PRES+2+SING*i #;
 
@@ -855,8 +855,6 @@ LEXICON rscIri3
     +V_FIN+IMP+PRES+1+PLUR:+IMP+PRES+1+PLUR*emu #;
     +V_FIN+IMP+PRES+2+PLUR:+IMP+PRES+2+PLUR*iti #;
     +V_FIN+IMP+PRES+3+PLUR:+IMP+PRES+3+PLUR*issiru #;
-
-LEXICON rscIri4
 
     +V_FIN+IND+IMPERF+1+SING:+IND+IMPERF+1+SING*ia #;
     +V_FIN+IND+IMPERF+1+SING:+IND+IMPERF+1+SING*iu #;
@@ -924,6 +922,5 @@ LEXICON rscIri4
     +V_FIN+COND+PRES+1+PLUR:+COND+PRES+1+PLUR*iriamu #;
     +V_FIN+COND+PRES+2+PLUR:+COND+PRES+2+PLUR*iriavu #;
     +V_FIN+COND+PRES+3+PLUR:+COND+PRES+3+PLUR*irianu #;
-
 
 END
