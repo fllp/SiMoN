@@ -4,9 +4,9 @@
 
 As mentioned before, SiMoN has a lexicon and a rule compound. While the former contains all the necessary lemmas and patterns to generate inflectional paradigms, the latter determines how the *multichar symbols* are treated and additionally takes care of accounting for particular morpho-phonetic phenomena, like gemination or ..., in the generation process applying to certain surface forms. The *surface forms* introduced in the previous chapter are built from the lexicon with the use of these rules.
 
-## The ruleset sections
+## The rule set sections
 
-The ruleset of SiMoN is divided into specific parts, just as the lexicon.
+The rule set of SiMoN is divided into specific parts, just as the lexicon.
 These are described in the sections \ref{ruleTypeFirst} to \ref{ruleTypeLast}.
 
 ### Alphabet
@@ -28,13 +28,43 @@ The (mathematical) sets defined for SiMoN are bags of letters, one containing al
 
 ### Definitions
 
-The definitons in the ruleset could be described as categories for the *multichar symbols* repesenting grammatical information that allow grouping specific information together. Refering to these groups within in context sensitive rules allows the construction of complex phenomena.
-A few examples:
+The definitions in the rule set could be described as categories for the *multichar symbols* that represent grammatical information. They allow grouping specific information together.
 
+**A few examples:**  
+
+- the group `NonVerbs` contains all word classes but verbs
+
+    `+NN:`   `+NN_P:`  `+ADJ:`  `+ADJ`  ...
+
+- included in `Verbs`, all the available verbal annotations are included:
+
+    `+V_ARI:`   `+V_IRI:`  `+V_FIN:`  `+V_NOFIN:`  `+V_PP:`
+
+- any tags labeling different modes for suffixes in the CCls are included in `Mode`:
+
+    `+INF:`  `+IND:`  `+SUBJ:`  `+COND:`  `+IMP:`  `+PART:`  `+GER:`
+
+The remaining definitions for `Head`, `Conj`, `Tense`, `Gender`, `Number` and `Modif` are composed analogously.
+Referring to these groups within in context sensitive rules allows the construction of complex constraints.
 
 
 ### Context rules
 
 Context rules check for specific conditions in the context of a character and execute certain actions if these conditions are met.
+Let's take a look at one of the context rules in SiMoN (originally from AnIta):
+
+```
+"Insert h for c|g with velar = a - 1"
+    %+VEL%_A:h <=> [c | g] _ (NonVerbs) (Gender) (Number) (Modif) %*: [e | è | é] ;
+```
+
+The above rule is valid in the context of a *multichar symbol* `+VEL_A` that is preceded by either `c` or `g` and followed by the vowels `e`, `è` or `è`. A sequence of at least one symbol from `NonVerbs` and up to three more from `Gender`, `Number` and `Modif` can be present between the `+VEL_A` tag and the vowels. Upon execution this rule replaces the `+VEL_A` with the letter `h` and ensures the pronounciation remains intact.
+
+**An example**: The entry adjective *comico*[^x ](comical) for *feminine plural* without the infinitive part is:
+`comic+VEL_A+ADJ+FEMM+PLUR:+ADJ+FEMM+PLUR*e`. \
+Applying the rule produces *comic*h*e* instead of *comice*.
+
+
+[^x]: Since the rule only applies to non verbs and SiMoN currently contains only verbs, the example is taken from AnIta.
 
 \label{ruleTypeLast}
