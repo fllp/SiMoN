@@ -22,41 +22,41 @@ Sets
 
 Definitions
 	Head = %+NN: | %+NN%_P: | %+V%_ARI: |  %+V%_IRI: | %+V%_FIN: | %+V%_NOFIN: | %+V%_PP: | %+ADJ: | %+ADJ%_DIM: | %+ADJ%_IND: | %+ADJ%_IES: | %+ADJ%_NUM: | %+ADJ%_POS: | %+ADV: | %+PRON: | %+PRON%_P: | %+PRON%_DIM: | %+PRON%_IND: | %+PRON%_IES: | %+PRON%_REL: | %+PRON%_POS: | %+PRON%_PER: | %+INT: | %+PREP: | %+PREP%_A: | %+CONJ%_C: | %+CONJ%_S: | %+ART: ;
-	Nonverbi =  %+NN: | %+NN%_P: | %+ADJ: | %+ADJ%_DIM: | %+ADJ%_IND: | %+ADJ%_IES: | %+ADJ%_NUM: | %+ADJ%_POS: | %+ADV: | %+PRON: | %+PRON%_P: | %+PRON%_DIM: | %+PRON%_IND: | %+PRON%_IES: | %+PRON%_REL: | %+PRON%_POS: | %+PRON%_PER: | %+INT: | %+PREP: | %+PREP%_A: | %+CONJ%_C: | %+CONJ%_S: | %+ART: ;
-	Verbi = %+V%_ARI: |  %+V%_IRI: | %+V%_FIN: | %+V%_NOFIN: | %+V%_PP: ;
-	Coniug = %+V%_ARI: |  %+V%_IRI: ;
-	Modo = %+INF: | %+IND: | %+SUBJ: | %+COND: | %+IMP: | %+PART: | %+GER: ;
-	Tempo = %+PRES: | %+IMPERF: | %+PAST: | %+FUT: ;
+	NonVerbs =  %+NN: | %+NN%_P: | %+ADJ: | %+ADJ%_DIM: | %+ADJ%_IND: | %+ADJ%_IES: | %+ADJ%_NUM: | %+ADJ%_POS: | %+ADV: | %+PRON: | %+PRON%_P: | %+PRON%_DIM: | %+PRON%_IND: | %+PRON%_IES: | %+PRON%_REL: | %+PRON%_POS: | %+PRON%_PER: | %+INT: | %+PREP: | %+PREP%_A: | %+CONJ%_C: | %+CONJ%_S: | %+ART: ;
+	Verbs = %+V%_ARI: |  %+V%_IRI: | %+V%_FIN: | %+V%_NOFIN: | %+V%_PP: ;
+	Conj = %+V%_ARI: |  %+V%_IRI: ;
+	Mode = %+INF: | %+IND: | %+SUBJ: | %+COND: | %+IMP: | %+PART: | %+GER: ;
+	Tense = %+PRES: | %+IMPERF: | %+PAST: | %+FUT: ;
 	Pers = %+1: | %+2: | %+3: ;
-	Genere = %+MASC: | %+FEMM: ;
-	Numero = %+SING: | %+PLUR: ;
+	Gender = %+MASC: | %+FEMM: ;
+	Number = %+SING: | %+PLUR: ;
 	Modif = %+DIM: | %+AUM: | %+VEZA: | %+VEZB: | %+PEG: | %+SUP: | %+C%_CE: | %+C%_CI: | %+C%_GLI: | %+C%_LA: | %+C%_LE: | %+C%_LI: | %+C%_LO: | %+C%_ME: | %+C%_MI: | %+C%_NE: | %+C%_SE: | %+C%_SI: | %+C%_TE: | %+C%_TI: | %+C%_VE: | %+C%_VI: ;
 
 Rules
 
 "Insert i for preceding c|g with a velar = n"
-	0:i <=> [c | g] _ (%+GLI:) (Head) (Modo) (Tempo) (Pers) (Genere) (Numero) (Modif) %*: [a | à | o | ò | u | ù] ;
+	0:i <=> [c | g] _ (%+GLI:) (Head) (Mode) (Tense) (Pers) (Gender) (Number) (Modif) %*: [a | à | o | ò | u | ù] ;
 
 "Insert h for preceding c|g with velar = y"
-	%+VEL%_Y:h <=> [c | g] _ (Head) (Modo) (Tempo) (Pers) (Genere) (Numero) (Modif) %*: [e | è | é | i | ì] ;
+	%+VEL%_Y:h <=> [c | g] _ (Head) (Mode) (Tense) (Pers) (Gender) (Number) (Modif) %*: [e | è | é | i | ì] ;
 
 "Insert h for c|g with velar = a - 1"
-	%+VEL%_A:h <=> [c | g] _ (Nonverbi) (Genere) (Numero) (Modif) %*: [e | è | é] ;
+	%+VEL%_A:h <=> [c | g] _ (NonVerbs) (Gender) (Number) (Modif) %*: [e | è | é] ;
 
 "Insert h for c|g with velar = a - 2"
-	%+VEL%_A:h <=> [c | g] _ (Nonverbi) (Genere) (Numero) (Modif) %*: i n ;
+	%+VEL%_A:h <=> [c | g] _ (NonVerbs) (Gender) (Number) (Modif) %*: i n ;
 
 "Insert i for c|g with velar = a"
-	%+VEL%_A:i <=> [c | g] _ (Verbi) (Modo) (Tempo) (Pers) (Genere) (Numero) %*: u ;
+	%+VEL%_A:i <=> [c | g] _ (Verbs) (Mode) (Tense) (Pers) (Gender) (Number) %*: u ;
 
 "Insert i for gl with velar = n"
-	0:i <=> g l _ (%+GLI:) (Head) (Modo) (Tempo) (Pers) (Genere) (Numero) (Modif) %*: [a | à | e | è | é | o | ò | u | ù] ;
+	0:i <=> g l _ (%+GLI:) (Head) (Mode) (Tense) (Pers) (Gender) (Number) (Modif) %*: [a | à | e | è | é | o | ò | u | ù] ;
 
 "Canceling of i with glide = n"
-	i:0 <=> _ (%+VEL%_A: | %+VEL%_Y:) (Head) (Modo) (Tempo) (Pers) (Genere) (Numero) (Modif) %*: i [a | à] ;
+	i:0 <=> _ (%+VEL%_A: | %+VEL%_Y:) (Head) (Mode) (Tense) (Pers) (Gender) (Number) (Modif) %*: i [a | à] ;
 
 "Canceling of i with glide = y"
-	i:0 <=> _ %+GLI: (Head) (Modo) (Tempo) (Pers) (Genere) (Numero) (Modif) %*: [i | ì] ;
+	i:0 <=> _ %+GLI: (Head) (Mode) (Tense) (Pers) (Gender) (Number) (Modif) %*: [i | ì] ;
 
 "Canceling of i with gn"
-	i:0 <=> g n (%+VEL%_A: | %+VEL%_Y: | %+GLI:) (Head) (Modo) (Tempo) (Pers) (Genere) (Numero) (Modif) %*: _ [a | à] ;
+	i:0 <=> g n (%+VEL%_A: | %+VEL%_Y: | %+GLI:) (Head) (Mode) (Tense) (Pers) (Gender) (Number) (Modif) %*: _ [a | à] ;
