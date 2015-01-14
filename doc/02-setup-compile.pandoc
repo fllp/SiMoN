@@ -39,7 +39,7 @@ make complete
 Given you have a copy of AnIta's sources and only want to compile those, you can override the default target by issuing the following command:
 
 ~~~
-make target=italian
+make target=italiano
 ~~~
 
 #### Keep Intermediate Binaries {-}
