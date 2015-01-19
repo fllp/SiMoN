@@ -60,9 +60,9 @@ Let's take a look at one of the context rules in SiMoN (originally from AnIta):
 
 The above rule is valid in the context of a *multichar symbol* `+VEL_A` that is preceded by either `c` or `g` and followed by the vowels `e`, `è` or `è`. A sequence of at least one symbol from `NonVerbs` and up to three more from `Gender`, `Number` and `Modif` can be present between the `+VEL_A` tag and the vowels. Upon execution this rule replaces the `+VEL_A` with the letter `h` and ensures the pronounciation remains intact.
 
-**An example**: The entry adjective *comico*[^x ](comical) for *feminine plural* without the infinitive part is:
+**An example**: The entry adjective *comico*[^x] (comical) for *feminine plural* without the infinitive part is:
 `comic+VEL_A+ADJ+FEMM+PLUR:+ADJ+FEMM+PLUR*e`. \
-Applying the rule produces *comic*h*e* instead of *comice*.
+Applying the rule produces the grammatically correct form *comic**h**e* instead of *comice*.
 
 
 [^x]: Since the rule only applies to non verbs and SiMoN currently contains only verbs, the example is taken from AnIta.
