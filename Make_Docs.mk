@@ -35,12 +35,14 @@ endef
 # mmd_title_block\
 #  pandoc_title_block\
 
-# doc_files = home.pdoc intro.pdoc compile-use.pdoc lexicon-doc.pdoc roadmap.pdoc
-
+# search for .pandoc files
 doc_files = $(notdir $(shell find doc -type f -name '*.pandoc' | sort -n));
 
+# search for .svg files
+image_names = $(basename $(shell find doc/img -type f -name '*.svg' -printf '%p ') );
+
 vpath %.pandoc doc/
-docs: SiMoN-Documentation.pdf
+docs: SiMoN-Documentation.pdf # graphics
 
 # little hack to have variable SPACE contain a whitespace
 EMPTY :=
@@ -49,3 +51,10 @@ SPACE := $(EMPTY) $(EMPTY)
 %.pdf: $(doc_files)
 	@pandoc $(pandoc_flags) -o $@ -f markdown$(subst $(SPACE),+,$(pandoc_extensions)) $^
 	@echo 'Documentation written to' $@
+
+graphics: $(addsuffix .png, $(image_names))
+	@echo $^ $(image_names)
+
+%.png:
+	inkscape -C -d=300 -f $(basename $@).svg -e $@
+	
