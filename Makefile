@@ -14,8 +14,10 @@ ifeq ($(keep-intermediates),yes)
   .SECONDARY:
 endif
 
-# use all steps by default and construct morpholocical generator
-default: $(target).generator.hfst
+default: check SiMoN
+
+# construct morpholocical analyzer/generator pair
+SiMoN: $(target).generator.hfst
 
 # remove HFST binaries and documentation file
 clean: $(shell find . -iname '*.hfst') $(shell find . -iname '*.lexc.hfst')
@@ -35,7 +37,7 @@ hfst-%:
 
 # convert XFST files to HFST binary format
 %.lexc.hfst: %.lexc
-	@echo -e '== Step 1: compile lexicon ==\n $^ to binary'
+	@echo -e '\n== Step 1: compile lexicon ==\n $^ to binary'
 	hfst-lexc $< -o $@
 	@echo -e ''
 
