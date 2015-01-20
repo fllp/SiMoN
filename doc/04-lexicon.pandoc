@@ -13,7 +13,7 @@ It closely follows the documentation of AnIta [@TamburiniMelandri.2012].
 ## Overview
 
 The Lexicon of SiMoN has a hierarchical tree structure, closely following that of AnIta.
-At present, SiMoN covers Sicilian morphology paradigms for [regular verbs](#regular-verb-lexicons) (p. \pageref{regular-verbs}), according to the grammar descriptions of J. K. Bonner [-@Bonner.2001].
+At present, SiMoN covers Sicilian morphology paradigms for [regular verbs](#regular-verb-lexicons), according to the grammar descriptions of J. K. Bonner [-@Bonner.2001].
 
 There are three sections to the lexicon:
 
@@ -23,7 +23,7 @@ There are three sections to the lexicon:
 
 ### The Root Lexicon
 
-While the verbal inflection patterns are documented in their [dedicated sections](#regular-verb-lexicons), the actual Sicilian verbs are listed in the *Root* lexicon:
+While the verbal inflection patterns are documented in their [dedicated section](#regular-verb-lexicons) \vpageref{sufVerbFirst} to \pageref{sufVerbLast}, the actual Sicilian verbs are listed in the *Root* lexicon:
 
 ~~~
 l_ammazzari:ammazz+V_ARI SufVerbAri ;
@@ -31,13 +31,9 @@ l_cantari:cant+V_ARI SufVerbAri ;
 l_durmiri:durm+V_IRI SufVerbIri ;
 ~~~
 
-These entries are called lemmas. Each lemma contains a verb in its infinitive form[^p]. Additionally, the lemma records the stem of the word (e.g. *cant* for *cantari*, to sing), its word class (verb, either ending in *ari* or *iri*) and the sub lexicon containing the inflectional suffixes of that word class (*[SufVerbAri](#sufverbari)* and *[ SufVerbIri ](#sufverbiri)*)
+These entries are called lemmas. Each lemma contains a verb in its nonfinite form^[prefixed with *l_* for easier discrimination from the generated inflected forms of that verb]. Additionally, the lemma records the stem of the word (e.g. *cant* for *cantari*, to sing), its word class (verb, either ending in *ari* or *iri*) and the sub lexicon containing the inflectional suffixes of that word class (*[SufVerbAri](#sufverbari)* and *[ SufVerbIri ](#sufverbiri)*)
 
-The vocabulary of SiMoN is taken from Bonner [-@Bonner.2001] and comprises of around 60 regular Sicilian verbs. Additionally a verb list automatically extracted from the [Sicilian Wikipedia][scn-wiki] pages is included[^v].
-
-[^v]: The verbs from Wikipedia have been picked according to a very basic pattern, matching regular inflectional endings. It is very likely that irregular forms are contained in this list as well.
-
-[^p]: Prefixed with *l_* for easier discrimination from the generated inflected forms of that verb
+The vocabulary of SiMoN is taken from Bonner [-@Bonner.2001] and comprises of around 60 regular Sicilian verbs. Additionally a verb list automatically extracted from the [Sicilian Wikipedia][scn-wiki] pages is included^[The verbs from Wikipedia have been picked according to a very basic pattern, matching regular inflectional suffixes. It is very likely that irregular forms are contained in this list as well.].
 
 ### Multichar Symbols
 
@@ -45,18 +41,16 @@ The *multicharacter symbols* can be seen as tags used to indicate the respective
 Examples are ``+V_ARI, +SING, +PLUR``. They denote a verb ending in the suffix *ari* and the number of a word (singular or plural).
 *multichar symbols* also act as variables in combination with the [ruleset definitions](#the-alphabet). In the context of the lexicon however, they serve as annotation tags containing grammatical and morphological information.
 
-- **ADD EXAMPLES FOR RULES W/ VARIABLES (maybe in chapter for rules)**
-
 For further information about *multichar symbols* and their syntax conventions, please refer to the [HFST-Documentation.][LexC-Tuto]
 
 ### Sub Lexicons
 
 A *sub lexicon* or *continuation class* (CCl) contains the inflectional suffixes of a word.
-Those suffixes are provided as a list of word endings each annotated with grammatical information like *gender*, *number*, *tense* or *mode*, marked by its equivalent multichar symbol respectively. Each suffix entry additionally contains a *multichar symbol* indicating to which word type it belongs.
-The sub lexicon for a verb is the corresponding conjugation pattern with the respective tenses of different modes for first, second and third person. Figure \ref{fig:structure} provides a visual representation of the lexicons structure.
+Those suffixes are provided as a list of word endings each annotated with grammatical information like *gender*, *number*, *tense* or *mode*, marked by its equivalent *multichar symbol* respectively. Each suffix entry additionally contains a *multichar symbol* indicating to which word type it belongs.
+The sub lexicon for a verb is the corresponding conjugation pattern with the respective tenses of different modes for first, second and third person. Figure \vref{fig:structure} provides a visual representation of the lexicons structure.
 
 Combining a words stem form a root lemma with the appropriate CCl yields the inflectional paradigm of that word. The generated forms of that paradigm are called *surface forms*. A surface form contains no *multichar symbols*, all grammatical information is suppressed through the rule set. On the '*surface*' of the lexicon (the actual inflected verb), the internal grammatical representation is not visible.
-Figure \ref{fig:surface-form} shows the surface form generation for 1st person plural of the Sicilian verb *to sleep* in conditional mode and present.
+Figure \vref{fig:surface-form} shows the surface form generation for 1st person plural of the Sicilian verb *to sleep* in conditional mode and present.
 
 ![Lexicon Structure\label{fig:structure}](doc/img/structure.png)
 
@@ -66,7 +60,7 @@ Figure \ref{fig:surface-form} shows the surface form generation for 1st person p
 
 ## Regular Verb Paradigms{#regular-verb-lexicons}
 
-\label{regular-verbs}
+\label{regular-paradigms}
 
 The special sub lexicons (or CCls) for sicilian regular verb forms created for SiMoN are described in sections \ref{sufVerbFirst} through \ref{sufVerbLast}.
 
