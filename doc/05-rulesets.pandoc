@@ -14,17 +14,18 @@ These are described in the sections \ref{ruleTypeFirst} to \ref{ruleTypeLast}.
 \label{ruleTypeFirst}
 
 The alphabet section contains a list of letters valid for the used language. In case of Sicilian this includes the letters *a* - *z* plus accented vowels like *à*, *â*, *è*, *é* and so on.
-All available *multichar symbols* are contained in the alphabet as well. They are listed as two-layer pairs that determine `0` as emission for each of them:
+All available *multichar symbols* are contained in the alphabet as well. They are listed as two-layer pairs that determine `0` as emission for each of them. An exemplary line from SiMoNs alphabet:
 
 ```
 +V_ARI:0  +V_IRI:0 +V_FIN:0 +V_NOFIN:0 +V_PP:0
 ```
 
-Thus, the line above filters any annotated verb and eliminates the symbols `V_ARI`, `V_IRI`, etc. from the final surface form of any verb.
+The line above filters all verbal features and eliminates the symbols `V_ARI`, `V_IRI`, etc. from the final surface form of a verb.
+All the other *mulitchar symbols* are included like this as well, resolving them all to `0`.
 
 ### Sets
 
-The (mathematical) sets defined for SiMoN are bags of letters, one containing all vowels (`Vowel`) the other containing all consonants (`Cons`) of the alphabet. These sets are used in the [context rules](#context-rules) and simplify accessing single letters by their type.
+The sets defined for SiMoN are bags of letters, one containing all vowels the other containing all consonants of the alphabet. These sets are used in the [context rules](#context-rules) and simplify accessing single letters by their type.
 
 ### Definitions
 
@@ -34,15 +35,15 @@ The definitions in the rule set could be described as categories for the *multic
 
 - the group `NonVerbs` contains all word classes but verbs
 
-    `+NN:`   `+NN_P:`  `+ADJ:`  `+ADJ`  ...
+    `+NN:`   `+NN_P:`  `+ADJ:`  `+ADJ` `+ADV` `+PRON`
 
 - included in `Verbs`, all the available verbal annotations are included:
 
-    `+V_ARI:`   `+V_IRI:`  `+V_FIN:`  `+V_NOFIN:`  `+V_PP:`
+    `+V_ARI`   `+V_IRI`  `+V_FIN`  `+V_NOFIN`  `+V_PP`
 
 - any tags labeling different modes for suffixes in the CCls are included in `Mode`:
 
-    `+INF:`  `+IND:`  `+SUBJ:`  `+COND:`  `+IMP:`  `+PART:`  `+GER:`
+    `+INF`  `+IND`  `+SUBJ`  `+COND`  `+IMP`  `+PART`  `+GER`
 
 The remaining definitions for `Head`, `Conj`, `Tense`, `Gender`, `Number` and `Modif` are composed analogously.
 Referring to these groups within in context sensitive rules allows the construction of complex constraints.
@@ -55,13 +56,13 @@ Let's take a look at one of the context rules in SiMoN (originally from AnIta):
 
 ```
 "Insert h for c|g with velar = a - 1"
-    %+VEL%_A:h <=> [c | g] _ (NonVerbs) (Gender) (Number) (Modif) %*: [e | è | é] ;
+    +VEL_A:h <=> [c | g] _ (NonVerbs) (Gender) (Number) (Modif) *: [e | è | é] ;
 ```
 
 The above rule is valid in the context of a *multichar symbol* `+VEL_A` that is preceded by either `c` or `g` and followed by the vowels `e`, `è` or `è`. A sequence of at least one symbol from `NonVerbs` and up to three more from `Gender`, `Number` and `Modif` can be present between the `+VEL_A` tag and the vowels. Upon execution this rule replaces the `+VEL_A` with the letter `h` and ensures the pronounciation remains intact.
 
-**An example**: The entry adjective *comico*[^x] (comical) for *feminine plural* without the infinitive part is:
-`comic+VEL_A+ADJ+FEMM+PLUR:+ADJ+FEMM+PLUR*e`. \
+**An example**: The entry for the adjective *comico*[^x] (comical) for *feminine plural* without the infinitive part is:
+`comic+VEL_A+ADJ+FEMM+PLUR:*e`. \
 Applying the rule produces the grammatically correct form *comic**h**e* instead of *comice*.
 
 
