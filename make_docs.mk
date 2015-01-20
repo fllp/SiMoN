@@ -34,6 +34,7 @@ define pandoc_extensions
  yaml_metadata_block\
  pipe_tables\
  table_captions\
+ inline_notes\
  header_attributes
 endef
 
@@ -57,7 +58,6 @@ docs: SiMoN-Documentation.pdf
 graphics: $(png_exports)
 
 %.pdf: $(doc_files)
-	@echo $(doc_files)
 	@pandoc $(pandoc_flags) -o $@ -f markdown$(subst $(SPACE),+,$(pandoc_extensions)) $^
 	@echo 'Documentation written to' $@
 
