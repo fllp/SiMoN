@@ -1,7 +1,7 @@
 target ?= siciliano
 keep-intermediates ?= no
 
-.PHONY : clean complete
+.PHONY : clean check
 
 # auto-detect AnIta files when in any subdir
 # ANITA = $(shell find . -type f -name 'italiano.*' -printf "%P\n" -quit | sed -e "s/\w\+\.\w\+\$//g")
@@ -13,7 +13,7 @@ ifeq ($(keep-intermediates),yes)
   .SECONDARY:
 endif
 
-default: check SiMoN
+default: SiMoN
 
 # construct morpholocical analyzer/generator pair
 SiMoN: $(target).generator.hfst
