@@ -13,12 +13,18 @@ Currently supported is the morphology of regular verbal conjugation with a lexic
 License
 -------------
 
-to be determined
+GPLv3
 
 Documentation
 -------------
 
-The documentation for SiMoN can be found either in *doc/* or as PDF (for release versions)
+The documentation for SiMoN can be found either in *doc/* (development versions) or as PDF (for release versions)
+
+Known Issues
+-------------
+
+- Lexicon (#8): multichars (*+FEMM*, *+MASC*) are still visible in surface forms for *past participle*.  
+Affected verb forms also are not recognized by SiMoN-AnIta bundle.
 
 Changelog/Roadmap
 -------------
