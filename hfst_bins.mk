@@ -1,5 +1,5 @@
 # compiles SiMoN & AnIta in the whole
-complete: it-scn.generator.hfst
+bundle: it-scn.analyzer.hfst
 
 check: hfst-lexc hfst-twolc hfst-invert hfst-compose-intersect hfst-union
 
@@ -19,17 +19,17 @@ hfst-%:
 	hfst-twolc $< -o $@
 	@echo -e ''
 
-# combine ruleset and lexicon binaries to analyzer FST
-%.analyzer.hfst: %.lexc.hfst %.twolc.hfst
+# combine ruleset and lexicon binaries to generator FST
+%.generator.hfst: %.lexc.hfst %.twolc.hfst
 	@echo '== Step 3: combine lexicon & rules =='
 	hfst-compose-intersect -v $^ -o $@
 	@echo -e ''
 
-# invert analyzer for use as generator
-%.generator.hfst : %.analyzer.hfst
-	@echo '== Step 4: get generator =='
+# invert analyzer for use as analyzer
+%.analyzer.hfst : %.generator.hfst
+	@echo '== Step 4: get analyzer =='
 	hfst-invert -v $< -o $@
 	@echo -e ''
 
-it-scn.analyzer.hfst: siciliano.analyzer.hfst italiano.analyzer.hfst
+it-scn.generator.hfst: siciliano.generator.hfst italiano.generator.hfst
 	hfst-union -v $^ -o $@
