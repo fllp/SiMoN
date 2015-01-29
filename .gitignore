@@ -4,6 +4,8 @@ arbeitsdaten
 *.hfst
 *.png
 italiano.*
+italiano-*
+siciliano-*
 doc/
 simon-files
 work-log/
