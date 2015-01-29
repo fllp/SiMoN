@@ -1,4 +1,4 @@
-[LexC-Tuto]: (https://kitwiki.csc.fi/twiki/bin/view/KitWiki/HfstLexcAndTwolcTutorial)
+[LexC-Tuto]: https://kitwiki.csc.fi/twiki/bin/view/KitWiki/HfstLexcAndTwolcTutorial#Lexc_for_more_info_visit_HfstLex
 [Multichar Symbols]: #multichar-symbols
 [scn-wiki]: https://scn.wikipedia.org/wiki/P%C3%A0ggina_principali
 
@@ -40,6 +40,60 @@ The vocabulary of SiMoN is taken from Bonner [-@Bonner.2001] and comprises of ar
 The *multicharacter symbols* can be seen as tags used to indicate the respective *POS* type and other grammatical informations of an entry in the lexicon.
 Examples are ``+V_ARI, +SING, +PLUR``. They denote a verb ending in the suffix *ari* and the number of a word (singular or plural).
 *multichar symbols* also act as variables in combination with the [ruleset definitions](#the-alphabet). In the context of the lexicon however, they serve as annotation tags containing grammatical and morphological information.
+
+### Symbol Definitions
+
+Below you find the *multichar symbols* present in SiMoN explaned:
+
++V_ARI:
+  ~ari
++V_IRI:
+  ~iri
++V_FIN:
+  ~finite verbs
++V_NOFIN:
+  ~nonfinite verbs
++V_PP:
+  ~ past participle verbs
++SING:
+  ~singular
++PLUR:
+  ~plural
++INF:
+  ~infinitve mode
++IND:
+  ~
++SUBJ:
+  ~
++COND:
+  ~
++IMP:
+  ~
++PART:
+  ~
++GER:
+  ~
++PRES:
+  ~
++IMPERF:
+  ~
++PAST:
+  ~
++FUT:
+  ~
++1:
+  ~
++2:
+  ~
++3:
+  ~
++GLI:
+  ~
++VEL_A:
+  ~
++VEL_Y:
+  ~
+
 
 For further information about *multichar symbols* and their syntax conventions, please refer to the [HFST-Documentation.][LexC-Tuto]
 

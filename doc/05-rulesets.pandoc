@@ -2,12 +2,15 @@
 
 \label{ch:rules}
 
-As mentioned before, SiMoN has a lexicon and a rule compound. While the former contains all the necessary lemmas and patterns to generate inflectional paradigms, the latter determines how the *multichar symbols* are treated and additionally takes care of accounting for particular morpho-phonetic phenomena, like gemination or ..., in the generation process applying to certain surface forms. The *surface forms* introduced in the previous chapter are built from the lexicon with the use of these rules.
+[TWOLC-doc]: https://kitwiki.csc.fi/twiki/bin/view/KitWiki/HfstTwolC
+
+As mentioned before, SiMoN has a lexicon and a rule compound. While the former contains all the necessary lemmas and patterns to generate inflectional paradigms, the latter determines how the *multichar symbols* are treated and additionally takes care of accounting for particular morpho-phonetic phenomena like gemination in the generation process applying to certain surface forms. The *surface forms* introduced in the previous chapter are built from the lexicon with the use of these rules. For technical details regarding the implementation as FSA, see [@Karttunen.2001].
 
 ## The rule set sections
 
 The rule set of SiMoN is divided into specific parts, just as the lexicon.
 These are described in the sections \ref{ruleTypeFirst} to \ref{ruleTypeLast}.
+A complete introduction to writing rule sets can be found in the [official HFST documentation][TWOLC-doc]
 
 ### Alphabet
 
@@ -21,7 +24,7 @@ All available *multichar symbols* are contained in the alphabet as well. They ar
 ```
 
 The line above filters all verbal features and eliminates the symbols `V_ARI`, `V_IRI`, etc. from the final surface form of a verb.
-All the other *mulitchar symbols* are included like this as well, resolving them all to `0`.
+All the other *mulitchar symbols* are included like this as well, resolving them all to the symbol `0`.
 
 ### Sets
 

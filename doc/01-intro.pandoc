@@ -50,7 +50,7 @@ Since grammatical features should not be visible when generating inflected forms
 
 \newpage
 
-Another aspect of the *two-level* concept is the efficiency of the algorithm used for implementation. It allows executing the combination of patterns and application of rules in parallel and increases speed. Further details about the underlying mathematics can be found in the article by E. Antworth [@Antworth.1991] and the original work about *two-level* morphology [@Kimmo.1983]. \
+Another aspect of the *two-level* concept is the efficiency of the algorithm used for implementation. It allows executing the combination of patterns and application of rules in parallel and increases speed. Further details about the underlying concepts and their implementation can be found in the articles by E. Antworth [@Antworth.1991], L. Karttunen [@Karttunen.2001] and the original work about *two-level* morphology Koskenniemi [@Kimmo.1983]. \
 SiMoN's lexicon and rules are constructed in a way that allows *bidirectional* access to the morphological information in order to both analyze and generate words with the lemmas available in the lexicon. The features of a lemma are displayed for linguistic analysis both when looking up or generating a word in the lexicon.
 The structure allowing such usage is explained in the dedicated chapters \vref{ch:lexicon} and \vref{ch:rules}.
 
