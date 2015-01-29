@@ -3,6 +3,7 @@ arbeitsdaten
 *.swp
 *.hfst
 *.png
+*.pdf
 italiano.lexc
 italiano.twolc
 SiMoN-Documentation.pdf
@@ -11,8 +12,4 @@ doc/bib/references-all.bib
 doc/bib/gesamte-literatur_aufgramt.bib
 doc/docs
 simon-files
-work-log/Zeiterfassung-15.12.2014-21.12.2014.html
-work-log/Zeiterfassung-22.12.2014-28.12.2014.html
-work-log/zeiterfassung-14.12.14.html
-hamster-applet
-Zeiterfassung-*
+work-log/
