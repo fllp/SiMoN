@@ -41,28 +41,30 @@ The *multicharacter symbols* can be seen as tags used to indicate the respective
 Examples are ``+V_ARI, +SING, +PLUR``. They denote a verb ending in the suffix *ari* and the number of a word (singular or plural).
 *multichar symbols* also act as variables in combination with the [ruleset definitions](#the-alphabet). In the context of the lexicon however, they serve as annotation tags containing grammatical and morphological information.
 
-### Symbol Definitions
+#### Symbol Definitions
 
 Below you find the *multichar symbols* present in SiMoN explaned:
 
 +V_ARI:
-  ~ari
+  ~ ari
 +V_IRI:
-  ~iri
+  ~ iri
 +V_FIN:
-  ~finite verbs
+  ~ finite verbs
 +V_NOFIN:
-  ~nonfinite verbs
+  ~ nonfinite verbs
 +V_PP:
   ~ past participle verbs
+
 +SING:
-  ~singular
+  ~ singular
 +PLUR:
-  ~plural
+  ~ plural
 +INF:
-  ~infinitve mode
+  ~ infinitve mode
 +IND:
-  ~
+  ~ indicative mode
+
 +SUBJ:
   ~
 +COND:
