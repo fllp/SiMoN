@@ -10,7 +10,7 @@ This chapter gives an overview of the general structure of SiMoN's lexicon and t
 It closely follows the documentation of AnIta [@TamburiniMelandri.2012].
 
 
-## Overview
+## Components
 
 The Lexicon of SiMoN has a hierarchical tree structure, closely following that of AnIta.
 At present, SiMoN covers Sicilian morphology paradigms for [regular verbs](#regular-verb-lexicons), according to the grammar descriptions of J. K. Bonner [-@Bonner.2001].
@@ -41,63 +41,60 @@ The *multicharacter symbols* can be seen as tags used to indicate the respective
 Examples are ``+V_ARI, +SING, +PLUR``. They denote a verb ending in the suffix *ari* and the number of a word (singular or plural).
 *multichar symbols* also act as variables in combination with the [ruleset definitions](#the-alphabet). In the context of the lexicon however, they serve as annotation tags containing grammatical and morphological information.
 
-#### Symbol Definitions
+#### Symbol Meanings{-}
 
-Below you find the *multichar symbols* present in SiMoN explaned:
+Below you find the *multichar symbols* present in SiMoN explained:
 
-+V_ARI:
-  ~ ari
-+V_IRI:
-  ~ iri
-+V_FIN:
-  ~ finite verbs
-+V_NOFIN:
-  ~ nonfinite verbs
-+V_PP:
-  ~ past participle verbs
+symbol  | meaning
+:-------|:-------
+**+V_ARI** | has suffix *ari*
+**+V_IRI** | has suffix *iri*
+**+V_FIN** | finite form
+**+V_NOFIN** | nonfinite/gerund form
+**+V_PP** |  past participle form
 
-+SING:
-  ~ singular
-+PLUR:
-  ~ plural
-+INF:
-  ~ infinitve mode
-+IND:
-  ~ indicative mode
+ :*multichar symbols* for verb forms
 
-+SUBJ:
-  ~
-+COND:
-  ~
-+IMP:
-  ~
-+PART:
-  ~
-+GER:
-  ~
-+PRES:
-  ~
-+IMPERF:
-  ~
-+PAST:
-  ~
-+FUT:
-  ~
-+1:
-  ~
-+2:
-  ~
-+3:
-  ~
-+GLI:
-  ~
-+VEL_A:
-  ~
-+VEL_Y:
-  ~
+symbol  | meaning
+:-------|:-------
+**+SING** | singular
+**+PLUR** | plural
+**+1:** | first person
+**+2:** | second person
+**+3:** | third person
 
+:*multichar symbols* for gender and number
 
-For further information about *multichar symbols* and their syntax conventions, please refer to the [HFST-Documentation.][LexC-Tuto]
+symbol  | meaning
+:-------|:-------
+**+INF** |  infinitve
+**+IND** | indicative
+**+SUBJ** | subjunctive
+**+COND** | conditional
+**+IMP** |  imperative
+
+ :*multichar symbols* for modes
+
+symbol  | meaning
+:-------|:-------
+**+PART** | participle tense
+**+GER** | gerund
+**+PRES** | present tense
+**+IMPERF** | imperfect tense
+**+PAST** | past tense
+**+FUT** | future tense
+
+:*multichar symbols* for tenses
+
+symbol  | meaning
+ :-------|:-------
+**+GLI** | stem with *glide*
+**+VEL_A** | velar stem ending
+**+VEL_Y** | velar stem ending
+
+:special *multichar symbols* (*phonetics*, see section \vref{phonetics-symbols})
+
+The complete manual to *multichar symbols* and their syntax conventions can be found in the [HFST-Documentation.][LexC-Tuto]
 
 ### Sub Lexicons
 
