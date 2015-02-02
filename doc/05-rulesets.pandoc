@@ -73,6 +73,8 @@ The comma separated arrow characters signify the available context contstraints:
 
 Let's take a look at one of the context rules in SiMoN (originally from AnIta):
 
+\label{phonetics-symbols}
+
 ```
 "Insert h for c|g with velar = a - 1"
     +VEL_A:h <=> [c | g] _ (NonVerbs) (Gender) (Number) (Modif) *: [e | è | é] ;
