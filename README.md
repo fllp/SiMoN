@@ -20,24 +20,11 @@ Documentation
 
 The documentation for SiMoN can be found either in *doc/* (development versions) or as PDF (for release versions)
 
-Known Issues
+
+Changelog
 -------------
 
-- Lexicon (#8): multichars (*+FEMM*, *+MASC*) are still visible in surface forms for *past participle*.  
-Affected verb forms also are not recognized by SiMoN-AnIta bundle.
-
-Changelog/Roadmap
--------------
-
-**Released** versions are bold,
-*planned* features italic.
-
-SiMoN 1.1
-
-*add frequent irregular verbs*
-*include custom morpho-phonetic rules for Sicilian*
-
-SiMoN 1.0
+**SiMoN 1.0**
 
 Initial puplic release
 including regular verbal morphology
