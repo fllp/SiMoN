@@ -575,6 +575,79 @@ LEXICON Root
 !  not sure if this is actually sicilian or only italian
 !    l_fari+V_PP+PART+PRES+MASC+PLUR:facenti #;
 
+!------- common verbs --------
+
+    ! -- indicative
+    l_dari+V_FIN+IND+PRES+1+SING:dugnu #;
+    l_dari+V_FIN+IND+PRES+2+SING:duni #;
+    l_dari+V_FIN+IND+PRES+2+SING:dai #;
+    l_dari+V_FIN+IND+PRES+3+SING:duna #;
+    l_dari+V_FIN+IND+PRES+3+SING:da #;
+    l_dari+V_FIN+IND+PRES+1+PLUR:damu #;
+    l_dari+V_FIN+IND+PRES+2+PLUR:dati #;
+    l_dari+V_FIN+IND+PRES+3+PLUR:dunanu #;
+    l_dari+V_FIN+IND+PRES+3+PLUR:dannu #;
+
+    l_dari+V_FIN+IND+IMPERF+1+SING:detti #;
+    l_dari+V_FIN+IND+IMPERF+1+SING:desi #;
+    l_dari+V_FIN+IND+IMPERF+2+SING:dasti #;
+    l_dari+V_FIN+IND+IMPERF+3+SING:detti #;
+    l_dari+V_FIN+IND+IMPERF+3+SING:desi #;
+    l_dari+V_FIN+IND+IMPERF+1+PLUR:dettimu #;
+    l_dari+V_FIN+IND+IMPERF+1+PLUR:desimu #;
+    l_dari+V_FIN+IND+IMPERF+2+PLUR:dastivu #;
+    l_dari+V_FIN+IND+IMPERF+3+PLUR:dettiru #;
+    l_dari+V_FIN+IND+IMPERF+3+PLUR:desiru #;
+
+    ! -- imperative
+    l_dari+V_FIN+IMP+PRES+2+SING:duna #;
+    l_dari+V_FIN+IMP+PRES+2+SING:dugna #;
+    l_dari+V_FIN+IMP+PRES+3+SING:dassi #;
+    l_dari+V_FIN+IMP+PRES+1+PLUR:damu #;
+    l_dari+V_FIN+IMP+PRES+2+PLUR:dati #;
+    l_dari+V_FIN+IMP+PRES+3+PLUR:dassiru #;
+
+    ! -- indicative
+    l_stari+V_FIN+IND+PRES+1+SING:staiu #;
+    l_stari+V_FIN+IND+PRES+2+SING:stai #;
+    l_stari+V_FIN+IND+PRES+2+SING:sta' #;
+    l_stari+V_FIN+IND+PRES+3+SING:sta#;
+    l_stari+V_FIN+IND+PRES+1+PLUR:stamu #;
+    l_stari+V_FIN+IND+PRES+2+PLUR:stati #;
+    l_stari+V_FIN+IND+PRES+3+PLUR:stannu #;
+
+    l_stari+V_FIN+IND+IMPERF+1+SING:stetti #;
+    l_stari+V_FIN+IND+IMPERF+1+SING:stesi #;
+    l_stari+V_FIN+IND+IMPERF+2+SING:stasti #;
+    l_stari+V_FIN+IND+IMPERF+3+SING:stetti #;
+    l_stari+V_FIN+IND+IMPERF+3+SING:stesi #;
+    l_stari+V_FIN+IND+IMPERF+1+PLUR:stettimu #;
+    l_stari+V_FIN+IND+IMPERF+1+PLUR:stesimu #;
+    l_stari+V_FIN+IND+IMPERF+2+PLUR:stastivu #;
+    l_stari+V_FIN+IND+IMPERF+3+PLUR:stettiru #;
+    l_stari+V_FIN+IND+IMPERF+3+PLUR:stesiru #;
+
+    ! -- imperative
+    l_stari+V_FIN+IMP+PRES+2+SING:staia #;
+    l_stari+V_FIN+IMP+PRES+2+SING:sta' #;
+    l_stari+V_FIN+IMP+PRES+3+SING:stassi #;
+    l_stari+V_FIN+IMP+PRES+1+PLUR:stamu #;
+    l_stari+V_FIN+IMP+PRES+2+PLUR:stati #;
+    l_stari+V_FIN+IMP+PRES+3+PLUR:stassiru #;
+
+!TODO:
+    ! dari/stari: indicative, cond, ...
+    ! l_diri+V_
+    ! l_putiri+V_
+    ! l_iri+V_
+    ! l_vuliri+V_
+    ! l_sapiri+V_
+    ! l_veniri+V_
+    ! l_teniri+V_
+    ! l_puniri+V_
+    ! l_vidiri+V_
+    ! l_duviri+V_
+
 LEXICON SiriEssiri
 
 ! == conjugation paradigm for essiri (and alternate form siri)
