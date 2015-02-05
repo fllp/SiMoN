@@ -102,7 +102,7 @@ A *sub lexicon* or *continuation class* (CCl) contains the inflectional suffixes
 Those suffixes are provided as a list of word endings each annotated with grammatical information like *gender*, *number*, *tense* or *mode*, marked by its equivalent *multichar symbol* respectively. Each suffix entry additionally contains a *multichar symbol* indicating to which word type it belongs.
 The sub lexicon for a verb is the corresponding conjugation pattern with the respective tenses of different modes for first, second and third person. Figure \vref{fig:structure} provides a visual representation of the lexicons structure.
 
-Combining a words stem form a root lemma with the appropriate CCl yields the inflectional paradigm of that word. The generated forms of that paradigm are called *surface forms*. A surface form contains no *multichar symbols*, all grammatical information is suppressed through the rule set. On the '*surface*' of the lexicon (the actual inflected verb), the internal grammatical representation is not visible.
+Combining the stem of a word from the lemmas with the appropriate CCl yields the inflectional paradigm of that word. The generated forms of that paradigm are called *surface forms*. A surface form contains no *multichar symbols*, all grammatical information is suppressed through the rule set. On the '*surface*' of the lexicon (the actual inflected verb), the internal grammatical representation is not visible.
 Figure \vref{fig:surface-form} shows the surface form generation for 1st person plural of the Sicilian verb *to sleep* in conditional mode and present.
 
 ![Lexicon Structure\label{fig:structure}](doc/img/structure.png)
@@ -115,7 +115,7 @@ Figure \vref{fig:surface-form} shows the surface form generation for 1st person 
 
 \label{regular-paradigms}
 
-The special sub lexicons (or CCls) for sicilian regular verb forms created for SiMoN are described in sections \ref{sufVerbFirst} through \ref{sufVerbLast}.
+The special sub lexicons (or CCls) for Sicilian regular verb forms created for SiMoN are described in sections \ref{sufVerbFirst} through \ref{sufVerbLast}.
 
 ### SufVerbAri
 

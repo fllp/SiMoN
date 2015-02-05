@@ -22,14 +22,14 @@ POS:
   ~ **P**art **O**f **S**peech (tagging) - identifying word types (verb, noun, adverb,...) in a text
 
 lemma:
-  ~ entry in a (linguistic) lexicon, providing the basic form of a word plus grammatical information
+  ~ entry in a (linguistic) lexicon, providing the basic form of a word
 
 paradigm:
   ~ contains a 'list' of word forms belonging to the same word
     + in the case of SiMoN, a paradigm holds all inflectional forms of a lemma
 
 FST:
-  ~ **f**inite **s**tate **t**ransducer - mathematical algorithms from the theory of (finite state) automata; core technology the *two-level morphology* (see section \ref{sec:two-level}) builds on
+  ~ **F**inite **S**tate **T**ransducer - mathematical algorithms from the theory of (finite state) automata; core technology the *two-level morphology* (see section \ref{sec:two-level}) builds on
 
 HFST:
   ~ **H**elsinki **F**inite **S**tate **T**echnology - suite of applications that are based on FSTs, developedat the University of Helsinki
@@ -48,7 +48,7 @@ Since grammatical features should not be visible when generating inflected forms
 
 \newpage
 
-Another aspect of the *two-level* concept is the efficiency of the algorithm used for implementation. It allows executing the combination of patterns and application of rules in parallel and increases speed. Further details about the underlying concepts and their implementation can be found in the articles by E. Antworth [@Antworth.1991], L. Karttunen [@Karttunen.2001] and the original work about *two-level* morphology Koskenniemi [@Kimmo.1983]. \
+Another aspect of the *two-level* concept is the efficiency of the algorithm used for implementation. It allows executing the combination of patterns and application of rules in parallel and increases speed. Further details about the underlying concepts and their implementation can be found in the articles by E. Antworth [-@Antworth.1991], L. Karttunen [-@Karttunen.2001] and the original work about *two-level* morphology [@Kimmo.1983]. \
 SiMoN's lexicon and rules are constructed in a way that allows *bidirectional* access to the morphological information in order to both analyze and generate words with the lemmas available in the lexicon. The features of a lemma are displayed for linguistic analysis both when looking up or generating a word in the lexicon.
 The structure allowing such usage is explained in the dedicated chapters \vref{ch:lexicon} and \vref{ch:rules}.
 

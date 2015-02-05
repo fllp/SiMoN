@@ -24,11 +24,11 @@ Even though GNU Make is [available for Windows](www.mingw.org), users of that pl
 
 ### Make Options
 
-The default behaviour is to compile the generator for sicilian morphology only.
+The default behaviour is to compile the generator for Sicilian morphology only.
 
 #### All In One {-}
 
-For convenience, there is an additional command that builds all parts of SiMoN and AnIta respectively and combines them into a single analyzer-generator pair that can parse italian and sicilian at the same time.
+For convenience, there is an additional command that builds all parts of SiMoN and AnIta respectively and combines them into a single analyzer-generator pair that can parse Italian and Sicilian at the same time.
 
 > **Note:** This needs AnIta's files to be present within SiMoN's directory.
 

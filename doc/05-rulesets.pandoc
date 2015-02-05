@@ -56,11 +56,28 @@ Referring to these groups within in context sensitive rules allows the construct
 Context rules check for specific conditions in the context of a character and execute certain actions if these conditions are met. The general form of these rules looks like this:
 
 ```
-Symbol:Replacement =>,<=,<=>,\<= [set of left-hand symbols] _ (optional multichar symbols) [set of right-hand symbols]
+S:R =>,<=,<=>,\<= [LH] _ (OPT) [RH]
 ```
 
 The `_` character signifies the center of context in which the specified replacement should be applied.
-The comma separated arrow characters signify the available context contstraints:
+For better readability the different parts are labeled with abbreviations:
+
+S:
+  ~ symbol that is going to be replaced (eg. a vowel or a specific *multichar symbol*)
+
+R:
+  ~ symbol replacing `S`
+
+LH:
+  ~ left hand context (eg. a consonant), may also be a set of characters
+
+OPT:
+  ~ optional context symbols, containing *multichar symbols* or sets of them (definition names)
+
+RH:
+  ~ right hand context
+
+The comma separated arrow characters signify the available context constraints:
 
 `=>`:
   ~ specifies contexts in which provided replacement is valid for given symbol
