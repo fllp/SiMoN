@@ -1,4 +1,4 @@
-[LexC-Tuto]: (https://kitwiki.csc.fi/twiki/bin/view/KitWiki/HfstLexcAndTwolcTutorial)
+[LexC-Tuto]: https://kitwiki.csc.fi/twiki/bin/view/KitWiki/HfstLexcAndTwolcTutorial#Lexc_for_more_info_visit_HfstLex
 [Multichar Symbols]: #multichar-symbols
 [scn-wiki]: https://scn.wikipedia.org/wiki/P%C3%A0ggina_principali
 
@@ -10,7 +10,7 @@ This chapter gives an overview of the general structure of SiMoN's lexicon and t
 It closely follows the documentation of AnIta [@TamburiniMelandri.2012].
 
 
-## Overview
+## Components
 
 The Lexicon of SiMoN has a hierarchical tree structure, closely following that of AnIta.
 At present, SiMoN covers Sicilian morphology paradigms for [regular verbs](#regular-verb-lexicons), according to the grammar descriptions of J. K. Bonner [-@Bonner.2001].
@@ -41,7 +41,60 @@ The *multicharacter symbols* can be seen as tags used to indicate the respective
 Examples are ``+V_ARI, +SING, +PLUR``. They denote a verb ending in the suffix *ari* and the number of a word (singular or plural).
 *multichar symbols* also act as variables in combination with the [ruleset definitions](#the-alphabet). In the context of the lexicon however, they serve as annotation tags containing grammatical and morphological information.
 
-For further information about *multichar symbols* and their syntax conventions, please refer to the [HFST-Documentation.][LexC-Tuto]
+#### Symbol Meanings{-}
+
+Below you find the *multichar symbols* present in SiMoN explained:
+
+symbol  | meaning
+:-------|:-------
+**+V_ARI** | has suffix *ari*
+**+V_IRI** | has suffix *iri*
+**+V_FIN** | finite form
+**+V_NOFIN** | nonfinite/gerund form
+**+V_PP** |  past participle form
+
+ :*multichar symbols* for verb forms
+
+symbol  | meaning
+:-------|:-------
+**+SING** | singular
+**+PLUR** | plural
+**+1:** | first person
+**+2:** | second person
+**+3:** | third person
+
+:*multichar symbols* for gender and number
+
+symbol  | meaning
+:-------|:-------
+**+INF** |  infinitve
+**+IND** | indicative
+**+SUBJ** | subjunctive
+**+COND** | conditional
+**+IMP** |  imperative
+
+ :*multichar symbols* for modes
+
+symbol  | meaning
+:-------|:-------
+**+PART** | participle tense
+**+GER** | gerund
+**+PRES** | present tense
+**+IMPERF** | imperfect tense
+**+PAST** | past tense
+**+FUT** | future tense
+
+:*multichar symbols* for tenses
+
+symbol  | meaning
+ :-------|:-------
+**+GLI** | stem with *glide*
+**+VEL_A** | velar stem ending
+**+VEL_Y** | velar stem ending
+
+:special *multichar symbols* (*phonetics*, see section \vref{phonetics-symbols})
+
+The complete manual to *multichar symbols* and their syntax conventions can be found in the [HFST-Documentation.][LexC-Tuto]
 
 ### Sub Lexicons
 
@@ -49,7 +102,7 @@ A *sub lexicon* or *continuation class* (CCl) contains the inflectional suffixes
 Those suffixes are provided as a list of word endings each annotated with grammatical information like *gender*, *number*, *tense* or *mode*, marked by its equivalent *multichar symbol* respectively. Each suffix entry additionally contains a *multichar symbol* indicating to which word type it belongs.
 The sub lexicon for a verb is the corresponding conjugation pattern with the respective tenses of different modes for first, second and third person. Figure \vref{fig:structure} provides a visual representation of the lexicons structure.
 
-Combining a words stem form a root lemma with the appropriate CCl yields the inflectional paradigm of that word. The generated forms of that paradigm are called *surface forms*. A surface form contains no *multichar symbols*, all grammatical information is suppressed through the rule set. On the '*surface*' of the lexicon (the actual inflected verb), the internal grammatical representation is not visible.
+Combining the stem of a word from the lemmas with the appropriate CCl yields the inflectional paradigm of that word. The generated forms of that paradigm are called *surface forms*. A surface form contains no *multichar symbols*, all grammatical information is suppressed through the rule set. On the '*surface*' of the lexicon (the actual inflected verb), the internal grammatical representation is not visible.
 Figure \vref{fig:surface-form} shows the surface form generation for 1st person plural of the Sicilian verb *to sleep* in conditional mode and present.
 
 ![Lexicon Structure\label{fig:structure}](doc/img/structure.png)
@@ -62,7 +115,7 @@ Figure \vref{fig:surface-form} shows the surface form generation for 1st person 
 
 \label{regular-paradigms}
 
-The special sub lexicons (or CCls) for sicilian regular verb forms created for SiMoN are described in sections \ref{sufVerbFirst} through \ref{sufVerbLast}.
+The special sub lexicons (or CCls) for Sicilian regular verb forms created for SiMoN are described in sections \ref{sufVerbFirst} through \ref{sufVerbLast}.
 
 ### SufVerbAri
 

@@ -2,14 +2,16 @@
 
 \label{ch:rules}
 
-As mentioned before, SiMoN has a lexicon and a rule compound. While the former contains all the necessary lemmas and patterns to generate inflectional paradigms, the latter determines how the *multichar symbols* are treated and additionally takes care of accounting for particular morpho-phonetic phenomena, like gemination or ..., in the generation process applying to certain surface forms. The *surface forms* introduced in the previous chapter are built from the lexicon with the use of these rules.
+[TWOLC-doc]: https://kitwiki.csc.fi/twiki/bin/view/KitWiki/HfstTwolC
 
-## The rule set sections
+As mentioned before, SiMoN has a lexicon and a rule compound. While the former contains all the necessary lemmas and patterns to generate inflectional paradigms, the latter determines how the *multichar symbols* are treated and additionally takes care of accounting for particular morpho-phonetic phenomena like gemination in the generation process applying to certain surface forms. The *surface forms* introduced in the previous chapter are built from the lexicon with the use of these rules. For technical details regarding the implementation as FSA, see [@Karttunen.2001].
 
-The rule set of SiMoN is divided into specific parts, just as the lexicon.
-These are described in the sections \ref{ruleTypeFirst} to \ref{ruleTypeLast}.
+## The rule set sections{-}
 
-### Alphabet
+The rule set of SiMoN is divided into specific parts, just as the lexicon. As of now SiMoN itself formulates no custom rules, the included rules file is a lightly adjusted copy of AnIta's rule set. The respective components are described  below.
+A complete introduction to writing rule sets can be found in the [official HFST documentation][TWOLC-doc].
+
+### Alphabet{-}
 
 \label{ruleTypeFirst}
 
@@ -21,13 +23,13 @@ All available *multichar symbols* are contained in the alphabet as well. They ar
 ```
 
 The line above filters all verbal features and eliminates the symbols `V_ARI`, `V_IRI`, etc. from the final surface form of a verb.
-All the other *mulitchar symbols* are included like this as well, resolving them all to `0`.
+All the other *mulitchar symbols* are included like this as well, resolving them all to the symbol `0`.
 
-### Sets
+### Sets{-}
 
 The sets defined for SiMoN are bags of letters, one containing all vowels the other containing all consonants of the alphabet. These sets are used in the [context rules](#context-rules) and simplify accessing single letters by their type.
 
-### Definitions
+### Definitions{-}
 
 The definitions in the rule set could be described as categories for the *multichar symbols* that represent grammatical information. They allow grouping specific information together.
 
@@ -49,22 +51,55 @@ The remaining definitions for `Head`, `Conj`, `Tense`, `Gender`, `Number` and `M
 Referring to these groups within in context sensitive rules allows the construction of complex constraints.
 
 
-### Context rules
+### Context rules{-}
 
-Context rules check for specific conditions in the context of a character and execute certain actions if these conditions are met.
+Context rules check for specific conditions in the context of a character and execute certain actions if these conditions are met. The general form of these rules looks like this:
+
+```
+S:R =>,<=,<=>,\<= [LH] _ (OPT) [RH]
+```
+
+The `_` character signifies the center of context in which the specified replacement should be applied.
+For better readability the different parts are labeled with abbreviations:
+
+S:
+  ~ symbol that is going to be replaced (eg. a vowel or a specific *multichar symbol*)
+
+R:
+  ~ symbol replacing `S`
+
+LH:
+  ~ left hand context (eg. a consonant), may also be a set of characters
+
+OPT:
+  ~ optional context symbols, containing *multichar symbols* or sets of them (definition names)
+
+RH:
+  ~ right hand context
+
+The comma separated arrow characters signify the available context constraints:
+
+`=>`:
+  ~ specifies contexts in which provided replacement is valid for given symbol
+`<=`:
+  ~ constraints certain replacement to specific context
+`<=>`:
+  ~ requires exact match for symbol and context
+`\<=`:
+  ~ excludes symbol replacement from specified context
+
 Let's take a look at one of the context rules in SiMoN (originally from AnIta):
+
+\label{phonetics-symbols}
 
 ```
 "Insert h for c|g with velar = a - 1"
     +VEL_A:h <=> [c | g] _ (NonVerbs) (Gender) (Number) (Modif) *: [e | è | é] ;
 ```
 
-The above rule is valid in the context of a *multichar symbol* `+VEL_A` that is preceded by either `c` or `g` and followed by the vowels `e`, `è` or `è`. A sequence of at least one symbol from `NonVerbs` and up to three more from `Gender`, `Number` and `Modif` can be present between the `+VEL_A` tag and the vowels. Upon execution this rule replaces the `+VEL_A` with the letter `h` and ensures the pronounciation remains intact.
-
-**An example**: The entry for the adjective *comico*[^x] (comical) for *feminine plural* without the infinitive part is:
-`comic+VEL_A+ADJ+FEMM+PLUR:*e`. \
-Applying the rule produces the grammatically correct form *comic**h**e* instead of *comice*.
-
+The above rule is valid in the context of a lemma including the *multichar symbol* `+VEL_A` that is preceded by either `c` or `g` and has its stem followed by the vowels `e`, `è` or `è`. The definition names within the braces are optional. Depending on whether a verb or a noun is matched with this particular rule, the noun feature groups `NonVerbs` and `Modif` are skipped. Upon execution this rule replaces the `+VEL_A` with the letter `h` and ensures the pronounciation remains intact. \
+For example, the lemma entry for the adjective *comico*[^x] (comical) for *feminine plural* (without the infinitive part) is:
+`comic+VEL_A+ADJ+FEMM+PLUR:*e`. Applying the rule produces the grammatically correct form *comic**h**e* instead of *comice*.
 
 [^x]: Since the rule only applies to non verbs and SiMoN currently contains only verbs, the example is taken from AnIta.
 
