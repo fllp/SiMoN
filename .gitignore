@@ -2,4 +2,14 @@ simon.wiki/
 arbeitsdaten
 *.swp
 *.hfst
-italiano.lexc italiano.twolc
+*.png
+*.pdf
+italiano.lexc
+italiano.twolc
+SiMoN-Documentation.pdf
+doc/bib/originaldaten/
+doc/bib/references-all.bib
+doc/bib/gesamte-literatur_aufgramt.bib
+doc/docs
+simon-files
+work-log/

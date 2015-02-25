@@ -1,25 +1,25 @@
-file ?= siciliano
-# einfache ersetzung: $(file:%.lexc=%.foo) -> pattern substitution
+TARGET ?= siciliano
+keep-intermediates ?= no
 
-# use all steps by default and construct word generator
-default: build-generator
+.PHONY : clean check
 
-compile-lexicon-and-rules: siciliano.lexc.hfst siciliano.twolc.hfst
+# auto-detect AnIta files when in any subdir
+# ANITA = $(shell find . -type f -name 'italiano.*' -printf "%P\n" -quit | sed -e "s/\w\+\.\w\+\$//g")
+VPATH = ./AnIta-v1.2core:./v1.2core:./*:$(ANITA)
 
-combine-to-analyzer: siciliano.analyzer.hfst
+# empties .SECONDARY if set to yes via command line,
+# thus rendering intermediates 'important' to keep
+ifeq ($(KEEP-INTERMEDIATES),yes)
+  .SECONDARY:
+endif
 
-build-generator: siciliano.generator.hfst
+default: SiMoN
 
-# convert XFST files to HFST binary format
-%.lexc.hfst: %.lexc
-	hfst-lexc $< -o $@
-%.twolc.hfst: %.twolc
-	hfst-twolc $< -o $@
+# construct morpholocical analyzer/generator pair
+SiMoN: $(TARGET).generator.hfst $(TARGET).analyzer.hfst
 
-# combine ruleset and lexicon binaries to analyzer FST
-%.analyzer.hfst: %.lexc.hfst %.twolc.hfst
-	hfst-compose-intersect $^ -o $@
+# remove HFST binaries and documentation file
+clean: $(shell find . -iname '*.hfst') $(shell find . -iname '*.lexc.hfst')
+	@rm -f $^
 
-# invert analyzer for use as generator
-%.generator.hfst : %.analyzer.hfst
-	hfst-invert $< -o $@
+include *.mk
