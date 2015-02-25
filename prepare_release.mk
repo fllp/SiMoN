@@ -12,4 +12,4 @@ define INC_FILES
 endef
 
 release: docs
-	@echo "zip SiMoN-v$(V).zip$(INC_FILES)"
+	@zip SiMoN-v$(V).zip$(INC_FILES)
