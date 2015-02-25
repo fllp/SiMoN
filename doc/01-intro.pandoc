@@ -1,0 +1,55 @@
+# Introduction
+
+## AnIta and SiMoN{#intro}
+
+This document describes the morphological parser SiMoN^[Acronym for **Si**cilian **Mo**rphology for **N**atural Language Processing], an analyzer for the Sicilian language.
+It is inspired by and based on *AnIta*, a morphological analyzer for the Italian language created by Tamburini and Melandri [-@TamburiniMelandri.2012] that consists of a larger lexicon of Italian words.
+SiMoN currently comprises of the regular verbal morphology of Sicilian and while being available for usage as a standalone application its purpose is to act as extension to AnIta and provide Sicilian morphological paradigms for processing in parallel to Italian.
+SiMoN is part of the [*TyDiaDy* research project](http://www.cis.lmu.de/linguistics/index.html).
+The subsequent chapter contains technical information for the setup of SiMoN. The third chapter describes the basic commands to analyze Sicilian words with SiMoN. Chapters \vref{ch:lexicon} and \vref{ch:rules} explain SiMoN's lexicon and rule set that form the morphological paradigms of Sicilian.
+
+## Relevant Terminology
+
+A few terms specific to the field of computational linguistics will occur throughout this documentation. They will be explained below.
+
+parsing:
+  ~ general term for analyzing and/or filtering text with specific rule sets
+
+parser:
+  ~ application/collection of rules to analyze/filter a certain type of textual information
+
+POS:
+  ~ **P**art **O**f **S**peech (tagging) - identifying word types (verb, noun, adverb,...) in a text
+
+lemma:
+  ~ entry in a (linguistic) lexicon, providing the basic form of a word
+
+paradigm:
+  ~ contains a 'list' of word forms belonging to the same word
+    + in the case of SiMoN, a paradigm holds all inflectional forms of a lemma
+
+FST:
+  ~ **F**inite **S**tate **T**ransducer - mathematical algorithms from the theory of (finite state) automata; core technology the *two-level morphology* (see section \ref{sec:two-level}) builds on
+
+HFST:
+  ~ **H**elsinki **F**inite **S**tate **T**echnology - suite of applications that are based on FSTs, developedat the University of Helsinki
+
+XFST:
+  ~ set of applications by the XEROX company implementing FSTs
+
+## The *two-level* principle
+
+\label{sec:two-level}
+
+SiMoN (as AnIta) consists of two parts: A lexicon and a rule set. They are part of a practice of representing morphologies first introduced by Kimmo Koskenniemi [-@Kimmo.1983] that is known as *two-level morphology*. In short, the idea is to combine the morphological lexicon and morphological rules of a language into a single finite state automaton that can be implemented as computer program thanks to a specific formalism (here XFST) the two parts are written in. Such morphologies - as the name suggests - contain two levels, the *surface level* and the *internal level*. In the following paragraph these two components are explained in brief.
+
+On the *internal level* grammatical information concerning the morphological and phonetic features is recorded in the lexicon on a word by word basis. In the case of SiMoN the lexicon contains various lemmas with basic word forms and their stems, each annotated with their word categories and other morphological features plus inflection class. These classes determine the associated inflection patterns, e.g. a conjugation pattern for verbs or a declination pattern for nouns. A conjugational paradigm of a verb can be build by appending each suffix from the pattern to its associated stem. \
+Since grammatical features should not be visible when generating inflected forms with the patterns an approach is required to remove them from the produced words while keeping their information intact for the generation process. In addition, many linguistic phenomena - especially those concerning phonology - can not easily be represented by the additive approach of a lexicon with inflectional patterns. This is what the second component, the rule set is used for. It contains various filters that both eliminate annotations from generated forms and manage phenomena outside the scope of the lexicon. Applying those rules to the lexicon on the *internal level* produces the cleaned up results on the *surface level*. See figure \vref{fig:two-level} for an illustration.
+
+\newpage
+
+Another aspect of the *two-level* concept is the efficiency of the algorithm used for implementation. It allows executing the combination of patterns and application of rules in parallel and increases speed. Further details about the underlying concepts and their implementation can be found in the articles by E. Antworth [-@Antworth.1991], L. Karttunen [-@Karttunen.2001] and the original work about *two-level* morphology [@Kimmo.1983]. \
+SiMoN's lexicon and rules are constructed in a way that allows *bidirectional* access to the morphological information in order to both analyze and generate words with the lemmas available in the lexicon. The features of a lemma are displayed for linguistic analysis both when looking up or generating a word in the lexicon.
+The structure allowing such usage is explained in the dedicated chapters \vref{ch:lexicon} and \vref{ch:rules}.
+
+![Two-Level representation\label{fig:two-level}](doc/img/two-level.png)
