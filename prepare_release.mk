@@ -6,11 +6,7 @@ define INC_FILES
  SiMoN-Documentation.pdf \
  siciliano.lexc \
  siciliano.twolc \
-<<<<<<< HEAD
- GPLv3 \
-=======
  GPLv3.txt \
->>>>>>> development
  Makefile \
  hfst_bins.mk
 endef
