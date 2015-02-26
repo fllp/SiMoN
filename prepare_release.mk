@@ -6,10 +6,16 @@ define INC_FILES
  SiMoN-Documentation.pdf \
  siciliano.lexc \
  siciliano.twolc \
+<<<<<<< HEAD
  GPLv3 \
+=======
+ GPLv3.txt \
+>>>>>>> development
  Makefile \
  hfst_bins.mk
 endef
 
-release: docs
-	@zip SiMoN-v$(V).zip$(INC_FILES)
+release: docs SiMoN-v$(V).zip
+
+%.zip:
+	@zip $@ $(INC_FILES)
