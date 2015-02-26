@@ -2,6 +2,8 @@
 *.hfst
 *.png
 *.pdf
+*.zip
+*.gz
 italiano*
 siciliano-*
 simon-files
