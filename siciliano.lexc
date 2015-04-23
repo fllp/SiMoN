@@ -506,7 +506,7 @@ LEXICON Root
 
     ! == conjugations for fari
     ! -- indicative
-    '_fari+V_FIN+IND+PRES+1+SING:fazzu #;
+    l_fari+V_FIN+IND+PRES+1+SING:fazzu #;
     l_fari+V_FIN+IND+PRES+2+SING:fai #;
     l_fari+V_FIN+IND+PRES+2+SING:fa' #;
     l_fari+V_FIN+IND+PRES+3+SING:fa #;
