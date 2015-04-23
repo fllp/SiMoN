@@ -596,12 +596,10 @@ LEXICON Root
     !not sure if this is actually sicilian or only italian
     !l_fari+V_PP+PART+PRES+MASC+PLUR:facenti #;
 
-!======= common verbs ========
+!======= common irregular verbs ========
 
 !TODO:
     ! dari/stari: indicative, cond, ...
-    l_diri:d+V_IRI SufCommon1;
-    l_stari:st+V_ARI SufCommon1;
     ! l_putiri+V_
     ! l_iri+V_
     ! l_vuliri+V_
@@ -611,6 +609,8 @@ LEXICON Root
     ! l_puniri+V_
     ! l_vidiri+V_
     ! l_duviri+V_
+    l_diri:d+V_IRI SufCommon1;
+    l_stari:st+V_ARI SufCommon1;
 
     ! -- indicative
     l_dari+V_FIN+IND+PRES+1+SING:dugnu #;
