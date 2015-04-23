@@ -24,6 +24,13 @@ The documentation for SiMoN can be found either in *doc/* (development versions)
 Changelog
 -------------
 
+**SiMoN 1.0.1**
+
+Minor release
+
+- update setup instructions for HFST Project (new Download page with binaries)
+- remove revision control files (GIT) from bundle archive
+
 **SiMoN 1.0**
 
 Initial puplic release
