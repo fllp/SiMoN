@@ -94,7 +94,7 @@ symbol  | meaning
 
 :special *multichar symbols* (*phonetics*, see section \vref{phonetics-symbols})
 
-A few more symbols that are not explained here are present in SiMoN's lexicon. They are present for compatability purposes with AnIta. \
+A few more symbols that are not explained here are present in SiMoN's lexicon. They are present for compatibility purposes with AnIta. \
 The complete manual to *multichar symbols* and their syntax conventions can be found in the [HFST-Documentation.][LexC-Tuto]
 
 ### Sub Lexicons
